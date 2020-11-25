@@ -1,5 +1,7 @@
 #include <string>
 #include <vector>
+#include <map>
+#include <iostream>
 
 using namespace std;
 
@@ -19,3 +21,9 @@ string file_to_string(const string & filename);
  * @return a vector containing filename's contents
  */
 vector<string> file_to_vector(const string & filename);
+
+
+map<int, int> organize(vector<string> list);
+
+
+
