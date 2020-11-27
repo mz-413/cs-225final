@@ -9,21 +9,27 @@ using namespace std;
 // adapted from CS 225 Final Project AMA
 
 /** 
- * Reads a file into a string
- * @param filename The file to read from 
- * @return a string containing filename's contents
- */
-string file_to_string(const string & filename);
-
-/** 
  * Reads a file into a vector
  * @param filename The file to read from
  * @return a vector containing filename's contents
  */
 vector<string> file_to_vector(const string & filename);
 
+/** 
+ * Creates directed map
+*/
+map<int, int> createMapDirected(vector<string> list);
 
-map<int, int> organize(vector<string> list);
+/**
+ * Creates undirected map
+*/
+map<int, int> createMapUndirected(map<int, int> directed);
+
+/** Output:
+ * Overwrite a new textfile to be the list of undirected nodes
+*/
+void writeOut(map<int, int> undirected);
+
 
 
 
