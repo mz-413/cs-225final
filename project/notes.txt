@@ -1,0 +1,13 @@
+
+3 main things to accomplish
+
+Traversal: BFS
+
+Djistra's algorithm https://www.includehelp.com/cpp-tutorial/dijkstras-algorithm.aspx
+
+Landmark algorithm
+
+
+Final Report
+"Presentation" Recording
+Readme
