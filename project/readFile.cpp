@@ -82,8 +82,8 @@ map<int, int> createMapUndirected(map<int, int> directed) {
 void writeOut(map<int, int> undirected) {
     ofstream myFile;
 
-    //! Find a way to clear the contents within undirected_list.txt
-    myFile.open("undirected_list.txt", ofstream::out | ofstream::trunc);
+    // // !Find a way to clear the contents within undirected_list.txt
+    myFile.open("undirected_list.txt");
 
     // myFile << "insert anything here to write";
     // convert int to string and writeOut in forloop
