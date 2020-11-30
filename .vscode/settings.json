@@ -1,6 +1,10 @@
 {
     "files.associations": {
         "memory": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "string": "cpp",
+        "*.txt": "cpp",
+        "__tuple": "cpp",
+        "tuple": "cpp"
     }
 }

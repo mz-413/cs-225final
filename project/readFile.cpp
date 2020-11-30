@@ -8,15 +8,22 @@
 #include <iterator>
 #include "readFile.hpp"
 #include "undirected_list.txt"
-#include "temp_directed_list.txt"
+// #include "temp_directed_list.txt"
 
 
 using namespace std;
 // Referencing from the sample files
+// TODO: Debug the code, figure out Makefile issue
+//? Makefile issue with stdlib?
+//? Sometime's file cannot be read due to "invalid preprocessing directive"
 
-vector<string> file_to_vector(const std::string & filename) {
-	std::ifstream text(filename);
-	std::vector<std::string> out;
+/** 
+ * Turns the directedlist file to a vectorString
+*/
+vector<string> file_to_vector() {
+	ifstream text;
+    text.open("temp_directed_list.txt"); //! CHANGE TO OFFICIAL DIRECTED LIST FOR FINAL PRODUCT
+	vector<string> out;
 
 	if (text.is_open()) {
 	    istream_iterator<string> iter(text);
@@ -30,11 +37,7 @@ vector<string> file_to_vector(const std::string & filename) {
 	return out;
 } 
 
-/** 
- * Make unordered pairs to ordered
- * deduplicate
- * export
-*/
+
 /** Reformats the list of directed nodes to be undirected list of nodes.
  * @param list of nodes, each index reps a new line of the list ("int of start node" + " " + "int of end node")
  * @return the organized map of ints that contains the undirected list of nodes
@@ -43,21 +46,20 @@ vector<string> file_to_vector(const std::string & filename) {
 map<int, int> createMapDirected(vector<string> list) {
     map<int, int> directed;
 
-    for (int i = 4; i < list.size(); i++) { // should start on the 4th line
+    for (size_t i = 4; i < list.size(); i++) { // should start on the 4th line
         string row = list[i];
-        int first = NULL; // start node
-        int second = NULL; // end node
+        int first = -1; // start node
+        int second = -1; // end node
         istringstream iss (row);
         for (int j = 0; j < 2; j++) {
-            if (first == NULL) {
+            if (first == -1) {
                 iss >> first;
             } else {
                 iss >> second;
             }
         }
 
-        // organized is not altered
-        directed.insert(first, second);
+        directed.insert(pair<int, int>(first, second));
     }
 
     return directed;
@@ -69,7 +71,7 @@ map<int, int> createMapUndirected(map<int, int> directed) {
     for (auto it = directed.begin(); it != directed.end(); it++) {
         int toCheck = undirected.find((*it).second)->first; // toCheck = first node of directed
         if (toCheck == 0) { // toCheck DNE OR == node0
-            undirected.insert((*it).first, (*it).second);
+            undirected.insert(pair<int, int>((*it).first, (*it).second));
         } else { // if pair alrdy exists
             continue;
         }
@@ -93,7 +95,7 @@ void writeOut(map<int, int> undirected) {
     return;
 }
 
-// need smthin like a main.cpp to call all of these functions
+
 
 /** Documentation:
  * readFile method reads the entire txt file of the directed nodes,
