@@ -7,7 +7,7 @@
 #include <istream>
 #include <iterator>
 #include "readFile.hpp"
-#include "undirected_list.txt"
+// #include "undirected_list.txt"
 // #include "temp_directed_list.txt"
 
 
@@ -81,7 +81,10 @@ map<int, int> createMapUndirected(map<int, int> directed) {
 
 void writeOut(map<int, int> undirected) {
     ofstream myFile;
-    myFile.open("undirected_list.txt");
+
+    //! Find a way to clear the contents within undirected_list.txt
+    myFile.open("undirected_list.txt", ofstream::out | ofstream::trunc);
+
     // myFile << "insert anything here to write";
     // convert int to string and writeOut in forloop
     string output = "";
