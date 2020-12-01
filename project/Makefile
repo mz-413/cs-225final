@@ -1,5 +1,5 @@
 EXENAME = finalproject
-OBJS = main.o graph.o Final.o readFile.o
+OBJS = main.o graph.o Final.o readFile.o tests.o
 
 CXX = clang++
 CXXFLAGS = $(CS225) -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic
@@ -44,10 +44,14 @@ graph.o: graph.cpp
 Final.o: Final.cpp
 	$(CXX) $(CXXFLAGS) Final.cpp
 
+readFileTest: output_msg catchmain.o readFile.o tests.o
+	$(LD) catchmain.o readFile.o tests.o $(LDFLAGS) -o readFileTest
 
-readFileTest: output_msg main.o readFile.o
-	$(LD) main.o readFile.o $(LDFLAGS) -o readFileTest
+tests.o: tests/tests.cpp catch/catch.hpp readFile.cpp
+	$(CXX) $(CXXFLAGS) tests/tests.cpp catch/catch.hpp readFile.cpp
 
+catchmain.o : catch/catchmain.cpp catch/catch.hpp
+	$(CXX) $(CXXFLAGS) catch/catchmain.cpp
 
-clean :
+clean:
 	-rm -f *.o $(EXENAME) test
