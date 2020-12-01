@@ -18,17 +18,17 @@ vector<string> file_to_vector();
 /** 
  * Creates directed map
 */
-map<int, int> createMapDirected(vector<string> list);
+vector<pair<int, int>> createMapDirected(vector<string> list);
 
 /**
  * Creates undirected map
 */
-map<int, int> createMapUndirected(map<int, int> directed);
+vector<pair<int, int>> createMapUndirected(vector<pair<int, int>> directed);
 
 /** Output:
  * Overwrite a new textfile to be the list of undirected nodes
 */
-void writeOut(map<int, int> undirected);
+void writeOut(vector<pair<int, int>> undirected);
 
 
 

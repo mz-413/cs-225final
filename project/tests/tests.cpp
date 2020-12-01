@@ -28,8 +28,8 @@ using namespace std;
 
 TEST_CASE("undir_list is correct", "[part=read]") {
     vector<string> dir_vect = file_to_vector();
-    map<int, int> dir_mapped = createMapDirected(dir_vect);
-    map<int, int> undir_mapped = createMapUndirected(dir_mapped);
+    vector<pair<int, int>> dir_mapped = createMapDirected(dir_vect);
+    vector<pair<int, int>> undir_mapped = createMapUndirected(dir_mapped);
     writeOut(undir_mapped);
     REQUIRE("../undirected_list.txt" == "undirected_list_solution.txt");
 }

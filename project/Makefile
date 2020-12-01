@@ -54,4 +54,4 @@ catchmain.o : catch/catchmain.cpp catch/catch.hpp
 	$(CXX) $(CXXFLAGS) catch/catchmain.cpp
 
 clean:
-	-rm -f *.o $(EXENAME) test
+	-rm -f *.o $(EXENAME) readFileTest
