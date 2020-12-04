@@ -10,26 +10,35 @@ Graph::Graph(){
 
 //Idea: Pass in vector in which first element is the source edge, 2nd dest edge, 3rd is the edge weight, this cycle repeats until the end
 //with this creat the graph
-Graph::Graph(vector<string> infile){
+Graph::Graph(queue<string> infile){
    
-   
+    string source;
+    string dest;
+    int weight;
+
+    //while queue is not empty
+    while(!infile.empty()){
+
+        //grab/remove three elements
+        source = infile.front();
+        infile.pop();
+        dest = infile.front();
+        infile.pop();
+        weight = std::stoi(infile.front());
+        infile.pop();
 
 
+        //Add the 2 vertices to adjacency List
+        this->insertVertex(source);
+        this->insertVertex(dest);
+        
+        //Add the the edge and set its weight;
+        bool  a = insertEdge(source,dest);
+        setEdgeWeight(source,dest, weight);
+        
 
-   /*
-    if (numVertices < 2)
-    {
-     error("numVertices too low");
-     exit(1);
     }
 
-    vector<Vertex> vertices;
-    for (int i = 0; i < numVertices; i++)
-    {
-        insertVertex(to_string(i));
-        vertices.push_back(to_string(i));
-    }
- */
 }
 
 vector<Vertex> Graph::getAdjacent(Vertex source) const 
@@ -188,19 +197,19 @@ Vertex Graph::removeVertex(Vertex v)
 
 bool Graph::insertEdge(Vertex source, Vertex destination)
 {
-    if(adjacency_list.find(source)!= adjacency_list.end() 
+    if(adjacency_list.find(source)!= adjacency_list.end() //if source is in adjList & its dest is also in adList edge already exists
     && adjacency_list[source].find(destination)!= adjacency_list[source].end())
     {
-        //edge already exit
+        //edge already exist
         return false;
     }
 
-    if(adjacency_list.find(source)==adjacency_list.end())
+    if(adjacency_list.find(source)==adjacency_list.end())   //if source is not in adjList......
     {
-        adjacency_list[source] = unordered_map<Vertex, Edge>();
+        adjacency_list[source] = unordered_map<Vertex, Edge>(); //add it
     }
         //source vertex exists
-    adjacency_list[source][destination] = Edge(source, destination);
+    adjacency_list[source][destination] = Edge(source, destination);    //add the edge to 
 
     if(adjacency_list.find(destination)== adjacency_list.end())
     {

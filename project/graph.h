@@ -33,6 +33,7 @@
 #include <set>
 #include <sstream>
 #include <vector>
+#include <queue>
 
 #include "edge.h"
 using std::cerr;
@@ -43,6 +44,7 @@ using std::set;
 using std::string;
 using std::to_string;
 using std::vector;
+using std::queue;
 using std::pair;
 using std::make_pair;
 using std::unordered_map;
@@ -61,7 +63,7 @@ public:
     /**
      * @param numVertices - the number of vertices the graph will have
      */
-    Graph(vector<string> infile);
+    Graph(queue<string> infile);
 
     /**
      * Gets all adjacent vertices to the parameter vertex.
