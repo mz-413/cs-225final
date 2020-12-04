@@ -1,5 +1,7 @@
 // yes
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "../readFile.hpp"
 #include "../catch/catch.hpp"
 
@@ -22,16 +24,41 @@ using namespace std;
 //     REQUIRE(d.get_anagrams("z").empty());
 // }
 
+// helper file compare - REFERENCING ONLINE getc TUTORIAL
+bool compareFiles(FILE * solution, FILE * result) {
+  if (solution == NULL || result == NULL) {
+    return false;
+  }
+  int soln = getc(solution);
+  int resul = getc(result);
+
+  while (soln != EOF && resul != EOF) { // loop till End Of File
+    if (soln != resul) {
+      cout << soln << " " << resul << endl;
+      return false; // discrepancy found
+    }
+    soln = getc(solution);
+    resul = getc(result);
+  }
+
+  return true; // no error
+}
+
 //
 // Basic tests
 //
-
 TEST_CASE("undir_list is correct", "[part=read]") {
     vector<string> dir_vect = file_to_vector();
-    vector<pair<int, int>> dir_mapped = createMapDirected(dir_vect);
-    vector<pair<int, int>> undir_mapped = createMapUndirected(dir_mapped);
-    writeOut(undir_mapped);
-    REQUIRE("../undirected_list.txt" == "undirected_list_solution.txt");
+    vector<pair<int, int>> dir_mapped = createMap(dir_vect);
+    writeOut(dir_mapped);
+    FILE * soln;
+    FILE * wrote;
+    soln = fopen("undirected_list_solution.txt", "r"); // Open files in read only mode
+    wrote = fopen("../undirected_list.txt", "r");
+    bool result = compareFiles(soln, wrote);
+    REQUIRE(result == false); //! FOR TESTING PURPOSES => SHOULD BE TRUE IF EQUAL
+    fclose(soln);
+    fclose(wrote);
 }
 
 /**

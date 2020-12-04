@@ -22,9 +22,9 @@ void test2();
     /** Read file of directed nodes, write the undirected nodes into "undirected_list.txt" */
     // string d_list = "temp_directed_list.txt";
     vector<string> dir_vect = file_to_vector();
-    map<int, int> dir_mapped = createMapDirected(dir_vect);
-    map<int, int> undir_mapped = createMapUndirected(dir_mapped);
-    writeOut(undir_mapped);
+    vector<pair<int, int>> dir_mapped = createMap(dir_vect);
+    // map<int, int> undir_mapped = createMapUndirected(dir_mapped);
+    writeOut(dir_mapped);
     cout << "test" << endl;
 
     return 0;

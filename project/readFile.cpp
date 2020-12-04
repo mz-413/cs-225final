@@ -7,11 +7,9 @@
 #include <istream>
 #include <iterator>
 #include "readFile.hpp"
-// #include "undirected_list.txt"
-// #include "temp_directed_list.txt"
-
 
 using namespace std;
+
 // Referencing from the sample files
 // TODO: Debug the code, figure out Makefile issue
 //? Makefile issue with stdlib?
@@ -23,13 +21,13 @@ using namespace std;
 vector<string> file_to_vector() {
 
     ofstream outfile;
-    outfile.open("temp_directed_list.txt", std::ios_base::app); // append instead of overwrite
+    outfile.open("roadNet-PA.txt", std::ios_base::app); // append instead of overwrite
     outfile << "\n";
-    outfile << "0 1";
+    outfile << "0 1"; // adds a new line to bottom to avoid missing any nodes
     outfile.close();
 
 	ifstream text;
-    text.open("temp_directed_list.txt"); //! CHANGE TO OFFICIAL DIRECTED LIST FOR FINAL PRODUCT
+    text.open("roadNet-PA.txt"); //! CHANGE TO OFFICIAL DIRECTED LIST FOR FINAL PRODUCT
 	vector<string> out;
 
 	if (text.is_open()) {
@@ -39,8 +37,6 @@ vector<string> file_to_vector() {
 			++iter;
 		}
 	}
-
-    cout << out[out.size() - 1] << endl;
 
     text.close();
 
@@ -53,18 +49,29 @@ vector<string> file_to_vector() {
  * @return the organized map of ints that contains the undirected list of nodes
 */
 // still have to figure out how to collect the data from actual file and connect the code with the file
-vector<pair<int, int>> createMapDirected(vector<string> list) {
-    vector<pair<int, int>> directed;
+vector<pair<int, int>> createMap(vector<string> list) {
+    vector<pair<int, int>> undirected;
 
-    for (size_t i = 0; i < list.size() - 1; i+=2) { // should start on the 4th line
+    undirected.push_back(pair<int,int>(stoi(list[0]), stoi(list[1]))); // First and second entry
+
+    for (size_t i = 2; i < list.size() - 1; i+=2) {
         int first = stoi(list[i]); // start node
         int second = stoi(list[i+1]); // end node
+        bool state = false;
 
-        cout << first << " " << second << endl;
+        for (size_t i = 0; i < undirected.size(); i++) {
+            pair<int, int> toCheck = undirected.at(i);
+            if (toCheck.second == first && toCheck.first == second) {
+                state = true;
+                break;
+            }
+        }
 
-        // change to vectors
-
-        directed.push_back(pair<int, int>(first, second));
+        if (state == false) { // toCheck DNE OR == node0
+            undirected.push_back(pair<int, int>(first, second));
+        } else { // if pair alrdy exists
+            continue;
+        }
     }
 
     // int first = stoi(list[list.size()]); // start node
@@ -77,30 +84,6 @@ vector<pair<int, int>> createMapDirected(vector<string> list) {
     //     cout << (*it).first << " " << (*it).second << endl;
     // }
 
-    return directed;
-}
-
-// PROBABLY WILL NEED TO EDIT
-vector<pair<int, int>> createMapUndirected(vector<pair<int, int>> directed) {
-    vector<pair<int, int>> undirected;
-    for (auto it = directed.begin(); it != directed.end(); it++) {
-        bool state = false; // false if no equal, true if exists alrdy
-
-        for (size_t i = 0; i < undirected.size(); i++) {
-            pair<int, int> toCheck = undirected.at(i);
-            if ((*it).second == toCheck.first && (*it).first == toCheck.second) {
-                state = true;
-                break;                
-            }
-        }
-
-        if (state == false) { // toCheck DNE OR == node0
-            undirected.push_back(pair<int, int>((*it).first, (*it).second));
-        } else { // if pair alrdy exists
-            continue;
-        }
-        // undirected.push_back(pair<int, int>((*it).first, (*it).second));
-    }
     return undirected;
 }
 
@@ -113,11 +96,23 @@ void writeOut(vector<pair<int, int>> undirected) {
     // myFile << "insert anything here to write";
     // convert int to string and writeOut in forloop
     string output = "";
+    int count = 0;
     for (auto it = undirected.begin(); it != undirected.end(); it++) {
         string first = to_string((*it).first);
         string second = to_string((*it).second);
-        output += first + " " + second + "\n";
+        string weight = to_string(rand() % 10 + 1);
+        
+        if (first == "0" && second == "1") {
+            count++;
+        }
+
+        if (count > 1) {
+            break;
+        } else {
+            output += first + " " + second + " " + weight + "\n";
+        }
     }
+
     myFile << output;
     myFile.close();
     return;
