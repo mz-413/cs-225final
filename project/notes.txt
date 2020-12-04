@@ -11,3 +11,5 @@ Landmark algorithm
 Final Report
 "Presentation" Recording
 Readme
+
+weights: for edges is random for now, maybe random num between 1-15 might chaange later

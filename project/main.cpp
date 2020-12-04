@@ -1,4 +1,5 @@
 #include "readFile.hpp"
+#include "graph.h"
 #include <fstream>
 #include <istream>
 #include <iostream>
@@ -26,6 +27,13 @@ void test2();
     map<int, int> undir_mapped = createMapUndirected(dir_mapped);
     writeOut(undir_mapped);
     cout << "test" << endl;
+
+
+    //Read from the newly created test file and create graph using that text file
+    vector<string> infileVector;
+    Graph PAgraph(infileVector);
+
+
 
     return 0;
 }
