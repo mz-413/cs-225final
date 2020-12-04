@@ -2,6 +2,7 @@
 #include <vector>
 #include <map>
 #include <iostream>
+#include <queue>
 
 using namespace std;
 
@@ -10,7 +11,6 @@ using namespace std;
 
 /** 
  * Reads a file into a vector
-//  * @param filename The file to read from
  * @return a vector containing filename's contents
  */
 vector<string> file_to_vector();
@@ -23,7 +23,7 @@ vector<pair<int, int>> createMap(vector<string> list);
 /** Output:
  * Overwrite a new textfile to be the list of undirected nodes
 */
-void writeOut(vector<pair<int, int>> undirected);
+queue<string> writeOut(vector<pair<int, int>> undirected);
 
 
 

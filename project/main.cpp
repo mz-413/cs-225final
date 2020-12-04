@@ -20,12 +20,13 @@ void test2();
 
 */
     /** Read file of directed nodes, write the undirected nodes into "undirected_list.txt" */
+    //? there is not output for queue in main but there's output in test?
     // string d_list = "temp_directed_list.txt";
     vector<string> dir_vect = file_to_vector();
     vector<pair<int, int>> dir_mapped = createMap(dir_vect);
-    // map<int, int> undir_mapped = createMapUndirected(dir_mapped);
-    writeOut(dir_mapped);
-    cout << "test" << endl;
+    queue<string> queue = writeOut(dir_mapped); // contains the queue of string
+    
+    
 
     return 0;
 }

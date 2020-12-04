@@ -6,6 +6,7 @@
 #include <vector>
 #include <istream>
 #include <iterator>
+#include <queue>
 #include "readFile.hpp"
 
 using namespace std;
@@ -21,13 +22,13 @@ using namespace std;
 vector<string> file_to_vector() {
 
     ofstream outfile;
-    outfile.open("roadNet-PA.txt", std::ios_base::app); // append instead of overwrite
+    outfile.open("temp_directed_list.txt", std::ios_base::app); // append instead of overwrite
     outfile << "\n";
     outfile << "0 1"; // adds a new line to bottom to avoid missing any nodes
     outfile.close();
 
 	ifstream text;
-    text.open("roadNet-PA.txt"); //! CHANGE TO OFFICIAL DIRECTED LIST FOR FINAL PRODUCT
+    text.open("temp_directed_list.txt"); //! CHANGE TO OFFICIAL DIRECTED LIST FOR FINAL PRODUCT
 	vector<string> out;
 
 	if (text.is_open()) {
@@ -87,7 +88,7 @@ vector<pair<int, int>> createMap(vector<string> list) {
     return undirected;
 }
 
-void writeOut(vector<pair<int, int>> undirected) {
+queue<string> writeOut(vector<pair<int, int>> undirected) {
     ofstream myFile;
 
     // // !Find a way to clear the contents within undirected_list.txt
@@ -96,6 +97,7 @@ void writeOut(vector<pair<int, int>> undirected) {
     // myFile << "insert anything here to write";
     // convert int to string and writeOut in forloop
     string output = "";
+    queue<string> to_return;
     int count = 0;
     for (auto it = undirected.begin(); it != undirected.end(); it++) {
         string first = to_string((*it).first);
@@ -106,16 +108,19 @@ void writeOut(vector<pair<int, int>> undirected) {
             count++;
         }
 
-        if (count > 1) {
+        if (count > 1) { // if reached to end, stop adding
             break;
         } else {
+            to_return.push(first);
+            to_return.push(second);
+            to_return.push(weight);
             output += first + " " + second + " " + weight + "\n";
         }
     }
 
     myFile << output;
     myFile.close();
-    return;
+    return to_return;
 }
 
 
