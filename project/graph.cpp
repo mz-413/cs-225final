@@ -12,8 +12,8 @@ Graph::Graph(){
 //with this creat the graph
 Graph::Graph(queue<string> infile){
    
-    string source;
-    string dest;
+    Vertex source;
+    Vertex dest;
     int weight;
 
     //while queue is not empty
@@ -160,7 +160,7 @@ int Graph::getEdgeWeight(Vertex source, Vertex destination) const
 void Graph::insertVertex(Vertex v)
 {
     // will overwrite if old stuff was there
-    removeVertex(v);
+    //removeVertex(v);
     // make it empty again
     adjacency_list[v] = unordered_map<Vertex, Edge>();
 }
