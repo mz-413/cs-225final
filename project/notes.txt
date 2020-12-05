@@ -12,4 +12,7 @@ Final Report
 "Presentation" Recording
 Readme
 
-weights: for edges is random for now, maybe random num between 1-15 might chaange later
+Traversal: visit every  node and save it into a text file,
+all the outputs should be saved to a textfile.
+
+min 100-200 nodes can cut down on dataset.

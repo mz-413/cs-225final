@@ -54,7 +54,7 @@ void graphtest(Graph g){
 
 
     //Edge Test
-    cout << "\nEdges (src,dest):weight) = { ";
+    cout << "\nEdges\n(src,dest):weight) = { ";
     for(size_t i =0; i< edges.size(); i++){
         
             if(i!=0){
@@ -63,7 +63,7 @@ void graphtest(Graph g){
                 cout << "("<<edges.at(i).source << "," << edges.at(i).dest << "):" << edges.at(i).getWeight();
             }
     }
-    cout << " }" << endl;
+    cout << " }\n" << endl;
 
 }
 
@@ -89,7 +89,7 @@ void test2();
     */
 
 
-    //Read from the newly created test file and create graph using that text file
+    //Queue Read from the newly created test file and create graph using that text file
     queue<string> infileQ;
     loadQ(infileQ);//loads Q with 5 vertices, 4 egdes
 
