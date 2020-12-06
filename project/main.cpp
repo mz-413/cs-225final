@@ -1,5 +1,6 @@
 #include "readFile.hpp"
 #include "graph.h"
+#include "BFS.h"
 #include <fstream>
 #include <istream>
 #include <iostream>
@@ -96,8 +97,10 @@ void test2();
     Graph PAgraph(infileQ); //create the graph
     graphtest(PAgraph);     //output the graph info
     
-    
-
+    // BFS
+    BFS bfs_test(PAgraph);
+    // TODO: Finish solving this issue
+    bfs_test.writeOut();
 
 
     return 0;

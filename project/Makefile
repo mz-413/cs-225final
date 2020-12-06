@@ -4,7 +4,7 @@ TEST = test
 
 # Add all object files needed for compiling:
 EXE_OBJ = main.o
-OBJS = graph.o main.o readFile.o
+OBJS = graph.o main.o readFile.o BFS.o
 
 # Generated files
 CLEAN_RM = images/Out.png
