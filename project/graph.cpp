@@ -1,4 +1,5 @@
 #include "graph.h"
+#include <list>
 
 const Vertex Graph::InvalidVertex = "_CS225INVALIDVERTEX";
 const int Graph::InvalidWeight = INT_MIN;
@@ -28,9 +29,9 @@ Graph::Graph(queue<string> infile){
         infile.pop();
 
 
-        //Add the 2 vertices to adjacency List
-        this->insertVertex(source);
-        this->insertVertex(dest);
+        //Add the 2 vertices to adjacency List, no need will be added with insertedge, possible missing edges if done this way
+        //insertVertex(source);
+        //insertVertex(dest);
         
         //Add the the edge and set its weight;
         bool  a = insertEdge(source,dest);
@@ -40,6 +41,92 @@ Graph::Graph(queue<string> infile){
     }
 
 }
+          //<weight, vertex>
+typedef pair<int, int> iPair; 
+vector<int> Graph::DijkstrasSSSP(int source) {
+    // establish the source vertex
+    int theSource = source;
+    
+    vector<int> shortestpath;
+
+    // (1) Create a vector of to size of graph to hold the distances of each vertex
+    //index represents vertex, element is the distance(weight)
+    vector<int> dist(getVertices().size(), INT32_MAX);  //distances from source
+
+    // (3) Create a Min-Heap priority_queue which takes in the following arguments:
+        // a. the datatype (pair<int,int>)
+        // b. the comparator (greater<pair<int,int>> is used as a default to find the smaller value b/c in a Min-Heap 
+        // the parent node value is smaller than or equal to children node value)
+    std::priority_queue<iPair, vector <iPair>, std::greater<iPair>> myQ;
+
+    // make a pair at the source
+    myQ.push(make_pair(0, theSource));
+
+    // the distance from the source the source is 0
+    dist[theSource] = 0;
+
+    // for as long as the priority_queue isn't empty
+    while (myQ.size() != 0) {
+        // store second element of the top most object
+        int current = myQ.top().second;   //= to the vertex
+        // remove the top most object
+        cout << current<< endl;
+        myQ.pop();
+
+        // iterate through the current object's adjacent objects
+        //list< pair<int, int> >::iterator iter;
+        //unordered_map<Vertex,Edge>::iterator iter;
+
+        for (auto it = adjacency_list[std::to_string(current)].begin(); it != adjacency_list[std::to_string(current)].end(); it++) {
+            // find and store an adjacent vertex current and the weight 
+            int currentAdj = std::stoi((*it).first); //adj vertex
+            int adjWeight = (*it).second.getWeight(); //weight
+            int compareDist = dist[current] + adjWeight;
+  
+            if (compareDist < dist[currentAdj]) { 
+                dist[currentAdj] = compareDist; 
+                myQ.push(make_pair(dist[currentAdj], currentAdj)); 
+            } 
+        }
+    }
+
+
+
+
+//////path for loop
+        Vertex start = std::to_string(source);
+        shortestpath.push_back(source);
+        
+    for(size_t i=0;i<adjacency_list.size(); i++){
+
+        int route = INT32_MAX;
+        vector<Vertex> temp = getAdjacent(start);
+
+        Vertex winning = temp.at(0);
+
+        for(Vertex v: temp){
+
+            if(getEdgeWeight(start,v) < route){
+
+                route = getEdgeWeight(start,v);
+                winning = v;
+            }
+        }
+        shortestpath.push_back(std::stoi(winning));
+        start= winning;
+
+
+    }
+
+    //return dist;
+    return shortestpath;
+}
+
+
+
+
+
+
 
 vector<Vertex> Graph::getAdjacent(Vertex source) const 
 {
@@ -200,7 +287,7 @@ bool Graph::insertEdge(Vertex source, Vertex destination)
     if(adjacency_list.find(source)!= adjacency_list.end() //if source is in adjList & its dest is also in adList edge already exists
     && adjacency_list[source].find(destination)!= adjacency_list[source].end())
     {
-        //edge already exist
+        //edge already exist return no need to do anything return false
         return false;
     }
 

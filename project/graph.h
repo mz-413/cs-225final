@@ -65,6 +65,9 @@ public:
      */
     Graph(queue<string> infile);
 
+
+    vector<int> DijkstrasSSSP(int source);
+
     /**
      * Gets all adjacent vertices to the parameter vertex.
      * @param source - vertex to get neighbors from
@@ -217,6 +220,7 @@ public:
     const static string InvalidLabel;
 
 private:
+                        //<src, umap<dest , edge>>
     mutable unordered_map<Vertex, unordered_map<Vertex, Edge>> adjacency_list;
     int picNum;
     string picName;
