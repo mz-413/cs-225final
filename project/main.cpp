@@ -1,5 +1,6 @@
 #include "readFile.hpp"
 #include "graph.h"
+#include "BFS.h"
 #include <fstream>
 #include <istream>
 #include <iostream>
@@ -101,6 +102,10 @@ void DijkstrasTest(Graph g, int source){
 
 }
 
+void BFSTest(Graph g) {
+    BFS graph(g);
+    graph.writeOut();
+}
 
 
 int main() {
@@ -134,7 +139,9 @@ void test2();
 
     DijkstrasTest(PAgraph,0);
     
-    
+    //TODO: BFS Not printing anything
+    cout << "BFS: " << endl;
+    BFSTest(PAgraph);
 
 
 
