@@ -139,7 +139,6 @@ void test2();
 
     DijkstrasTest(PAgraph,0);
     
-    //TODO: BFS Not printing anything
     cout << "BFS: " << endl;
     BFSTest(PAgraph);
 
