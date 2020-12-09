@@ -12,9 +12,9 @@
 using namespace std;
 
 // Referencing from the sample files
-// TODO: Debug the code, figure out Makefile issue
-//? Makefile issue with stdlib?
 //? Sometime's file cannot be read due to "invalid preprocessing directive"
+
+vector<int> empty_nodes_check;
 
 /** 
  * Turns the directedlist file to a vectorString
@@ -22,13 +22,13 @@ using namespace std;
 vector<string> file_to_vector() {
 
     ofstream outfile;
-    outfile.open("temp_directed_list.txt", std::ios_base::app); // append instead of overwrite
+    outfile.open("roadNet-PA.txt", std::ios_base::app); // append instead of overwrite
     outfile << "\n";
     outfile << "0 1"; // adds a new line to bottom to avoid missing any nodes
     outfile.close();
 
 	ifstream text;
-    text.open("temp_directed_list.txt"); //! CHANGE TO OFFICIAL DIRECTED LIST FOR FINAL PRODUCT
+    text.open("roadNet-PA.txt"); //! CHANGE TO OFFICIAL DIRECTED LIST FOR FINAL PRODUCT
 	vector<string> out;
 
 	if (text.is_open()) {
@@ -44,7 +44,6 @@ vector<string> file_to_vector() {
 	return out;
 } 
 
-
 /** Reformats the list of directed nodes to be undirected list of nodes.
  * @param list of nodes, each index reps a new line of the list ("int of start node" + " " + "int of end node")
  * @return the organized map of ints that contains the undirected list of nodes
@@ -53,12 +52,23 @@ vector<string> file_to_vector() {
 vector<pair<int, int>> createMap(vector<string> list) {
     vector<pair<int, int>> undirected;
 
+    for (size_t i = 0; i < 250; i++) {
+        empty_nodes_check.push_back(0);
+    }
+
     undirected.push_back(pair<int,int>(stoi(list[0]), stoi(list[1]))); // First and second entry
 
     for (size_t i = 2; i < list.size() - 1; i+=2) {
         int first = stoi(list[i]); // start node
         int second = stoi(list[i+1]); // end node
         bool state = false;
+
+        if (first > 249 || second > 249) {
+            continue;
+        }
+
+        empty_nodes_check.at(first) = 1;
+        empty_nodes_check.at(second) = 1;
 
         for (size_t i = 0; i < undirected.size(); i++) {
             pair<int, int> toCheck = undirected.at(i);
@@ -118,6 +128,11 @@ queue<string> writeOut(vector<pair<int, int>> undirected) {
         }
     }
 
+    output += "\n\n\n--------TO CHECK--------\n\n\n";
+
+    for (size_t i = 0; i < empty_nodes_check.size(); i++) {
+        output += to_string(i) + " " + to_string(empty_nodes_check.at(i)) + "\n";
+    }
     myFile << output;
     myFile.close();
     return to_return;
