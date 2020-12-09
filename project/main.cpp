@@ -133,16 +133,15 @@ queue<string> readFromFile() {
 int main() {
 /*
 OUTLINE:
-1) Read from file,
-2) load and Create graph object
-3) test cases outputs in main;
+1) Read from file, 
+2) load and Create graph object and output to text file, vertices, edeges, weights,
+3) Do a BFS Traversal, output traversal info to txt file
+4) Run Dijkstras algorithm, output information to txt file
+5) Run xxxxx algorithm, ouptut information to txt file
+6) Any addition test cases to ouput to screen in main;
 
 
-
-void test1 ();
-void test2();
 */
-
     /** Read file of directed nodes, write the undirected nodes into "undirected_list.txt" */
     //? there is not output for queue in main but there's output in test?
    /* // string d_list = "temp_directed_list.txt";

@@ -118,8 +118,8 @@ vector<int> Graph::DijkstrasSSSP(int source) {
 
     }
 
-    //return dist;
-    return shortestpath;
+    return dist;
+    //return shortestpath;
 }
 
 
