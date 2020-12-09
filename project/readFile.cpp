@@ -128,11 +128,11 @@ queue<string> writeOut(vector<pair<int, int>> undirected) {
         }
     }
 
-    output += "\n\n\n--------TO CHECK--------\n\n\n";
+    // output += "\n\n\n--------TO CHECK--------\n\n\n";
 
-    for (size_t i = 0; i < empty_nodes_check.size(); i++) {
-        output += to_string(i) + " " + to_string(empty_nodes_check.at(i)) + "\n";
-    }
+    // for (size_t i = 0; i < empty_nodes_check.size(); i++) {
+    //     output += to_string(i) + " " + to_string(empty_nodes_check.at(i)) + "\n";
+    // }
     myFile << output;
     myFile.close();
     return to_return;

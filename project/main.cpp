@@ -101,12 +101,34 @@ void DijkstrasTest(Graph g, int source){
     cout << endl;
 
 }
-
 void BFSTest(Graph g) {
     BFS graph(g);
     graph.writeOut();
 }
 
+/** 
+ * Reads undirected_list.txt
+ * Returns queue<string> of nodes & weights
+*/
+queue<string> readFromFile() {
+
+	ifstream text;
+    text.open("undirected_list.txt");
+
+	queue<string> out;
+
+	if (text.is_open()) {
+	    istream_iterator<string> iter(text);
+		while (!text.eof()) {
+			out.push(*iter);
+			++iter;
+		}
+	}
+
+    text.close();
+
+	return out;
+} 
 
 int main() {
 /*
@@ -128,18 +150,20 @@ void test2();
     vector<pair<int, int>> dir_mapped = createMap(dir_vect);
     queue<string> q = writeOut(dir_mapped); // contains the queue of string
     */
-
+    
 
     //Queue Read from the newly created test file and create graph using that text file
     queue<string> infileQ;
     loadQ(infileQ);//loads Q with 5 vertices, 4 egdes
+
+    // queue<string> infileQ = readFromFile();
 
     Graph PAgraph(infileQ); //create the graph
     graphtest(PAgraph);     //output the graph info
 
     DijkstrasTest(PAgraph,0);
     
-    cout << "BFS: " << endl;
+    cout << "BFS: Check BFS.txt" << endl;
     BFSTest(PAgraph);
 
 

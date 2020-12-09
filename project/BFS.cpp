@@ -8,6 +8,7 @@
 #include <queue>
 #include <iostream>
 #include <fstream>
+#include <stack>
 #include "graph.h"
 #include "edge.h"
 #include "BFS.h"
@@ -213,7 +214,32 @@ void BFS::writeOut() {
 }
 
 //? Getter for test case?
+queue<string> BFS::getTraverseOrder() {
+    // stack<string> stack;
+    // queue<string> queue = output_queue_;
+    // size_t size = queue.size();
 
+    // for (size_t i = 0; i < size; i++) {
+    //     stack.push(queue.front());
+    //     queue.pop();
+    // }
+    return output_queue_;
+}
 
+vector<Edge> BFS::getEdgesDiscovered() {
+    vector<Edge> final;
+    for (auto it = discovered.begin(); it != discovered.end(); it++) {
+        final.push_back(*it);
+    }
+    return final;
+}
+
+vector<Edge> BFS::getEdgesCross() {
+    vector<Edge> final;
+    for (auto it = unexplored.begin(); it != unexplored.end(); it++) {
+        final.push_back(*it);
+    }
+    return final;
+}
 
 

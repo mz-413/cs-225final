@@ -9,6 +9,7 @@
 #include <list>
 #include <queue>
 #include <map>
+#include <stack>
 #include "graph.h"
 #include "edge.h"
 
@@ -27,6 +28,11 @@ public:
 
     void writeOut();
 
+    /** FOR TEST CASES */
+    queue<string> getTraverseOrder();
+    vector<Edge> getEdgesDiscovered();
+    vector<Edge> getEdgesCross();
+
 private:
     // Graph graph_;
     map<Vertex, bool> visited_vertices; // map of visited vertices - to keep track of visited state; true = visited
@@ -34,10 +40,9 @@ private:
     queue<string> output_queue_; // final queue that keeps track of traversed nodes
 
     vector<Edge> discovered; // edges in this vector will be labeled as discovered
-    vector<Edge> cross; // edges in this vector will be labeled as cross
-    vector<Edge> unexplored; // edges that are unexplored
+    vector<Edge> cross; // edges in this vector will be labeled as cross => BUGGED?
+    vector<Edge> unexplored; // edges that are unexplored => TECHNICALLY ALL ARE CROSS USE THIS INSTEAD
     
-
 };
 
 
