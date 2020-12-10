@@ -16,3 +16,6 @@ Traversal: visit every  node and save it into a text file,
 all the outputs should be saved to a textfile.
 
 min 100-200 nodes can cut down on dataset.
+
+
+

@@ -68,6 +68,14 @@ public:
 
     vector<int> DijkstrasSSSP(int source);
 
+    void DijkstraSSSPpath(int source);  //try#2
+
+
+
+
+
+    int findVertexidx(vector<Vertex> &adjverts, Vertex vertex);   //find a particular vertex index
+
     /**
      * Gets all adjacent vertices to the parameter vertex.
      * @param source - vertex to get neighbors from
@@ -222,6 +230,11 @@ public:
 private:
                         //<src, umap<dest , edge>>
     mutable unordered_map<Vertex, unordered_map<Vertex, Edge>> adjacency_list;
+    vector<int> Dshortestpath;
+    vector<int> Dijkdistances;
+
+
+
     int picNum;
     string picName;
 

@@ -41,95 +41,172 @@ Graph::Graph(queue<string> infile){
     }
 
 }
-          //<weight, vertex>
-typedef pair<int, int> iPair; 
+
 vector<int> Graph::DijkstrasSSSP(int source) {
     // establish the source vertex
     int theSource = source;
     
-    vector<int> shortestpath;
-
     // (1) Create a vector of to size of graph to hold the distances of each vertex
     //index represents vertex, element is the distance(weight)
     vector<int> dist(getVertices().size(), INT32_MAX);  //distances from source
+    vector<bool> visited(getVertices().size(),false);    //used to see if we have visited a node
+    vector<Edge> shortestpath;
 
     // (3) Create a Min-Heap priority_queue which takes in the following arguments:
         // a. the datatype (pair<int,int>)
         // b. the comparator (greater<pair<int,int>> is used as a default to find the smaller value b/c in a Min-Heap 
         // the parent node value is smaller than or equal to children node value)
-    std::priority_queue<iPair, vector <iPair>, std::greater<iPair>> myQ;
+    std::priority_queue<pair<int,int>, vector <pair<int,int>>, std::greater<pair<int,int>>> myQ;
 
     // make a pair at the source
     myQ.push(make_pair(0, theSource));
 
     // the distance from the source the source is 0
     dist[theSource] = 0;
-
+    visited.at(0) =true;
+    
+    int count=1;
     // for as long as the priority_queue isn't empty
     while (myQ.size() != 0) {
         // store second element of the top most object
-        int current = myQ.top().second;   //= to the vertex
+        int currV = myQ.top().second;   //= to the current vertex
+        int currMinEdge = INT32_MAX;    //the smallest adj path 
+        Edge temp;
         // remove the top most object
-        cout << current<< endl;
+        cout<< "loop("<<count<<") " << "current vertex being processed:" <<currV<< endl;
         myQ.pop();
 
         // iterate through the current object's adjacent objects
-        //list< pair<int, int> >::iterator iter;
-        //unordered_map<Vertex,Edge>::iterator iter;
-
-        for (auto it = adjacency_list[std::to_string(current)].begin(); it != adjacency_list[std::to_string(current)].end(); it++) {
+        for (auto it = adjacency_list[std::to_string(currV)].begin(); it != adjacency_list[std::to_string(currV)].end(); it++) {
+            
             // find and store an adjacent vertex current and the weight 
-            int currentAdj = std::stoi((*it).first); //adj vertex
-            int adjWeight = (*it).second.getWeight(); //weight
-            int compareDist = dist[current] + adjWeight;
+            int currAdjV = std::stoi((*it).first);  //current adj vertex
+
+            if(visited.at(currAdjV))    //if adjV was already processed skip to next one.
+                continue;
+
+            cout << "innerloop adjvertex:" << currAdjV << endl;
+            int adjWeight = (*it).second.getWeight(); // the edge weight
+            int compareDist = dist[currV] + adjWeight;  //weight from source vertex
   
-            if (compareDist < dist[currentAdj]) { 
-                dist[currentAdj] = compareDist; 
-                myQ.push(make_pair(dist[currentAdj], currentAdj)); 
+            if (compareDist < dist[currAdjV]) { 
+                dist[currAdjV] = compareDist; 
+                myQ.push(make_pair(dist[currAdjV], currAdjV)); 
+                cout << currAdjV << "pushed to queue" << endl;
             } 
+
+            if(adjWeight < currMinEdge && visited.at(currAdjV) == false){
+
+                currMinEdge =adjWeight;
+                temp = getEdge(std::to_string(currV),std::to_string(currAdjV));
+                
+            }      
+                
+            
         }
-    }
+        visited.at(currV) = true;
+        shortestpath.push_back(temp);
 
+        /*    
+        if(count ==9){
+            cout << "\ncurrV: " << currV<<" " << visited[currV] << endl;
+            visited[7] = true;
 
+        }else if(count==10){
+            cout << "\ncurrV: " << currV<<" " << visited[currV] << endl;
+            visited[7] = true;
 
+        }else if(count <8){
+            visited[currV] = true;
 
-//////path for loop
-        Vertex start = std::to_string(source);
-        shortestpath.push_back(source);
+        }
+
+        //visited[currV] = true;
+        int j = std::stoi(temp.dest);
         
-    for(size_t i=0;i<adjacency_list.size(); i++){
-
-        int route = INT32_MAX;
-        vector<Vertex> temp = getAdjacent(start);
-
-        Vertex winning = temp.at(0);
-
-        for(Vertex v: temp){
-
-            if(getEdgeWeight(start,v) < route){
-
-                route = getEdgeWeight(start,v);
-                winning = v;
-            }
+        if(visited.at(j) != true){
+            shortestpath.push_back(temp);
+    
         }
-        shortestpath.push_back(std::stoi(winning));
-        start= winning;
+    
 
-
+        */
+    count++;
     }
 
+    cout << "shortest path: ";
+    for(Edge e: shortestpath)
+        cout << e.source<< ":" << e.dest << " ";
+    
+    cout << endl;
+    
     return dist;
-    //return shortestpath;
+ 
 }
 
 
+/*
+void Graph::DijkstraSSSPpath(int source){
+
+    vector<int> distance(getVertices().size(), INFINITY);           //used to track distances from source, index represents node number
+    vector<bool> shortestTree(getVertices().size(), false);
+    vector<int> parent(getVertices().size(), -1);
+    //std::priority_queue<pair<int,int>, vector <pair<int,int>>, std::greater<pair<int,int>>> myQ;
+
+    parent.at(0) = -1;
+    distance.at(source) =0;
+
+    int minIdx;
+
+    for(size_t i=0; i<getVertices().size()-1; i++){
+
+        int minWeight= INFINITY;
+        
+        for(size_t i=0; i<getVertices().size(); i++){
+            if(distance.at(i) <=minWeight && shortestTree.at(i) == false){
+                minWeight=distance.at(i);
+                minIdx = i;
+            }
+        }
+
+        shortestTree.at(minIdx) = true;
+
+        for(size_t i=0; i<getVertices().size(); i++){
+
+
+            if(!shortestTree.at(i) && assertEdgeExists(to_string(minIdx),to_string(i), string("Djisktar")) 
+            &&  (distance.at(minIdx)+ getEdgeWeight(to_string(minIdx),to_string(i)) < distance.at(i)) ){
+                
+                parent.at(i) = minIdx;
+                distance[i]=distance[minIdx] + getEdgeWeight(to_string(minIdx),to_string(i));
+
+            }
+
+
+        }
+
+    }
+
+*/
+    /*
+    cout << "Vertex\t" << "Distance\t" << "Path\t" << endl;
+    for(size_t i=1; i< getVertices().size(); i++){
+
+        cout << source << "->" <<i << "\t\t"<< distance.at(i) << "\t\t"<< source <<endl;
+
+        
+    }
+    */
 
 
 
 
 
-vector<Vertex> Graph::getAdjacent(Vertex source) const 
-{
+
+
+
+
+vector<Vertex> Graph::getAdjacent(Vertex source) const {
     auto lookup = adjacency_list.find(source);
 
     if(lookup == adjacency_list.end())

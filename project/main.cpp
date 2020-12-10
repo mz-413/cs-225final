@@ -9,6 +9,8 @@
 
 using namespace std;
 
+//void BFStest()
+//void LandmarkTest()
 void loadQ(queue<string> & q){
     
     q.push(string("0"));    //src
@@ -92,10 +94,10 @@ void graphtest(Graph g){
 }
 void DijkstrasTest(Graph g, int source){
 
-    vector<int> distances = g.DijkstrasSSSP(source);
+    vector<int> path= g.DijkstrasSSSP(source);
 
-    cout << "\nDistances: ";
-    for(int n: distances){
+    cout << "\nD Path From " << source << " : ";
+    for(int n: path){
         cout << n << ", ";
     }
     cout << endl;
@@ -164,6 +166,8 @@ OUTLINE:
     
     cout << "BFS: Check BFS.txt" << endl;
     BFSTest(PAgraph);
+
+    //PAgraph.DijkstraSSSPpath(0); 
 
 
 
