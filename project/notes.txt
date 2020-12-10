@@ -8,9 +8,16 @@ Djistra's algorithm https://www.includehelp.com/cpp-tutorial/dijkstras-algorithm
 Landmark algorithm
 
 
-Final Report
-"Presentation" Recording
-Readme
+Final Report "Results" & develpment Nihiraka start
+"Presentation" Recording with powerpoint Nihiraka start
+
+
+Readme (instruction set) everyone start writing your part  
+
+
+
+
+
 
 Traversal: visit every  node and save it into a text file,
 all the outputs should be saved to a textfile.
