@@ -73,7 +73,6 @@ public:
 
 
 
-
     int findVertexidx(vector<Vertex> &adjverts, Vertex vertex);   //find a particular vertex index
 
     /**

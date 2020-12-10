@@ -60,6 +60,37 @@ void loadQ(queue<string> & q){
     q.push(string("4"));
     q.push(string("2"));
     q.push(string("6"));
+
+////////////pt2 graph
+  /*  q.push(string("6"));
+    q.push(string("10"));
+    q.push(string("1"));
+
+    q.push(string("7"));
+    q.push(string("9"));
+    q.push(string("3"));
+
+    q.push(string("9"));
+    q.push(string("8"));
+    q.push(string("8"));
+
+    q.push(string("10"));
+    q.push(string("9"));
+    q.push(string("1"));
+
+    q.push(string("10"));
+    q.push(string("11"));
+    q.push(string("3"));
+
+
+    q.push(string("10"));
+    q.push(string("12"));
+    q.push(string("2"));
+
+    q.push(string("11"));
+    q.push(string("12"));
+    q.push(string("6"));
+*/
 }
 void graphtest(Graph g){
 
@@ -167,7 +198,7 @@ OUTLINE:
     cout << "BFS: Check BFS.txt" << endl;
     BFSTest(PAgraph);
 
-    //PAgraph.DijkstraSSSPpath(0); 
+    PAgraph.DijkstraSSSPpath(0); 
 
 
 

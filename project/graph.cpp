@@ -51,6 +51,7 @@ vector<int> Graph::DijkstrasSSSP(int source) {
     vector<int> dist(getVertices().size(), INT32_MAX);  //distances from source
     vector<bool> visited(getVertices().size(),false);    //used to see if we have visited a node
     vector<Edge> shortestpath;
+    
 
     // (3) Create a Min-Heap priority_queue which takes in the following arguments:
         // a. the datatype (pair<int,int>)
@@ -63,36 +64,36 @@ vector<int> Graph::DijkstrasSSSP(int source) {
 
     // the distance from the source the source is 0
     dist[theSource] = 0;
-    visited.at(0) =true;
+    //visited.at(0) =true;
     
     int count=1;
     // for as long as the priority_queue isn't empty
-    while (myQ.size() != 0) {
+    while (!myQ.empty()) {
         // store second element of the top most object
         int currV = myQ.top().second;   //= to the current vertex
         int currMinEdge = INT32_MAX;    //the smallest adj path 
         Edge temp;
         // remove the top most object
-        cout<< "loop("<<count<<") " << "current vertex being processed:" <<currV<< endl;
+        //cout<< "loop("<<count<<") " << "current vertex being processed:" <<currV<< endl;
         myQ.pop();
 
         // iterate through the current object's adjacent objects
         for (auto it = adjacency_list[std::to_string(currV)].begin(); it != adjacency_list[std::to_string(currV)].end(); it++) {
             
-            // find and store an adjacent vertex current and the weight 
+            //store the current adjacent vertex
             int currAdjV = std::stoi((*it).first);  //current adj vertex
 
             if(visited.at(currAdjV))    //if adjV was already processed skip to next one.
                 continue;
 
-            cout << "innerloop adjvertex:" << currAdjV << endl;
-            int adjWeight = (*it).second.getWeight(); // the edge weight
+            //cout << "innerloop adjvertex:" << currAdjV << endl;
+            int adjWeight = (*it).second.getWeight(); // the adj vertex edge weight
             int compareDist = dist[currV] + adjWeight;  //weight from source vertex
   
             if (compareDist < dist[currAdjV]) { 
                 dist[currAdjV] = compareDist; 
                 myQ.push(make_pair(dist[currAdjV], currAdjV)); 
-                cout << currAdjV << "pushed to queue" << endl;
+                //cout << currAdjV << "pushed to queue" << endl;
             } 
 
             if(adjWeight < currMinEdge && visited.at(currAdjV) == false){
@@ -105,7 +106,9 @@ vector<int> Graph::DijkstrasSSSP(int source) {
             
         }
         visited.at(currV) = true;
-        shortestpath.push_back(temp);
+
+        if(temp.source != "")
+            shortestpath.push_back(temp);
 
         /*    
         if(count ==9){
@@ -145,61 +148,87 @@ vector<int> Graph::DijkstrasSSSP(int source) {
 }
 
 
-/*
 void Graph::DijkstraSSSPpath(int source){
 
-    vector<int> distance(getVertices().size(), INFINITY);           //used to track distances from source, index represents node number
-    vector<bool> shortestTree(getVertices().size(), false);
-    vector<int> parent(getVertices().size(), -1);
-    //std::priority_queue<pair<int,int>, vector <pair<int,int>>, std::greater<pair<int,int>>> myQ;
+    int graphsize = (int)getVertices().size();      
 
-    parent.at(0) = -1;
-    distance.at(source) =0;
+    vector<int> distance(graphsize, INFINITY);           //used to track distances from source, index represents node number, initialiezed to infinity
+    vector<bool> visited(graphsize, false);             //used to keep track of which vertices have been processed
+    vector<int> prevStep(graphsize, -1);                 //use to keep track of path to source
 
-    int minIdx;
+    prevStep.at(source) = -1;                           //path starts at the source
+    distance.at(source) =0;                             //distance from source
 
-    for(size_t i=0; i<getVertices().size()-1; i++){
 
-        int minWeight= INFINITY;
+    //iterate through all vertices in the graph and find their distances from the source vertex
+    for(int i=0; i<graphsize; i++){
+
+        int minWeight = INT32_MAX; //large number but not infinite, used to find the vertex w/smallest to process next
+        int minIdx;                 //the index of the vertex to 
+  
+        //iterate through every vertex and select an uvisited vertex with smallest weight
+        for (int v = 0; v < graphsize; v++){ 
+       
+            if (visited[v] == false && distance[v] <= minWeight) { //if not visited and distance from source is finite
+                minWeight = distance[v]; 
+                minIdx = v; 
+            }
+        }
+        //at the end of for loop we found the next unprocessed vertex at the "edge" of visited vs unvisted nodes w/ smallest weight.
+        int currV= minIdx; 
+        visited[currV] = true;     //mark current vertex as visited
+        //cout << "LOOP:" << i << " currV=" << currV << "\n";
         
-        for(size_t i=0; i<getVertices().size(); i++){
-            if(distance.at(i) <=minWeight && shortestTree.at(i) == false){
-                minWeight=distance.at(i);
-                minIdx = i;
-            }
-        }
 
-        shortestTree.at(minIdx) = true;
+        //iterate thru every vertex that is connected to current vertex and update its prevStep and weight if shorter path to source exists
+        for(int v=0; v<graphsize; v++){
+            //if v not visited and edge exist between v and currV and distance from currV to source + the edge weight of currV and V is less than distance v to src
+            if(!visited[v] && edgeExists(to_string(currV),to_string(v)) && 
+            distance[currV]+getEdgeWeight(to_string(currV),to_string(v)) < distance[v] ){
 
-        for(size_t i=0; i<getVertices().size(); i++){
-
-
-            if(!shortestTree.at(i) && assertEdgeExists(to_string(minIdx),to_string(i), string("Djisktar")) 
-            &&  (distance.at(minIdx)+ getEdgeWeight(to_string(minIdx),to_string(i)) < distance.at(i)) ){
-                
-                parent.at(i) = minIdx;
-                distance[i]=distance[minIdx] + getEdgeWeight(to_string(minIdx),to_string(i));
-
+                prevStep[v] =currV;
+                distance[v] = distance[currV] + getEdgeWeight(to_string(currV),to_string(v));
+                //cout << "iloop:" << v << "\n";
             }
 
-
         }
+
+        
+
+        
+    }
+
+
+    ///Print solution: indexes represent vertex number, and the element is the distance from source in the distance vector and the element in the prevStep 
+    //vector represent the previous step to which takes you back eventually to the source.
+
+    for(int i=0; i< graphsize; i++){
+
+        vector<int> path;
+       int nextidx = prevStep.at(i);    //i=7 , nxt=4
+       path.push_back(i);
+
+        //find path
+       while(nextidx != -1){
+
+           path.push_back(nextidx);
+           nextidx = prevStep.at(nextidx);
+       }
+        std::reverse(path.begin(), path.end()); //reverse
+
+
+        cout << "Path from " << i << " to " << source << ": weight =" << distance.at(i) << ", path ={";
+
+        for(int v:path)
+            cout << v << " ";
+
+        cout << "}\n";
+
 
     }
 
-*/
-    /*
-    cout << "Vertex\t" << "Distance\t" << "Path\t" << endl;
-    for(size_t i=1; i< getVertices().size(); i++){
 
-        cout << source << "->" <<i << "\t\t"<< distance.at(i) << "\t\t"<< source <<endl;
-
-        
-    }
-    */
-
-
-
+}
 
 
 
