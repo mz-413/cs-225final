@@ -66,9 +66,8 @@ public:
     Graph(queue<string> infile);
 
 
-    vector<int> DijkstrasSSSP(int source);
 
-    void DijkstraSSSPpath(int source);  //try#2
+    void DijkstraSSSP(int source);  //try#2
 
 
 

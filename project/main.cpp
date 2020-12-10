@@ -123,17 +123,7 @@ void graphtest(Graph g){
     cout << " }\n" << endl;
 
 }
-void DijkstrasTest(Graph g, int source){
 
-    vector<int> path= g.DijkstrasSSSP(source);
-
-    cout << "\nD Path From " << source << " : ";
-    for(int n: path){
-        cout << n << ", ";
-    }
-    cout << endl;
-
-}
 void BFSTest(Graph g) {
     BFS graph(g);
     graph.writeOut();
@@ -193,12 +183,12 @@ OUTLINE:
     Graph PAgraph(infileQ); //create the graph
     graphtest(PAgraph);     //output the graph info
 
-    DijkstrasTest(PAgraph,0);
     
     cout << "BFS: Check BFS.txt" << endl;
     BFSTest(PAgraph);
 
-    PAgraph.DijkstraSSSPpath(0); 
+    PAgraph.DijkstraSSSP(0);    //0 =source
+    PAgraph.print();
 
 
 

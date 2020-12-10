@@ -4,13 +4,13 @@
 const Vertex Graph::InvalidVertex = "_CS225INVALIDVERTEX";
 const int Graph::InvalidWeight = INT_MIN;
 const string Graph:: InvalidLabel = "_CS225INVALIDLABEL";
-const Edge Graph::InvalidEdge = Edge(Graph::InvalidVertex, Graph::InvalidVertex, Graph::InvalidWeight, Graph::InvalidLabel);
+const Edge Graph::InvalidEdge = Edge(Graph::InvalidVertex, Graph::InvalidVertex, Graph::InvalidWeight);
 
 Graph::Graph(){
 }
 
 //Idea: Pass in vector in which first element is the source edge, 2nd dest edge, 3rd is the edge weight, this cycle repeats until the end
-//with this creat the graph
+//main constructor used
 Graph::Graph(queue<string> infile){
    
     Vertex source;
@@ -42,113 +42,8 @@ Graph::Graph(queue<string> infile){
 
 }
 
-vector<int> Graph::DijkstrasSSSP(int source) {
-    // establish the source vertex
-    int theSource = source;
-    
-    // (1) Create a vector of to size of graph to hold the distances of each vertex
-    //index represents vertex, element is the distance(weight)
-    vector<int> dist(getVertices().size(), INT32_MAX);  //distances from source
-    vector<bool> visited(getVertices().size(),false);    //used to see if we have visited a node
-    vector<Edge> shortestpath;
-    
 
-    // (3) Create a Min-Heap priority_queue which takes in the following arguments:
-        // a. the datatype (pair<int,int>)
-        // b. the comparator (greater<pair<int,int>> is used as a default to find the smaller value b/c in a Min-Heap 
-        // the parent node value is smaller than or equal to children node value)
-    std::priority_queue<pair<int,int>, vector <pair<int,int>>, std::greater<pair<int,int>>> myQ;
-
-    // make a pair at the source
-    myQ.push(make_pair(0, theSource));
-
-    // the distance from the source the source is 0
-    dist[theSource] = 0;
-    //visited.at(0) =true;
-    
-    int count=1;
-    // for as long as the priority_queue isn't empty
-    while (!myQ.empty()) {
-        // store second element of the top most object
-        int currV = myQ.top().second;   //= to the current vertex
-        int currMinEdge = INT32_MAX;    //the smallest adj path 
-        Edge temp;
-        // remove the top most object
-        //cout<< "loop("<<count<<") " << "current vertex being processed:" <<currV<< endl;
-        myQ.pop();
-
-        // iterate through the current object's adjacent objects
-        for (auto it = adjacency_list[std::to_string(currV)].begin(); it != adjacency_list[std::to_string(currV)].end(); it++) {
-            
-            //store the current adjacent vertex
-            int currAdjV = std::stoi((*it).first);  //current adj vertex
-
-            if(visited.at(currAdjV))    //if adjV was already processed skip to next one.
-                continue;
-
-            //cout << "innerloop adjvertex:" << currAdjV << endl;
-            int adjWeight = (*it).second.getWeight(); // the adj vertex edge weight
-            int compareDist = dist[currV] + adjWeight;  //weight from source vertex
-  
-            if (compareDist < dist[currAdjV]) { 
-                dist[currAdjV] = compareDist; 
-                myQ.push(make_pair(dist[currAdjV], currAdjV)); 
-                //cout << currAdjV << "pushed to queue" << endl;
-            } 
-
-            if(adjWeight < currMinEdge && visited.at(currAdjV) == false){
-
-                currMinEdge =adjWeight;
-                temp = getEdge(std::to_string(currV),std::to_string(currAdjV));
-                
-            }      
-                
-            
-        }
-        visited.at(currV) = true;
-
-        if(temp.source != "")
-            shortestpath.push_back(temp);
-
-        /*    
-        if(count ==9){
-            cout << "\ncurrV: " << currV<<" " << visited[currV] << endl;
-            visited[7] = true;
-
-        }else if(count==10){
-            cout << "\ncurrV: " << currV<<" " << visited[currV] << endl;
-            visited[7] = true;
-
-        }else if(count <8){
-            visited[currV] = true;
-
-        }
-
-        //visited[currV] = true;
-        int j = std::stoi(temp.dest);
-        
-        if(visited.at(j) != true){
-            shortestpath.push_back(temp);
-    
-        }
-    
-
-        */
-    count++;
-    }
-
-    cout << "shortest path: ";
-    for(Edge e: shortestpath)
-        cout << e.source<< ":" << e.dest << " ";
-    
-    cout << endl;
-    
-    return dist;
- 
-}
-
-
-void Graph::DijkstraSSSPpath(int source){
+void Graph::DijkstraSSSP(int source){
 
     int graphsize = (int)getVertices().size();      
 
@@ -229,6 +124,8 @@ void Graph::DijkstraSSSPpath(int source){
 
 
 }
+
+
 
 
 
@@ -319,28 +216,6 @@ bool Graph::edgeExists(Vertex source, Vertex destination) const
     return assertEdgeExists(source, destination, "");
 }
 
-Edge Graph::setEdgeLabel(Vertex source, Vertex destination, string label)
-{
-    if (assertEdgeExists(source, destination, __func__) == false)
-        return InvalidEdge;
-    Edge e = adjacency_list[source][destination];
-    Edge new_edge(source, destination, e.getWeight(), label);
-    adjacency_list[source][destination] = new_edge;
-
-
-    Edge new_edge_reverse(destination,source, e.getWeight(), label);
-    adjacency_list[destination][source] = new_edge_reverse;
-    
-    return new_edge;
-}
-
-
-string Graph::getEdgeLabel(Vertex source, Vertex destination) const
-{
-    if(assertEdgeExists(source, destination, __func__) == false)
-        return InvalidLabel;
-    return adjacency_list[source][destination].getLabel();
-}
 
 int Graph::getEdgeWeight(Vertex source, Vertex destination) const
 {
@@ -433,11 +308,11 @@ Edge Graph::setEdgeWeight(Vertex source, Vertex destination, int weight)
         return InvalidEdge;
     Edge e = adjacency_list[source][destination];
     //std::cout << "setting weight: " << weight << std::endl;
-    Edge new_edge(source, destination, weight, e.getLabel());
+    Edge new_edge(source, destination, weight);
     adjacency_list[source][destination] = new_edge;
 
 
-    Edge new_edge_reverse(destination,source, weight, e.getLabel());
+    Edge new_edge_reverse(destination,source, weight);
     adjacency_list[destination][source] = new_edge_reverse;
         
 
@@ -495,28 +370,9 @@ void Graph::error(string message) const
     cerr << "\033[1;31m[Graph Error]\033[0m " + message << endl;
 }
 
-/**
- * Creates a name for snapshots of the graph.
- * @param title - the name to save the snapshots as
- */
-void Graph::initSnapshot(string title)
-{
-    picNum = 0;
-    picName = title;
-}
 
-/**
- * Saves a snapshot of the graph to file.
- * initSnapshot() must be run first.
- */
-void Graph::snapshot()
-{
-    std::stringstream ss;
-    ss << picNum;
-    string newName = picName + ss.str();
-    savePNG(newName);
-    ++picNum;
-}
+
+
 
 /**
  * Prints the graph to stdout.
@@ -533,109 +389,10 @@ void Graph::print() const
             string vertexColumn = "    => " + ss.str();
             vertexColumn += " " ;
             cout << std::left << std::setw(26) << vertexColumn;
-            string edgeColumn = "edge label = \"" + it2->second.getLabel()+ "\"";
-            cout << std::left << std::setw(26) << edgeColumn;
 
             cout << "weight = " << it2->second.getWeight();
             cout << endl;
         }
         cout << endl;
     }
-}
-
-/**
- * Saves the graph as a PNG image.
- * @param title - the filename of the PNG image
- */
-void Graph::savePNG(string title) const
-{
-    std::ofstream neatoFile;
-    string filename = "images/" + title + ".dot";
-    neatoFile.open(filename.c_str());
-
-    if (!neatoFile.good())
-        error("couldn't create " + filename + ".dot");
-
-    neatoFile
-        << "strict graph G {\n"
-        << "\toverlap=\"false\";\n"
-        << "\tdpi=\"1300\";\n"
-        << "\tsep=\"1.5\";\n"
-        << "\tnode [fixedsize=\"true\", shape=\"circle\", fontsize=\"7.0\"];\n"
-        << "\tedge [penwidth=\"1.5\", fontsize=\"7.0\"];\n";
-
-    vector<Vertex> allv = getVertices();
-    //lambda expression
-    sort(allv.begin(), allv.end(), [](const Vertex& lhs, const Vertex& rhs) {
-        return stoi(lhs.substr(3)) > stoi(rhs.substr(3));
-    });
-
-    int xpos1 = 100;
-    int xpos2 = 100;
-    int xpos, ypos;
-    for (auto it : allv) {
-        string current = it;
-        neatoFile 
-            << "\t\"" 
-            << current
-            << "\"";
-        if (current[1] == '1') {
-            ypos = 100;
-            xpos = xpos1;
-            xpos1 += 100;
-        }
-        else {
-            ypos = 200;
-            xpos = xpos2;
-            xpos2 += 100;
-        }
-        neatoFile << "[pos=\""<< xpos << "," << ypos <<"\"]";
-        neatoFile << ";\n";
-    }
-
-    neatoFile << "\tedge [penwidth=\"1.5\", fontsize=\"7.0\"];\n";
-
-    for (auto it = adjacency_list.begin(); it != adjacency_list.end(); ++it) 
-    {
-        for (auto it2 = it->second.begin(); it2 != it->second.end(); ++it2) 
-        {
-            string vertex1Text = it->first;
-            string vertex2Text = it2->first;
-
-            neatoFile << "\t\"" ;
-            neatoFile << vertex1Text;
-            neatoFile << "\" -- \"" ;
-            neatoFile << vertex2Text;
-            neatoFile << "\"";
-
-            string edgeLabel = it2->second.getLabel();
-            if (edgeLabel == "WIN") {
-                neatoFile << "[color=\"blue\"]";
-            } else if (edgeLabel == "LOSE") {
-                neatoFile << "[color=\"red\"]";                
-            } else {
-                neatoFile << "[color=\"grey\"]";
-            }
-            if (it2->second.getWeight() != -1)
-                neatoFile << "[label=\"" << it2->second.getWeight() << "\"]";
-            
-            neatoFile<< "[constraint = \"false\"]" << ";\n";
-        }
-    }
-
-    neatoFile << "}";
-    neatoFile.close();
-    string command = "neato -n -Tpng " + filename + " -o " + "images/" + title
-                     + ".png 2> /dev/null";
-    int result = system(command.c_str());
-
-
-    if (result == 0) {
-        cout << "Output graph saved as images/" << title << ".png" << endl;
-    } else {
-        cout << "Failed to generate visual output graph using `neato`. Install `graphviz` or `neato` to generate a visual graph." << endl;
-    }
-
-    string rmCommand = "rm -f " + filename + " 2> /dev/null";
-    system(rmCommand.c_str());
 }

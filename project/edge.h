@@ -19,26 +19,20 @@ class Edge
 
 
     Edge(Vertex u, Vertex v)
-        : source(u), dest(v), label(""), weight(-1)
+        : source(u), dest(v), weight(-1)
     { /* nothing */
     }
 
-    /**
-     * Parameter constructor for weighted graphs.
-     * @param u - one vertex the edge is connected to
-     * @param v - the other vertex it is connected to
-     * @param w - the weight of the edge
-     * @param lbl - the edge label
-     */
-    Edge(Vertex u, Vertex v, int w, string lbl)
-        : source(u), dest(v), label(lbl), weight(w)
+
+    Edge(Vertex u, Vertex v, int w)
+        : source(u), dest(v), weight(w)
     { /* nothing */
     }
 
     /**
      * Default constructor.
      */
-    Edge() : source(""), dest(""), label(""), weight(-1)
+    Edge() : source(""), dest(""), weight(-1)
     { /* nothing */
     }
 
@@ -51,14 +45,6 @@ class Edge
     bool operator<(const Edge& other) const
     {
         return weight < other.weight;
-    }
-
-    /**
-     * Gets edge label.
-     */
-    string getLabel() const
-    {
-        return this->label;
     }
 
     /**
@@ -82,7 +68,6 @@ class Edge
         return true;
     }
 private:
-    string label; /**< The edge label **/
     int weight; /**< The edge weight (if in a weighed graph) **/
 
 };
