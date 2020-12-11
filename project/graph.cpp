@@ -15,6 +15,7 @@ Graph::Graph(queue<string> infile){
     Vertex source;
     Vertex dest;
     int weight;
+    total_weight = 0;
 
     //while queue is not empty
     while(!infile.empty()){
@@ -25,6 +26,9 @@ Graph::Graph(queue<string> infile){
         dest = infile.front();
         infile.pop();
         weight = std::stoi(infile.front());
+
+        total_weight += weight;
+
         infile.pop();
 
         //Add the the edge and set its weight;
@@ -126,13 +130,21 @@ void Graph::DijkstraSSSP(int source){
         //Print solution to a txt file & to cout
         string first = "Path from " + to_string(i);
         string second = " to " + to_string(source);
-        string third = ": weight =" + to_string(distance.at(i)) + ", path ={";
+        string third = "";
+        bool disconnected = false;
+        if (distance.at(i) >= total_weight) {
+            third = ": weight = INFINITE, path ={ disconnected, NO PATH EXISTS }";
+            disconnected = true;
+        } else {
+            third = ": weight =" + to_string(distance.at(i)) + ", path ={";
+        }
         // cout << "Path from " << i << " to " << source << ": weight =" << distance.at(i) << ", path = { ";
 
         path_output += first + second + third;
 
         for(int v:path) {
             // cout << v << " ";
+            if (disconnected) break;
             string temp = to_string(v);
             path_output += temp + " ";
             path_output += ",";
@@ -141,7 +153,11 @@ void Graph::DijkstraSSSP(int source){
 
 
         // cout << "}\n";
-        path_output += "}\n";
+        if (disconnected) {
+            path_output += "\n";
+        } else {
+            path_output += "}\n";
+        }
 
 
 
@@ -548,6 +564,4 @@ string Graph::toPrint() const {
 string Graph::getPaths() const {
     return path_output;
 }
-
-
 

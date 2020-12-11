@@ -260,7 +260,7 @@ OUTLINE:
     loadQ(infileQ);//loads graph, manually 
 
     /*Read from a modified large dataset txt file and load that into the queue, uncomment line below*/        
-    // infileQ = readFromFile(); //load from "undirected_list.txt"
+    infileQ = readFromFile(); //load from "undirected_list.txt"
 
     Graph PAgraph(infileQ); //create the graph object
 
@@ -280,12 +280,12 @@ OUTLINE:
 
     // to initialize? For some reason the first time this
     // is called the code does not work as intended
-    PAgraph.DijkstraSSSP(6);    //0 =source
+    // PAgraph.DijkstraSSSP(6);    //0 =source
 //////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////interactive Dijkstras test
-    //DijkstrasTestMenu(PAgraph);
+    DijkstrasTestMenu(PAgraph);
 
 
 

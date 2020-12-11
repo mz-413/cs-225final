@@ -195,6 +195,7 @@ private:
     vector<int> Dijkdistances;      //contains the distances to source from the previously ran void DijkstrasSSSP
 
     string path_output;
+    int total_weight;
 
     /**
      * Returns whether a given vertex exists in the graph.
