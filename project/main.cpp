@@ -219,7 +219,7 @@ void DijkstrasTestMenu(Graph &g){
         
         if(selection !="q"){
 
-            string temp = "Dijkstra results: \n";
+            string temp = "-----DIJKSTRAS PATH RESULTS-----\n";
 
             g.DijkstraSSSP(stoi(selection));
             
