@@ -38,6 +38,9 @@ Graph::Graph(queue<string> infile){
 
 void Graph::DijkstraSSSP(int source){
 
+    // Renews string
+    path_output = "";
+
     int graphsize = (int)getVertices().size();          //number of vertices in the current graph object  
 
     //bounds check
@@ -46,9 +49,6 @@ void Graph::DijkstraSSSP(int source){
         cout << "ERROR!! The inputted source vertex is outside of range!! Please choose a vertex less than than " << graphsize << "!!" << endl;
         return;
     }
-        
-
-
 
 
 
@@ -127,12 +127,12 @@ void Graph::DijkstraSSSP(int source){
         string first = "Path from " + to_string(i);
         string second = " to " + to_string(source);
         string third = ": weight =" + to_string(distance.at(i)) + ", path ={";
-        cout << "Path from " << i << " to " << source << ": weight =" << distance.at(i) << ", path = { ";
+        // cout << "Path from " << i << " to " << source << ": weight =" << distance.at(i) << ", path = { ";
 
         path_output += first + second + third;
 
         for(int v:path) {
-            cout << v << " ";
+            // cout << v << " ";
             string temp = to_string(v);
             path_output += temp + " ";
             path_output += ",";
@@ -140,7 +140,7 @@ void Graph::DijkstraSSSP(int source){
 
 
 
-        cout << "}\n";
+        // cout << "}\n";
         path_output += "}\n";
 
 

@@ -225,7 +225,7 @@ void DijkstrasTestMenu(Graph &g){
             
             temp += g.getPaths();
     
-            temp += "\n-----PATH NODES WENT THROUGH-----\n\n";
+            temp += "\n-----ADJACENCY LIST OF NODES-----\n\n";
             temp += g.toPrint();
 
             writeOutDijkstras(temp);
@@ -259,7 +259,7 @@ OUTLINE:
     loadQ(infileQ);//loads graph, manually 
 
     /*Read from a modified large dataset txt file and load that into the queue, uncomment line below*/        
-    //infileQ = readFromFile(); //load from "temp_undirected_list.txt"
+    // infileQ = readFromFile(); //load from "undirected_list.txt"
 
     Graph PAgraph(infileQ); //create the graph object
 
@@ -277,18 +277,9 @@ OUTLINE:
     BFSTest(PAgraph);
     cout << "Updated BFS.txt" << endl;
 
+    // to initialize? For some reason the first time this
+    // is called the code does not work as intended
     PAgraph.DijkstraSSSP(6);    //0 =source
-    
-    string temp = "Dijkstra results: \n";
-
-    temp += PAgraph.getPaths();
-    
-    temp += "\n-----PATH NODES WENT THROUGH-----\n\n";
-    temp += PAgraph.toPrint();
-///////////////////////////////////////////////////////
-    // Output into a Dijkstras.txt
-    writeOutDijkstras(temp);
-    cout << "Updated Dijkstras.txt" << endl;
 //////////////////////////////////////////////////////
 
 

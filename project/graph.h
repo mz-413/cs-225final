@@ -194,7 +194,7 @@ private:
     //vector<int> Dshortestpath;
     //vector<int> Dijkdistances;
 
-    string path_output = "";
+    string path_output;
 
     /**
      * Returns whether a given vertex exists in the graph.
