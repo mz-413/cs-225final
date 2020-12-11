@@ -134,7 +134,7 @@ void BFSTest(Graph g) {
 queue<string> readFromFile() {
 
 	ifstream text;
-    text.open("temp_undirected_list.txt");
+    text.open("undirected_list.txt");
 
 	queue<string> out;
 
