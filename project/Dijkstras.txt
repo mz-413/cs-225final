@@ -1,254 +1,254 @@
 -----DIJKSTRAS PATH RESULTS-----
-Path from 0 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 1 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 2 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 3 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 4 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 5 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 6 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 7 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 8 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 9 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 10 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 11 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 12 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 13 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 14 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 15 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 16 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 17 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 18 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 19 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 20 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 21 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 22 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 23 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 24 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 25 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 26 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 27 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 28 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 29 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 30 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 31 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 32 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 33 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 34 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 35 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 36 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 37 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 38 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 39 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 40 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 41 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 42 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 43 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 44 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 45 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 46 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 47 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 48 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 49 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 50 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 51 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 52 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 53 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 54 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 55 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 56 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 57 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 58 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 59 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 60 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 61 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 62 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 63 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 64 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 65 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 66 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 67 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 68 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 69 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 70 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 71 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 72 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 73 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 74 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 75 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 76 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 77 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 78 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 79 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 80 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 81 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 82 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 83 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 84 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 85 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 86 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 87 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 88 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 89 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 90 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 91 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 92 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 93 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 94 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 95 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 96 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 97 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 98 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 99 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 100 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 101 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 102 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 103 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 104 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 105 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 106 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 107 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 108 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 109 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 110 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 111 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 112 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 113 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 114 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 115 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 116 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 117 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 118 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 119 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 120 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 121 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 122 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 123 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 124 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 125 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 126 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 127 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 128 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 129 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 130 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 131 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 132 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 133 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 134 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 135 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 136 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 137 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 138 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 139 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 140 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 141 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 142 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 143 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 144 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 145 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 146 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 147 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 148 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 149 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 150 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 151 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 152 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 153 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 154 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 155 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 156 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 157 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 158 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 159 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 160 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 161 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 162 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 163 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 164 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 165 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 166 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 167 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 168 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 169 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 170 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 171 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 172 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 173 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 174 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 175 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 176 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 177 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 178 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 179 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 180 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 181 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 182 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 183 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 184 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 185 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 186 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 187 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 188 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 189 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 190 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 191 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 192 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 193 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 194 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 195 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 196 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 197 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 198 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 199 to 238: weight =27, path ={199 ,206 ,210 ,215 ,226 ,229 ,238 ,}
-Path from 200 to 238: weight =28, path ={200 ,199 ,206 ,210 ,215 ,226 ,229 ,238 ,}
-Path from 201 to 238: weight =23, path ={201 ,204 ,210 ,215 ,226 ,229 ,238 ,}
-Path from 202 to 238: weight =23, path ={202 ,208 ,214 ,222 ,221 ,226 ,229 ,238 ,}
-Path from 203 to 238: weight =26, path ={203 ,201 ,204 ,210 ,215 ,226 ,229 ,238 ,}
-Path from 204 to 238: weight =17, path ={204 ,210 ,215 ,226 ,229 ,238 ,}
-Path from 205 to 238: weight =22, path ={205 ,204 ,210 ,215 ,226 ,229 ,238 ,}
-Path from 206 to 238: weight =21, path ={206 ,210 ,215 ,226 ,229 ,238 ,}
-Path from 207 to 238: weight =22, path ={207 ,206 ,210 ,215 ,226 ,229 ,238 ,}
-Path from 208 to 238: weight =16, path ={208 ,214 ,222 ,221 ,226 ,229 ,238 ,}
-Path from 209 to 238: weight =21, path ={209 ,208 ,214 ,222 ,221 ,226 ,229 ,238 ,}
-Path from 210 to 238: weight =14, path ={210 ,215 ,226 ,229 ,238 ,}
-Path from 211 to 238: weight =11, path ={211 ,223 ,229 ,238 ,}
-Path from 212 to 238: weight =21, path ={212 ,215 ,226 ,229 ,238 ,}
-Path from 213 to 238: weight =17, path ={213 ,222 ,221 ,226 ,229 ,238 ,}
-Path from 214 to 238: weight =15, path ={214 ,222 ,221 ,226 ,229 ,238 ,}
-Path from 215 to 238: weight =11, path ={215 ,226 ,229 ,238 ,}
-Path from 216 to 238: weight =32, path ={216 ,217 ,224 ,234 ,239 ,237 ,238 ,}
-Path from 217 to 238: weight =22, path ={217 ,224 ,234 ,239 ,237 ,238 ,}
-Path from 218 to 238: weight =17, path ={218 ,220 ,231 ,238 ,}
-Path from 219 to 238: weight =18, path ={219 ,218 ,220 ,231 ,238 ,}
-Path from 220 to 238: weight =13, path ={220 ,231 ,238 ,}
-Path from 221 to 238: weight =13, path ={221 ,226 ,229 ,238 ,}
-Path from 222 to 238: weight =14, path ={222 ,221 ,226 ,229 ,238 ,}
-Path from 223 to 238: weight =9, path ={223 ,229 ,238 ,}
-Path from 224 to 238: weight =18, path ={224 ,234 ,239 ,237 ,238 ,}
-Path from 225 to 238: weight =27, path ={225 ,233 ,240 ,245 ,239 ,237 ,238 ,}
-Path from 226 to 238: weight =9, path ={226 ,229 ,238 ,}
-Path from 227 to 238: weight =24, path ={227 ,224 ,234 ,239 ,237 ,238 ,}
-Path from 228 to 238: weight =34, path ={228 ,235 ,244 ,246 ,245 ,239 ,237 ,238 ,}
-Path from 229 to 238: weight =7, path ={229 ,238 ,}
-Path from 230 to 238: weight =14, path ={230 ,237 ,238 ,}
-Path from 231 to 238: weight =8, path ={231 ,238 ,}
-Path from 232 to 238: weight =42, path ={232 ,228 ,235 ,244 ,246 ,245 ,239 ,237 ,238 ,}
-Path from 233 to 238: weight =26, path ={233 ,240 ,245 ,239 ,237 ,238 ,}
-Path from 234 to 238: weight =17, path ={234 ,239 ,237 ,238 ,}
-Path from 235 to 238: weight =31, path ={235 ,244 ,246 ,245 ,239 ,237 ,238 ,}
-Path from 236 to 238: weight =27, path ={236 ,234 ,239 ,237 ,238 ,}
-Path from 237 to 238: weight =7, path ={237 ,238 ,}
-Path from 238 to 238: weight =0, path ={238 ,}
-Path from 239 to 238: weight =8, path ={239 ,237 ,238 ,}
-Path from 240 to 238: weight =23, path ={240 ,245 ,239 ,237 ,238 ,}
-Path from 241 to 238: weight =29, path ={241 ,243 ,221 ,226 ,229 ,238 ,}
-Path from 242 to 238: weight =32, path ={242 ,241 ,243 ,221 ,226 ,229 ,238 ,}
-Path from 243 to 238: weight =23, path ={243 ,221 ,226 ,229 ,238 ,}
-Path from 244 to 238: weight =21, path ={244 ,246 ,245 ,239 ,237 ,238 ,}
-Path from 245 to 238: weight =15, path ={245 ,239 ,237 ,238 ,}
-Path from 246 to 238: weight =19, path ={246 ,245 ,239 ,237 ,238 ,}
-Path from 247 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 248 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
-Path from 249 to 238: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 0 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 1 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 2 to 34: weight =71, path ={2 ,7 ,16 ,18 ,24 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 3 to 34: weight =78, path ={3 ,2 ,7 ,16 ,18 ,24 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 4 to 34: weight =79, path ={4 ,2 ,7 ,16 ,18 ,24 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 5 to 34: weight =62, path ={5 ,9 ,12 ,14 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 6 to 34: weight =69, path ={6 ,5 ,9 ,12 ,14 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 7 to 34: weight =65, path ={7 ,16 ,18 ,24 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 8 to 34: weight =65, path ={8 ,5 ,9 ,12 ,14 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 9 to 34: weight =52, path ={9 ,12 ,14 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 10 to 34: weight =34, path ={10 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 11 to 34: weight =31, path ={11 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 12 to 34: weight =50, path ={12 ,14 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 13 to 34: weight =51, path ={13 ,12 ,14 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 14 to 34: weight =40, path ={14 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 15 to 34: weight =41, path ={15 ,14 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 16 to 34: weight =59, path ={16 ,18 ,24 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 17 to 34: weight =62, path ={17 ,16 ,18 ,24 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 18 to 34: weight =51, path ={18 ,24 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 19 to 34: weight =33, path ={19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 20 to 34: weight =37, path ={20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 21 to 34: weight =36, path ={21 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 22 to 34: weight =27, path ={22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 23 to 34: weight =36, path ={23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 24 to 34: weight =45, path ={24 ,20 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 25 to 34: weight =24, path ={25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 26 to 34: weight =21, path ={26 ,37 ,36 ,34 ,}
+Path from 27 to 34: weight =12, path ={27 ,30 ,32 ,34 ,}
+Path from 28 to 34: weight =17, path ={28 ,27 ,30 ,32 ,34 ,}
+Path from 29 to 34: weight =20, path ={29 ,27 ,30 ,32 ,34 ,}
+Path from 30 to 34: weight =6, path ={30 ,32 ,34 ,}
+Path from 31 to 34: weight =7, path ={31 ,30 ,32 ,34 ,}
+Path from 32 to 34: weight =2, path ={32 ,34 ,}
+Path from 33 to 34: weight =9, path ={33 ,32 ,34 ,}
+Path from 34 to 34: weight =0, path ={34 ,}
+Path from 35 to 34: weight =1, path ={35 ,34 ,}
+Path from 36 to 34: weight =7, path ={36 ,34 ,}
+Path from 37 to 34: weight =16, path ={37 ,36 ,34 ,}
+Path from 38 to 34: weight =46, path ={38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 39 to 34: weight =48, path ={39 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 40 to 34: weight =11, path ={40 ,36 ,34 ,}
+Path from 41 to 34: weight =67, path ={41 ,57 ,64 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 42 to 34: weight =73, path ={42 ,41 ,57 ,64 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 43 to 34: weight =72, path ={43 ,41 ,57 ,64 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 44 to 34: weight =24, path ={44 ,45 ,40 ,36 ,34 ,}
+Path from 45 to 34: weight =14, path ={45 ,40 ,36 ,34 ,}
+Path from 46 to 34: weight =74, path ={46 ,56 ,57 ,64 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 47 to 34: weight =78, path ={47 ,46 ,56 ,57 ,64 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 48 to 34: weight =87, path ={48 ,54 ,60 ,59 ,65 ,75 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 49 to 34: weight =87, path ={49 ,55 ,54 ,60 ,59 ,65 ,75 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 50 to 34: weight =37, path ={50 ,51 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 51 to 34: weight =27, path ={51 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 52 to 34: weight =56, path ={52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 53 to 34: weight =63, path ={53 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 54 to 34: weight =78, path ={54 ,60 ,59 ,65 ,75 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 55 to 34: weight =82, path ={55 ,54 ,60 ,59 ,65 ,75 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 56 to 34: weight =66, path ={56 ,57 ,64 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 57 to 34: weight =59, path ={57 ,64 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 58 to 34: weight =34, path ={58 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 59 to 34: weight =72, path ={59 ,65 ,75 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 60 to 34: weight =77, path ={60 ,59 ,65 ,75 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 61 to 34: weight =36, path ={61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 62 to 34: weight =77, path ={62 ,68 ,78 ,82 ,87 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 63 to 34: weight =86, path ={63 ,62 ,68 ,78 ,82 ,87 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 64 to 34: weight =53, path ={64 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 65 to 34: weight =64, path ={65 ,75 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 66 to 34: weight =56, path ={66 ,73 ,79 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 67 to 34: weight =12, path ={67 ,40 ,36 ,34 ,}
+Path from 68 to 34: weight =76, path ={68 ,78 ,82 ,87 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 69 to 34: weight =29, path ={69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 70 to 34: weight =32, path ={70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 71 to 34: weight =58, path ={71 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 72 to 34: weight =63, path ={72 ,71 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 73 to 34: weight =47, path ={73 ,79 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 74 to 34: weight =55, path ={74 ,73 ,79 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 75 to 34: weight =57, path ={75 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 76 to 34: weight =39, path ={76 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 77 to 34: weight =35, path ={77 ,10 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 78 to 34: weight =66, path ={78 ,82 ,87 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 79 to 34: weight =44, path ={79 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 80 to 34: weight =50, path ={80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 81 to 34: weight =38, path ={81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 82 to 34: weight =63, path ={82 ,87 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 83 to 34: weight =33, path ={83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 84 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 85 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 86 to 34: weight =48, path ={86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 87 to 34: weight =58, path ={87 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 88 to 34: weight =40, path ={88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 89 to 34: weight =45, path ={89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 90 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 91 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 92 to 34: weight =35, path ={92 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 93 to 34: weight =37, path ={93 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 94 to 34: weight =55, path ={94 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 95 to 34: weight =43, path ={95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 96 to 34: weight =41, path ={96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 97 to 34: weight =53, path ={97 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 98 to 34: weight =43, path ={98 ,92 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 99 to 34: weight =60, path ={99 ,87 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 100 to 34: weight =67, path ={100 ,99 ,87 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 101 to 34: weight =45, path ={101 ,98 ,92 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 102 to 34: weight =49, path ={102 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 103 to 34: weight =48, path ={103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 104 to 34: weight =45, path ={104 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 105 to 34: weight =66, path ={105 ,99 ,87 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 106 to 34: weight =73, path ={106 ,82 ,87 ,80 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 107 to 34: weight =58, path ={107 ,97 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 108 to 34: weight =59, path ={108 ,94 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 109 to 34: weight =75, path ={109 ,110 ,108 ,94 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 110 to 34: weight =69, path ={110 ,108 ,94 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 111 to 34: weight =48, path ={111 ,112 ,101 ,98 ,92 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 112 to 34: weight =46, path ={112 ,101 ,98 ,92 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 113 to 34: weight =58, path ={113 ,102 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 114 to 34: weight =68, path ={114 ,113 ,102 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 115 to 34: weight =54, path ={115 ,103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 116 to 34: weight =83, path ={116 ,118 ,109 ,110 ,108 ,94 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 117 to 34: weight =91, path ={117 ,116 ,118 ,109 ,110 ,108 ,94 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 118 to 34: weight =82, path ={118 ,109 ,110 ,108 ,94 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 119 to 34: weight =50, path ={119 ,111 ,112 ,101 ,98 ,92 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 120 to 34: weight =52, path ={120 ,104 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 121 to 34: weight =59, path ={121 ,122 ,111 ,112 ,101 ,98 ,92 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 122 to 34: weight =54, path ={122 ,111 ,112 ,101 ,98 ,92 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 123 to 34: weight =50, path ={123 ,124 ,103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 124 to 34: weight =49, path ={124 ,103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 125 to 34: weight =55, path ={125 ,119 ,111 ,112 ,101 ,98 ,92 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 126 to 34: weight =66, path ={126 ,127 ,122 ,111 ,112 ,101 ,98 ,92 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 127 to 34: weight =59, path ={127 ,122 ,111 ,112 ,101 ,98 ,92 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 128 to 34: weight =56, path ={128 ,115 ,103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 129 to 34: weight =61, path ={129 ,127 ,122 ,111 ,112 ,101 ,98 ,92 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 130 to 34: weight =69, path ={130 ,126 ,127 ,122 ,111 ,112 ,101 ,98 ,92 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 131 to 34: weight =77, path ={131 ,130 ,126 ,127 ,122 ,111 ,112 ,101 ,98 ,92 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 132 to 34: weight =62, path ={132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 133 to 34: weight =89, path ={133 ,116 ,118 ,109 ,110 ,108 ,94 ,86 ,89 ,95 ,81 ,61 ,70 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 134 to 34: weight =66, path ={134 ,137 ,138 ,128 ,115 ,103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 135 to 34: weight =66, path ={135 ,136 ,123 ,124 ,103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 136 to 34: weight =57, path ={136 ,123 ,124 ,103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 137 to 34: weight =64, path ={137 ,138 ,128 ,115 ,103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 138 to 34: weight =58, path ={138 ,128 ,115 ,103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 139 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 140 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 141 to 34: weight =78, path ={141 ,142 ,145 ,137 ,138 ,128 ,115 ,103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 142 to 34: weight =74, path ={142 ,145 ,137 ,138 ,128 ,115 ,103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 143 to 34: weight =78, path ={143 ,144 ,138 ,128 ,115 ,103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 144 to 34: weight =68, path ={144 ,138 ,128 ,115 ,103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 145 to 34: weight =72, path ={145 ,137 ,138 ,128 ,115 ,103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 146 to 34: weight =165, path ={146 ,149 ,161 ,175 ,178 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 147 to 34: weight =162, path ={147 ,150 ,149 ,161 ,175 ,178 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 148 to 34: weight =169, path ={148 ,147 ,150 ,149 ,161 ,175 ,178 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 149 to 34: weight =156, path ={149 ,161 ,175 ,178 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 150 to 34: weight =161, path ={150 ,149 ,161 ,175 ,178 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 151 to 34: weight =72, path ={151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 152 to 34: weight =65, path ={152 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 153 to 34: weight =74, path ={153 ,152 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 154 to 34: weight =74, path ={154 ,152 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 155 to 34: weight =85, path ={155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 156 to 34: weight =76, path ={156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 157 to 34: weight =93, path ={157 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 158 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 159 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 160 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 161 to 34: weight =147, path ={161 ,175 ,178 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 162 to 34: weight =100, path ={162 ,157 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 163 to 34: weight =102, path ={163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 164 to 34: weight =108, path ={164 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 165 to 34: weight =97, path ={165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 166 to 34: weight =93, path ={166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 167 to 34: weight =149, path ={167 ,172 ,176 ,178 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 168 to 34: weight =156, path ={168 ,167 ,172 ,176 ,178 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 169 to 34: weight =159, path ={169 ,167 ,172 ,176 ,178 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 170 to 34: weight =98, path ={170 ,157 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 171 to 34: weight =99, path ={171 ,170 ,157 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 172 to 34: weight =146, path ={172 ,176 ,178 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 173 to 34: weight =148, path ={173 ,175 ,178 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 174 to 34: weight =156, path ={174 ,173 ,175 ,178 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 175 to 34: weight =138, path ={175 ,178 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 176 to 34: weight =143, path ={176 ,178 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 177 to 34: weight =75, path ={177 ,144 ,138 ,128 ,115 ,103 ,96 ,88 ,83 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 178 to 34: weight =135, path ={178 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 179 to 34: weight =108, path ={179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 180 to 34: weight =103, path ={180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 181 to 34: weight =129, path ={181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 182 to 34: weight =134, path ={182 ,181 ,183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 183 to 34: weight =120, path ={183 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 184 to 34: weight =110, path ={184 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 185 to 34: weight =111, path ={185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 186 to 34: weight =121, path ={186 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 187 to 34: weight =125, path ={187 ,186 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 188 to 34: weight =128, path ={188 ,186 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 189 to 34: weight =149, path ={189 ,193 ,192 ,196 ,195 ,194 ,188 ,186 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 190 to 34: weight =152, path ={190 ,189 ,193 ,192 ,196 ,195 ,194 ,188 ,186 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 191 to 34: weight =151, path ={191 ,189 ,193 ,192 ,196 ,195 ,194 ,188 ,186 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 192 to 34: weight =142, path ={192 ,196 ,195 ,194 ,188 ,186 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 193 to 34: weight =148, path ={193 ,192 ,196 ,195 ,194 ,188 ,186 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 194 to 34: weight =137, path ={194 ,188 ,186 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 195 to 34: weight =138, path ={195 ,194 ,188 ,186 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 196 to 34: weight =140, path ={196 ,195 ,194 ,188 ,186 ,185 ,179 ,180 ,163 ,165 ,166 ,155 ,156 ,151 ,132 ,52 ,38 ,23 ,19 ,25 ,29 ,27 ,30 ,32 ,34 ,}
+Path from 197 to 34: weight =43, path ={197 ,77 ,10 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 198 to 34: weight =40, path ={198 ,76 ,69 ,22 ,44 ,45 ,40 ,36 ,34 ,}
+Path from 199 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 200 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 201 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 202 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 203 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 204 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 205 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 206 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 207 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 208 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 209 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 210 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 211 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 212 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 213 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 214 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 215 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 216 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 217 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 218 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 219 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 220 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 221 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 222 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 223 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 224 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 225 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 226 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 227 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 228 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 229 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 230 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 231 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 232 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 233 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 234 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 235 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 236 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 237 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 238 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 239 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 240 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 241 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 242 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 243 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 244 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 245 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 246 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 247 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 248 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
+Path from 249 to 34: weight = INFINITE, path ={ disconnected, NO PATH EXISTS }
 
 -----ADJACENCY LIST OF NODES-----
 

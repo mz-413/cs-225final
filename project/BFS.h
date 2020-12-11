@@ -17,15 +17,18 @@ using namespace std;
 
 /**
  * A breadth-first ImageTraversal.
+ *      BFS implementation.
  * Derived from base class ImageTraversal
  */
 class BFS {
 public:
-    // Constructors create the private variable output_queue_
+    // Constructor to create the private variables for keeping track of results 
     BFS(Graph graph);
     
+    // Method to construct the BFS traversal given graph and vertex
     void construct(Graph graph, Vertex vertex);
 
+    // Prints the BFS traversal results to BFS.txt
     void writeOut();
 
     /** FOR TEST CASES */
@@ -34,21 +37,12 @@ public:
     vector<Edge> getEdgesCross();
 
 private:
-    // Graph graph_;
     map<Vertex, bool> visited_vertices; // map of visited vertices - to keep track of visited state; true = visited
     map<Edge, string> visited_edges; // vector of visited edges - to keep track of visited state of edges
     queue<string> output_queue_; // final queue that keeps track of traversed nodes
 
     vector<Edge> discovered; // edges in this vector will be labeled as discovered
-    vector<Edge> cross; // edges in this vector will be labeled as cross => BUGGED?
-    vector<Edge> unexplored; // edges that are unexplored => TECHNICALLY ALL ARE CROSS USE THIS INSTEAD
+    vector<Edge> cross; // edges in this vector will be labeled as cross
+    // Note: All edges are either discovered or crossing edges
     
 };
-
-
-/** Outline:
- * BFS Traversing method
- * 
- * Output traverse results in a txt file
- * 
-*/

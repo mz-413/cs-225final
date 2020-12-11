@@ -15,39 +15,19 @@
 
 using namespace std;
 
-/** Outline:
- * BFS Traversing method
- * 
- * Output traverse results in a txt file
- * 
- * PSEUDOCODE:
-BFS(G):
- Input: Graph, G
- Output: A labeling of the edges on G as discovery and cross edges
-
- create a copy of graph
-foreach (Vertex v : G.vertices()):
-    setLabel(v, UNEXPLORED)
-foreach (Edge e : G.edges()):
-    setLabel(e, UNEXPLORED)
-foreach (Vertex v : G.vertices()):
-    if getLabel(v) == UNEXPLORED:
-        BFS(G, v)
+/** 
+ * BFS Constructor
+ *  Initiates and constructs the BFS traversal for given graph
 */
 BFS::BFS(Graph graph) {
-    for (Vertex vertex : graph.getVertices()) { // initiates map
+    for (Vertex vertex : graph.getVertices()) { // initializes vertex vector
         pair<Vertex, bool> pair(vertex, false);
         visited_vertices.insert(pair);
     }
 
     vector<Edge> edges = graph.getEdges();
-    for (size_t i = 0; i < edges.size(); i++) { // initiates map
-        unexplored.push_back(edges.at(i));
-
-        // pair<Edge, string> pair(edges.at(i), "UNEXPLORED");
-        // visited_edges.insert(pair);
-        // Edge e = (edges.at(i));
-        // cout << e.dest << " " << e.source << " " << pair.second << endl;
+    for (size_t i = 0; i < edges.size(); i++) { // initializes edge vector
+        cross.push_back(edges.at(i));
     }
 
     for (auto it = visited_vertices.begin(); it != visited_vertices.end(); it++) {
@@ -58,20 +38,7 @@ BFS::BFS(Graph graph) {
 }
 
 /**
-BFS(G, v):
-    Queue q
-    setLabel(v, VISITED)
-    q.enqueue(v)
-    
-    while !q.empty():
-        v = q.dequeue()
-        foreach (Vertex w : G.adjacent(v)):
-            if getLabel(w) == UNEXPLORED:
-                setLabel(v, w, DISCOVERY) - mark the edges as visited
-                setLabel(w, VISITED) - mark the new vertex as visited
-                q.enqueue(w) - add the new vertex to visit
-            elseif getLabel(v, w) == UNEXPLORED:
-                setLabel(v, w, CROSS) //? Could be skipped
+ * Constructs the BFS Traversal
 */
 void BFS::construct(Graph graph, Vertex vertex) {
     queue<Vertex> queue; // queue of vertices to visit
@@ -84,56 +51,24 @@ void BFS::construct(Graph graph, Vertex vertex) {
         vertex = queue.front();
         queue.pop();
         
-        // vector<Vertex> vect_vertex = graph.getAdjacent(vertex);
-
         for (Vertex temp_vertex : graph.getAdjacent(vertex)) {
 
-            // Edge * edge = new Edge(temp_vertex, vertex);
-            // Edge * edge2 = new Edge(vertex, temp_vertex);
             Edge edge(temp_vertex, vertex);
             Edge edge2(vertex, temp_vertex);
             
             if (visited_vertices[temp_vertex] == false) {
 
-                bool crossed = false; // true if added to cross_vector
-                // adding edges
-                if (discovered.size() == 0) {
-                    discovered.push_back(edge);
-                } else {
-                    for (auto it = discovered.begin(); it != discovered.end(); it++) {
-                        if ((*it) == edge || (*it) == edge2) { //? ISSUE WITH THIS STATEMENT
-                        // if (((*it).source == edge.source && (*it).dest == edge.dest)
-                        //     || ((*it).source == edge.dest && (*it).dest == edge.source)) {
-                            cout << __LINE__ << endl; //!
-                            crossed = true;
-                            cross.push_back(edge); // adds edge to cross
-                            break;
-                        }
-                    }
-
-                    // if (find(discovered.begin(), discovered.end(), (edge)) != discovered.end()) { // if edge is found
-                    //     cout << __LINE__ << endl; //!
-                    //     crossed = true;
-                    //     cross.push_back(e); // adds edge to cross
-                    // } else if (find(discovered.begin(), discovered.end(), (edge2)) != discovered.end()) { // if edg2 is found
-                    //     cout << __LINE__ << endl; //!
-                    //     crossed = true;
-                    //     cross.push_back(e2); // adds edge to cross
-                    // } else { // not found in discovered, add to discovered
-                    //     discovered.push_back(e);
-                    // }
-
-                    if (!crossed) discovered.push_back(edge);
-                }
-                // removes edge from unexplored
-                for (size_t i = 0; i < unexplored.size(); i++) {
-                    if (unexplored.at(i) == edge || unexplored.at(i) == edge2) {
-                        unexplored.erase(unexplored.begin() + i);
+                discovered.push_back(edge);
+                
+                // removes edge from cross as they are labeled as discovered
+                for (size_t i = 0; i < cross.size(); i++) {
+                    if (cross.at(i) == edge || cross.at(i) == edge2) {
+                        cross.erase(cross.begin() + i);
                         break;
                     }
                 }
 
-                visited_vertices[temp_vertex] = true; // temp_ is now visited, add to queue
+                visited_vertices[temp_vertex] = true; // temp_vertex is now visited, add to queue to visit
                 queue.push(temp_vertex);
                 
                 output_queue_.push(temp_vertex); // adds new vertex to output queue
@@ -143,24 +78,6 @@ void BFS::construct(Graph graph, Vertex vertex) {
     }
 
 }
-
-
-/** 
- * Initializing:
- * Add all edges to unexplored_vector
- * 
- * Have an edge
- * If edge is not in discovered_vector
- *      add edge to discovered_vector
- *      rm from unexplored_vector
- *  else if edge is in discovered
- *      add edge to cross
- *      rm from unexplored_vector
- * 
- * FOR WRITEOUT:
- * for all edges of graph
- *  
-*/
 
 
 /** 
@@ -187,14 +104,9 @@ void BFS::writeOut() {
     for (size_t i = 0; i < discovered.size(); i++) {
         output += discovered.at(i).source + " " + discovered.at(i).dest + " DISCOVERED\n";
     }
-    //! No output
-    for (size_t i = 0; i < cross.size(); i++) {
-        output += cross.at(i).source + " " + cross.at(i).dest + " CROSS\n";
-    }
     // All unvisited should be cross edges/discovered theoretically, hence this should ouptut cross edges
-    for (size_t i = 0; i < unexplored.size(); i++) {
-        output += unexplored.at(i).source + " " + unexplored.at(i).dest + " CROSS EDGE\n";
-        // NOTE: Should be unreachabale
+    for (size_t i = 0; i < cross.size(); i++) {
+        output += cross.at(i).source + " " + cross.at(i).dest + " CROSS EDGE\n";
     }
 
     myFile << output;
@@ -203,7 +115,7 @@ void BFS::writeOut() {
     return;
 }
 
-//? Getter for test case?
+// Getters for test cases
 queue<string> BFS::getTraverseOrder() {
     return output_queue_;
 }
@@ -218,7 +130,7 @@ vector<Edge> BFS::getEdgesDiscovered() {
 
 vector<Edge> BFS::getEdgesCross() {
     vector<Edge> final;
-    for (auto it = unexplored.begin(); it != unexplored.end(); it++) {
+    for (auto it = cross.begin(); it != cross.end(); it++) {
         final.push_back(*it);
     }
     return final;

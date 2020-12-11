@@ -1,3 +1,7 @@
 ______LANDMARK RUNS______
-Run #0 Path from 23 to 44 through 99:  weight = 123, path ={ 23 19 25 26 37 36 40 45 44 22 69 70 93 81 95 89 86 80 87 99 87 80 86 89 95 81 93 70 69 22 44 }
-Run #1 Path from 34 to 28 through 999\:  weight = 137, path ={ 34 36 40 45 44 22 69 70 93 81 95 89 86 80 87 99 87 80 86 89 95 81 93 70 69 22 44 45 40 36 34 32 30 27 28 }
+Run #0 Path from 34 to 54 through 65:  weight = 78, path ={ 34 36 40 45 44 22 69 70 93 81 95 89 86 80 75 65 59 60 54 }
+Run #1 Path from 6 to 53 through 4:  weight = 99, path ={ 6 5 8 7 2 4 2 7 16 18 24 23 38 52 53 }
+Run #2 Path from 6 to 4 through 4:  weight = 28, path ={ 6 5 8 7 2 4 }
+Run #3 Path from 23 to 55 through 4:  weight = 196, path ={ 23 24 18 16 7 2 4 2 7 16 18 24 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 75 65 59 60 54 55 }
+Run #4 Path from 0 to 3 through 4:  weight = DNE, path ={ DNE }
+Run #5 Path from 22 to 34 through 56:  weight = 105, path ={ 22 69 70 93 81 95 89 86 80 64 57 56 57 64 80 86 89 95 81 93 70 69 22 44 45 40 36 34 }

@@ -8,6 +8,9 @@
 
 using namespace std;
 
+/** 
+ * Loads a sample smaller graph for testing purposes
+*/
 void loadQ(queue<string> & q){
     
     q.push(string("0"));    //src
@@ -89,6 +92,10 @@ void loadQ(queue<string> & q){
     q.push(string("6"));
 */
 }
+
+/** 
+ * Tests the graph and prints results to terminal
+*/
 void graphtest(Graph g){
 
     vector<string> vertices = g.getVertices();
@@ -124,14 +131,18 @@ void graphtest2(Graph g){
 
     g.print();
 }
+
+/** 
+ * Prints results of BFS traversal to BFS.txt
+*/
 void BFSTest(Graph g) {
     BFS graph(g);
     graph.writeOut();
 }
 
 /** 
- * Reads undirected_list.txt
- * Returns queue<string> of nodes & weights
+ * Reads undirected_list.txt and returns the queue of the nodes and weights
+ * @return src & dest & weights to create the graph 
 */
 queue<string> readFromFile() {
 
@@ -153,6 +164,9 @@ queue<string> readFromFile() {
 	return out;
 } 
 
+/** 
+ * Outputs the graph results (edges and vertices) to Graph.txt file
+*/
 void  writeOutGraph(Graph g) {
 
     ofstream myFile;
@@ -194,6 +208,9 @@ void  writeOutGraph(Graph g) {
     return;
 }
 
+/** 
+ * Outputs Dijkstras algorithm results to Dijkstras.txt file
+*/
 void  writeOutDijkstras(string output) {
 
     ofstream myFile;
@@ -205,6 +222,9 @@ void  writeOutDijkstras(string output) {
     return;
 }
 
+/** 
+ * Outputs Landmark algorithm results to Landmark.txt file
+*/
 void writeOutLandmark(string output) {
     ofstream myFile;
     myFile.open("Landmark.txt");
@@ -213,6 +233,10 @@ void writeOutLandmark(string output) {
     myFile.close();   
 }
 
+/** 
+ * Creates an interactive testing menu in the terminal to test Dijkstras algorithm
+ * Results foe each test are shown on Dijstras.txt
+*/
 void DijkstrasTestMenu(Graph &g){
 
     bool done =false;
@@ -250,7 +274,10 @@ void DijkstrasTestMenu(Graph &g){
 
 }
 
-
+/** 
+ * Creates an interactive testing menu in the terminal to test Landmark algorithm
+ * Results foe each test are shown on Landmark.txt
+*/
 void LandmarkTestMenu(Graph &g){
 
     bool done =false;
@@ -378,11 +405,5 @@ OUTLINE:
 return 0;
 }
 
-/** 
- * Fix readFile.cpp
- * Test cases
- * Clean
- * Explain/Fix cross edge?
-*/
 
 
