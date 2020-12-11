@@ -221,12 +221,12 @@ vector<int> Graph::Landmark(int source, int dest, int landmark){
 
     }
 
-
+    /*
     //print out soltion path
     cout << "\nSTD ";
     for(int i=0; i< (int)srcToLandmark.size(); i++)
         cout << srcToLandmark[i] << " ";
-
+    */
 
 
     /*

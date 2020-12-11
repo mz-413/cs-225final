@@ -1,0 +1,4 @@
+______LANDMARK RUNS______
+Run #0 Path from 23 to 44 through 23:  weight = 51, path ={ 23 19 25 26 37 36 40 45 44 }
+Run #1 Path from 99 to 12 through 43:  weight = 145, path ={ 99 87 80 64 57 41 43 41 57 64 80 86 89 95 81 93 70 69 22 44 45 40 36 37 26 25 19 20 14 12 }
+Run #2 Path from 245 to 249 through 247:  weight = DNE, path ={ DNE }

@@ -205,6 +205,14 @@ void  writeOutDijkstras(string output) {
     return;
 }
 
+void writeOutLandmark(string output) {
+    ofstream myFile;
+    myFile.open("Landmark.txt");
+
+    myFile << output;
+    myFile.close();   
+}
+
 void DijkstrasTestMenu(Graph &g){
 
     bool done =false;
@@ -250,11 +258,11 @@ void LandmarkTestMenu(Graph &g){
     string source;
     string dest;
     string landmark;
-    int count=1;
-    string output = "";
+    int count=0;
+    string output = "______LANDMARK RUNS______";
 
     while(!done){
-        cout << "\nWelcome to our interactive Landmark Test!";
+        cout << "\n\nWelcome to our interactive Landmark Test!";
         cout << "\n(Press q to exit, or c to continue)";
         cin >> selection;
 
@@ -273,24 +281,36 @@ void LandmarkTestMenu(Graph &g){
             string run = "\nRun #" + to_string(count);
             string path = " Path from " + source + " to " + dest + " through " + landmark + ":  weight = ";
             int distance = g.Ddistances[stoi(source)] + g.Ddistances[stoi(dest)];
-            string dist = to_string(distance);
+            string dist = "";
+            bool disconnected = false;
+            if (distance > 2500) {
+                dist = "DNE";
+                disconnected = true;
+            } else {
+                dist = to_string(distance);
+            }
 
             cout << "\nRun #" << count << "Path from " << source << " to " << dest << " through "<< landmark << ": " << " weight = ";
-            cout << g.Ddistances[stoi(source)] +g.Ddistances[stoi(dest)] << ",\tpath ={ ";
+            cout << g.Ddistances[stoi(source)] +g.Ddistances[stoi(dest)] << ", path ={ ";
 
-            output += run + path + dist + ",\tpath ={ ";
+            output += run + path + dist + ", path ={ ";
 
-            for(int v:result){
-            
-                cout << v << " ";
-                output += to_string(v);
-                output += " ";
+            if (disconnected) {
+                output += "DNE ";
+            } else {
+                for(int v:result){
+                    cout << v << " ";
+                    output += to_string(v);
+                    output += " ";
+                }
             }
 
             cout << "}";
+            cout << "\nSaved to Landmark.txt!!";
 
             output += "}";
 
+            writeOutLandmark(output);
 
         }else{
 
@@ -298,17 +318,9 @@ void LandmarkTestMenu(Graph &g){
             done =true;
         }
 
-
-    }
     count++;
-}
-
-void writeOutLandmark(string output) {
-    ofstream myFile;
-    myFile.open("Landmark.txt");
-
-    myFile << output;
-    myFile.close();   
+    }
+    
 }
 
 
