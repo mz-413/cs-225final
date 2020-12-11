@@ -17,6 +17,9 @@
  *
  * Update Spring 18 by Simeng
  * - Finishing adding all required features
+ * 
+ * Edited by Manuel Martinez Fall 2020 (removed some features
+ * for simple use with an undirected weighted graph)
  */
 #pragma once
 
@@ -52,8 +55,8 @@ using std::unordered_map;
 
 /**
  * Represents a graph; used by the GraphTools class.
- *
  */
+
 class Graph
 {
 public:
@@ -61,18 +64,12 @@ public:
     Graph();
 
     /**
-     * @param numVertices - the number of vertices the graph will have
+     * @param infile- the queue to load edges/vertices from (note queue is loaded from txt file)
      */
     Graph(queue<string> infile);
 
+    void DijkstraSSSP(int source);
 
-
-    void DijkstraSSSP(int source);  //try#2
-
-
-
-
-    int findVertexidx(vector<Vertex> &adjverts, Vertex vertex);   //find a particular vertex index
 
     /**
      * Gets all adjacent vertices to the parameter vertex.
@@ -82,19 +79,11 @@ public:
     vector<Vertex> getAdjacent(Vertex source) const;
 
     /**
-     * Returns one vertex in the graph. This function can be used
-     *  to find a random vertex with which to start a traversal.
-     * @return a vertex from the graph
-     */
-    Vertex getStartingVertex() const;
-
-    /**
      * Gets all vertices in the graph.
      * @return a vector of all vertices in the graph
      */
     vector<Vertex> getVertices() const;
     
-
     /**
      * Gets an edge between two vertices.
      * @param source - one vertex the edge is connected to
@@ -124,23 +113,7 @@ public:
      */
     bool edgeExists(Vertex source, Vertex destination) const;
 
-        /**
-     * Sets the edge label of the edge between vertices u and v.
-     * @param source - one vertex the edge is connected to
-     * @param destination - the other vertex the edge is connected to
-     * @return - if edge exists, set the label to the corresponding edge(if not directed, set the reverse one too), return edge with new label
-     *         - if edge doesn't exist, return InvalidEdge
-     */
-    Edge setEdgeLabel(Vertex source, Vertex destination, string label);
-
-    /**
-     * Gets the edge label of the edge between vertices u and v.
-     * @param source - one vertex the edge is connected to
-     * @param destination - the other vertex the edge is connected to
-     * @return - if edge exists, return edge label
-     *         - if edge doesn't exist, return InvalidLabel
-     */
-    string getEdgeLabel(Vertex source, Vertex destination) const;
+   
 
     /**
      * Gets the weight of the edge between two vertices.
@@ -194,28 +167,11 @@ public:
      */
     Edge setEdgeWeight(Vertex source, Vertex destination, int weight);
 
-    /**
-     * Creates a name for snapshots of the graph.
-     * @param title - the name to save the snapshots as
-     */
-    void initSnapshot(string title);
-
-    /**
-     * Saves a snapshot of the graph to file.
-     * initSnapshot() must be run first.
-     */
-    void snapshot();
-
+    
     /**
      * Prints the graph to stdout.
      */
     void print() const;
-
-    /**
-     * Saves the graph as a PNG image.
-     * @param title - the filename of the PNG image
-     */
-    void savePNG(string title) const;
 
     void clear();
 
@@ -233,14 +189,10 @@ public:
 private:
                         //<src, umap<dest , edge>>
     mutable unordered_map<Vertex, unordered_map<Vertex, Edge>> adjacency_list;
-    vector<int> Dshortestpath;
-    vector<int> Dijkdistances;
+    //vector<int> Dshortestpath;
+    //vector<int> Dijkdistances;
 
     string path_output = "";
-
-    int picNum;
-    string picName;
-
 
     /**
      * Returns whether a given vertex exists in the graph.

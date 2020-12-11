@@ -7,10 +7,11 @@ typedef string Vertex;
 
 /**
  * Represents an edge in a graph; used by the Graph class.
- *
  * @author Sean Massung
  * @date Spring 2012
+ * edited by Manuel Martinez Fall 2020(removed label) 
  */
+
 class Edge
 {
   public:

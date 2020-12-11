@@ -8,8 +8,6 @@
 
 using namespace std;
 
-//void BFStest()
-//void LandmarkTest()
 void loadQ(queue<string> & q){
     
     q.push(string("0"));    //src
@@ -60,7 +58,7 @@ void loadQ(queue<string> & q){
     q.push(string("2"));
     q.push(string("6"));
 
-////////////pt2 graph
+////////////extended graph
   /*  q.push(string("6"));
     q.push(string("10"));
     q.push(string("1"));
@@ -121,6 +119,10 @@ void graphtest(Graph g){
     }
     cout << " }\n" << endl;
 
+}
+void graphtest2(Graph g){
+
+    g.print();
 }
 void BFSTest(Graph g) {
     BFS graph(g);
@@ -208,10 +210,9 @@ int main() {
 /*
 OUTLINE:
 1) Read from file, 
-2) load and Create graph object and output to text file, vertices, edeges, weights,
+2) load and Create graph object and output to text file, vertices, edges, and weights,
 3) Do a BFS Traversal, output traversal info to txt file
 4) Run Dijkstras algorithm, output information to txt file
-5) Run xxxxx algorithm, ouptut information to txt file
 6) Any addition test cases to ouput to screen in main;
 
 
@@ -224,16 +225,16 @@ OUTLINE:
     queue<string> q = writeOut(dir_mapped); // contains the queue of string
     */
     
-
-    //Manual load of a predefined queue;
-    //queue<string> infileQ;
+    queue<string> infileQ;
+    /*Manual load of a predefined queue */
     //loadQ(infileQ);//loads graph, manually 
 
-    //Queue Read from the newly created test file and create graph using that text file
-    queue<string> infileQ = readFromFile(); //load from "   "
+    /*Read from a modified large dataset txt file and load that into the queue*/        
+    infileQ = readFromFile(); //load from "temp_undirected_list.txt"
 
-    Graph PAgraph(infileQ); //create the graph
-    graphtest(PAgraph);     //output the graph info
+    Graph PAgraph(infileQ); //create the graph object
+    graphtest(PAgraph);     //output the graph info simple
+    graphtest2(PAgraph);    //output graph detailed
 
     // Output into a Graph.txt
     writeOutGraph(PAgraph);

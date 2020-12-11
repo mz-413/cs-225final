@@ -1,254 +1,254 @@
 Dijkstra results: 
-Path from 0 to 6: weight =32767, path ={0 }
-Path from 1 to 6: weight =32767, path ={1 }
-Path from 2 to 6: weight =20, path ={6 5 8 7 2 }
-Path from 3 to 6: weight =27, path ={6 5 8 7 2 3 }
-Path from 4 to 6: weight =28, path ={6 5 8 7 2 4 }
-Path from 5 to 6: weight =7, path ={6 5 }
+Path from 0 to 6: weight =32764, path ={0 }
+Path from 1 to 6: weight =32764, path ={1 }
+Path from 2 to 6: weight =20, path ={2 7 8 5 6 }
+Path from 3 to 6: weight =27, path ={3 2 7 8 5 6 }
+Path from 4 to 6: weight =28, path ={4 2 7 8 5 6 }
+Path from 5 to 6: weight =7, path ={5 6 }
 Path from 6 to 6: weight =0, path ={6 }
-Path from 7 to 6: weight =14, path ={6 5 8 7 }
-Path from 8 to 6: weight =10, path ={6 5 8 }
-Path from 9 to 6: weight =17, path ={6 5 9 }
-Path from 10 to 6: weight =94, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 10 }
-Path from 11 to 6: weight =91, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 11 }
-Path from 12 to 6: weight =19, path ={6 5 9 12 }
-Path from 13 to 6: weight =20, path ={6 5 9 12 13 }
-Path from 14 to 6: weight =29, path ={6 5 9 12 14 }
-Path from 15 to 6: weight =30, path ={6 5 9 12 14 15 }
-Path from 16 to 6: weight =20, path ={6 5 8 7 16 }
-Path from 17 to 6: weight =23, path ={6 5 8 7 16 17 }
-Path from 18 to 6: weight =28, path ={6 5 8 7 16 18 }
-Path from 19 to 6: weight =36, path ={6 5 9 12 14 20 19 }
-Path from 20 to 6: weight =32, path ={6 5 9 12 14 20 }
-Path from 21 to 6: weight =39, path ={6 5 9 12 14 20 19 21 }
-Path from 22 to 6: weight =87, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 }
-Path from 23 to 6: weight =39, path ={6 5 9 12 14 20 19 23 }
-Path from 24 to 6: weight =34, path ={6 5 8 7 16 18 24 }
-Path from 25 to 6: weight =45, path ={6 5 9 12 14 20 19 25 }
-Path from 26 to 6: weight =53, path ={6 5 9 12 14 20 19 25 26 }
-Path from 27 to 6: weight =57, path ={6 5 9 12 14 20 19 25 29 27 }
-Path from 28 to 6: weight =62, path ={6 5 9 12 14 20 19 25 29 27 28 }
-Path from 29 to 6: weight =49, path ={6 5 9 12 14 20 19 25 29 }
-Path from 30 to 6: weight =63, path ={6 5 9 12 14 20 19 25 29 27 30 }
-Path from 31 to 6: weight =64, path ={6 5 9 12 14 20 19 25 29 27 30 31 }
-Path from 32 to 6: weight =67, path ={6 5 9 12 14 20 19 25 29 27 30 32 }
-Path from 33 to 6: weight =74, path ={6 5 9 12 14 20 19 25 29 27 30 32 33 }
-Path from 34 to 6: weight =69, path ={6 5 9 12 14 20 19 25 29 27 30 32 34 }
-Path from 35 to 6: weight =70, path ={6 5 9 12 14 20 19 25 29 27 30 32 34 35 }
-Path from 36 to 6: weight =67, path ={6 5 9 12 14 20 19 25 26 37 36 }
-Path from 37 to 6: weight =58, path ={6 5 9 12 14 20 19 25 26 37 }
-Path from 38 to 6: weight =49, path ={6 5 9 12 14 20 19 23 38 }
-Path from 39 to 6: weight =51, path ={6 5 9 12 14 20 19 23 38 39 }
-Path from 40 to 6: weight =71, path ={6 5 9 12 14 20 19 25 26 37 36 40 }
-Path from 41 to 6: weight =127, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 64 57 41 }
-Path from 42 to 6: weight =133, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 64 57 41 42 }
-Path from 43 to 6: weight =132, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 64 57 41 43 }
-Path from 44 to 6: weight =84, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 }
-Path from 45 to 6: weight =74, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 }
-Path from 46 to 6: weight =134, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 64 57 56 46 }
-Path from 47 to 6: weight =138, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 64 57 56 46 47 }
-Path from 48 to 6: weight =147, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 75 65 59 60 54 48 }
-Path from 49 to 6: weight =147, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 75 65 59 60 54 55 49 }
-Path from 50 to 6: weight =97, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 51 50 }
-Path from 51 to 6: weight =87, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 51 }
-Path from 52 to 6: weight =59, path ={6 5 9 12 14 20 19 23 38 52 }
-Path from 53 to 6: weight =66, path ={6 5 9 12 14 20 19 23 38 52 53 }
-Path from 54 to 6: weight =138, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 75 65 59 60 54 }
-Path from 55 to 6: weight =142, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 75 65 59 60 54 55 }
-Path from 56 to 6: weight =126, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 64 57 56 }
-Path from 57 to 6: weight =119, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 64 57 }
-Path from 58 to 6: weight =94, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 58 }
-Path from 59 to 6: weight =132, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 75 65 59 }
-Path from 60 to 6: weight =137, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 75 65 59 60 }
-Path from 61 to 6: weight =96, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 }
-Path from 62 to 6: weight =137, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 87 82 78 68 62 }
-Path from 63 to 6: weight =146, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 87 82 78 68 62 63 }
-Path from 64 to 6: weight =113, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 64 }
-Path from 65 to 6: weight =124, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 75 65 }
-Path from 66 to 6: weight =116, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 79 73 66 }
-Path from 67 to 6: weight =72, path ={6 5 9 12 14 20 19 25 26 37 36 40 67 }
-Path from 68 to 6: weight =136, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 87 82 78 68 }
-Path from 69 to 6: weight =89, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 }
-Path from 70 to 6: weight =92, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 }
-Path from 71 to 6: weight =61, path ={6 5 9 12 14 20 19 23 38 52 71 }
-Path from 72 to 6: weight =66, path ={6 5 9 12 14 20 19 23 38 52 71 72 }
-Path from 73 to 6: weight =107, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 79 73 }
-Path from 74 to 6: weight =115, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 79 73 74 }
-Path from 75 to 6: weight =117, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 75 }
-Path from 76 to 6: weight =99, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 76 }
-Path from 77 to 6: weight =95, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 10 77 }
-Path from 78 to 6: weight =126, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 87 82 78 }
-Path from 79 to 6: weight =104, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 79 }
-Path from 80 to 6: weight =110, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 }
-Path from 81 to 6: weight =98, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 }
-Path from 82 to 6: weight =123, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 87 82 }
-Path from 83 to 6: weight =93, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 }
-Path from 84 to 6: weight =32767, path ={84 }
-Path from 85 to 6: weight =32767, path ={85 }
-Path from 86 to 6: weight =108, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 }
-Path from 87 to 6: weight =118, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 87 }
-Path from 88 to 6: weight =100, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 }
-Path from 89 to 6: weight =105, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 }
-Path from 90 to 6: weight =32767, path ={90 }
-Path from 91 to 6: weight =32767, path ={91 }
-Path from 92 to 6: weight =95, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 92 }
-Path from 93 to 6: weight =97, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 93 }
-Path from 94 to 6: weight =115, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 94 }
-Path from 95 to 6: weight =103, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 }
-Path from 96 to 6: weight =101, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 }
-Path from 97 to 6: weight =113, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 97 }
-Path from 98 to 6: weight =103, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 92 98 }
-Path from 99 to 6: weight =120, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 87 99 }
-Path from 100 to 6: weight =127, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 87 99 100 }
-Path from 101 to 6: weight =105, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 92 98 101 }
-Path from 102 to 6: weight =109, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 102 }
-Path from 103 to 6: weight =108, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 }
-Path from 104 to 6: weight =105, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 104 }
-Path from 105 to 6: weight =126, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 87 99 105 }
-Path from 106 to 6: weight =133, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 87 82 106 }
-Path from 107 to 6: weight =118, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 97 107 }
-Path from 108 to 6: weight =119, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 94 108 }
-Path from 109 to 6: weight =135, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 94 108 110 109 }
-Path from 110 to 6: weight =129, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 94 108 110 }
-Path from 111 to 6: weight =108, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 92 98 101 112 111 }
-Path from 112 to 6: weight =106, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 92 98 101 112 }
-Path from 113 to 6: weight =118, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 102 113 }
-Path from 114 to 6: weight =128, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 102 113 114 }
-Path from 115 to 6: weight =114, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 115 }
-Path from 116 to 6: weight =143, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 94 108 110 109 118 116 }
-Path from 117 to 6: weight =151, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 94 108 110 109 118 116 117 }
-Path from 118 to 6: weight =142, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 94 108 110 109 118 }
-Path from 119 to 6: weight =110, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 92 98 101 112 111 119 }
-Path from 120 to 6: weight =112, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 104 120 }
-Path from 121 to 6: weight =119, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 92 98 101 112 111 122 121 }
-Path from 122 to 6: weight =114, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 92 98 101 112 111 122 }
-Path from 123 to 6: weight =110, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 124 123 }
-Path from 124 to 6: weight =109, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 124 }
-Path from 125 to 6: weight =115, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 92 98 101 112 111 119 125 }
-Path from 126 to 6: weight =126, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 92 98 101 112 111 122 127 126 }
-Path from 127 to 6: weight =119, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 92 98 101 112 111 122 127 }
-Path from 128 to 6: weight =116, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 115 128 }
-Path from 129 to 6: weight =121, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 92 98 101 112 111 122 127 129 }
-Path from 130 to 6: weight =129, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 92 98 101 112 111 122 127 126 130 }
-Path from 131 to 6: weight =137, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 92 98 101 112 111 122 127 126 130 131 }
-Path from 132 to 6: weight =65, path ={6 5 9 12 14 20 19 23 38 52 132 }
-Path from 133 to 6: weight =149, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 94 108 110 109 118 116 133 }
-Path from 134 to 6: weight =126, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 115 128 138 137 134 }
-Path from 135 to 6: weight =126, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 124 123 136 135 }
-Path from 136 to 6: weight =117, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 124 123 136 }
-Path from 137 to 6: weight =124, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 115 128 138 137 }
-Path from 138 to 6: weight =118, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 115 128 138 }
-Path from 139 to 6: weight =32767, path ={139 }
-Path from 140 to 6: weight =32767, path ={140 }
-Path from 141 to 6: weight =138, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 115 128 138 137 145 142 141 }
-Path from 142 to 6: weight =134, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 115 128 138 137 145 142 }
-Path from 143 to 6: weight =138, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 115 128 138 144 143 }
-Path from 144 to 6: weight =128, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 115 128 138 144 }
-Path from 145 to 6: weight =132, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 115 128 138 137 145 }
-Path from 146 to 6: weight =168, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 178 175 161 149 146 }
-Path from 147 to 6: weight =165, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 178 175 161 149 150 147 }
-Path from 148 to 6: weight =172, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 178 175 161 149 150 147 148 }
-Path from 149 to 6: weight =159, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 178 175 161 149 }
-Path from 150 to 6: weight =164, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 178 175 161 149 150 }
-Path from 151 to 6: weight =75, path ={6 5 9 12 14 20 19 23 38 52 132 151 }
-Path from 152 to 6: weight =68, path ={6 5 9 12 14 20 19 23 38 52 132 152 }
-Path from 153 to 6: weight =77, path ={6 5 9 12 14 20 19 23 38 52 132 152 153 }
-Path from 154 to 6: weight =77, path ={6 5 9 12 14 20 19 23 38 52 132 152 154 }
-Path from 155 to 6: weight =88, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 }
-Path from 156 to 6: weight =79, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 }
-Path from 157 to 6: weight =96, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 157 }
-Path from 158 to 6: weight =32767, path ={158 }
-Path from 159 to 6: weight =32767, path ={159 }
-Path from 160 to 6: weight =32767, path ={160 }
-Path from 161 to 6: weight =150, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 178 175 161 }
-Path from 162 to 6: weight =103, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 157 162 }
-Path from 163 to 6: weight =105, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 }
-Path from 164 to 6: weight =111, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 164 }
-Path from 165 to 6: weight =100, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 }
-Path from 166 to 6: weight =96, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 }
-Path from 167 to 6: weight =152, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 178 176 172 167 }
-Path from 168 to 6: weight =159, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 178 176 172 167 168 }
-Path from 169 to 6: weight =162, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 178 176 172 167 169 }
-Path from 170 to 6: weight =101, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 157 170 }
-Path from 171 to 6: weight =102, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 157 170 171 }
-Path from 172 to 6: weight =149, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 178 176 172 }
-Path from 173 to 6: weight =151, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 178 175 173 }
-Path from 174 to 6: weight =159, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 178 175 173 174 }
-Path from 175 to 6: weight =141, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 178 175 }
-Path from 176 to 6: weight =146, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 178 176 }
-Path from 177 to 6: weight =135, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 83 88 96 103 115 128 138 144 177 }
-Path from 178 to 6: weight =138, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 178 }
-Path from 179 to 6: weight =111, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 }
-Path from 180 to 6: weight =106, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 }
-Path from 181 to 6: weight =132, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 }
-Path from 182 to 6: weight =137, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 181 182 }
-Path from 183 to 6: weight =123, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 183 }
-Path from 184 to 6: weight =113, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 184 }
-Path from 185 to 6: weight =114, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 }
-Path from 186 to 6: weight =124, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 186 }
-Path from 187 to 6: weight =128, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 186 187 }
-Path from 188 to 6: weight =131, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 186 188 }
-Path from 189 to 6: weight =152, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 186 188 194 195 196 192 193 189 }
-Path from 190 to 6: weight =155, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 186 188 194 195 196 192 193 189 190 }
-Path from 191 to 6: weight =154, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 186 188 194 195 196 192 193 189 191 }
-Path from 192 to 6: weight =145, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 186 188 194 195 196 192 }
-Path from 193 to 6: weight =151, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 186 188 194 195 196 192 193 }
-Path from 194 to 6: weight =140, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 186 188 194 }
-Path from 195 to 6: weight =141, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 186 188 194 195 }
-Path from 196 to 6: weight =143, path ={6 5 9 12 14 20 19 23 38 52 132 151 156 155 166 165 163 180 179 185 186 188 194 195 196 }
-Path from 197 to 6: weight =103, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 10 77 197 }
-Path from 198 to 6: weight =100, path ={6 5 9 12 14 20 19 25 26 37 36 40 45 44 22 69 76 198 }
-Path from 199 to 6: weight =32767, path ={199 }
-Path from 200 to 6: weight =32767, path ={200 }
-Path from 201 to 6: weight =32767, path ={201 }
-Path from 202 to 6: weight =32767, path ={202 }
-Path from 203 to 6: weight =32767, path ={203 }
-Path from 204 to 6: weight =32767, path ={204 }
-Path from 205 to 6: weight =32767, path ={205 }
-Path from 206 to 6: weight =32767, path ={206 }
-Path from 207 to 6: weight =32767, path ={207 }
-Path from 208 to 6: weight =32767, path ={208 }
-Path from 209 to 6: weight =32767, path ={209 }
-Path from 210 to 6: weight =32767, path ={210 }
-Path from 211 to 6: weight =32767, path ={211 }
-Path from 212 to 6: weight =32767, path ={212 }
-Path from 213 to 6: weight =32767, path ={213 }
-Path from 214 to 6: weight =32767, path ={214 }
-Path from 215 to 6: weight =32767, path ={215 }
-Path from 216 to 6: weight =32767, path ={216 }
-Path from 217 to 6: weight =32767, path ={217 }
-Path from 218 to 6: weight =32767, path ={218 }
-Path from 219 to 6: weight =32767, path ={219 }
-Path from 220 to 6: weight =32767, path ={220 }
-Path from 221 to 6: weight =32767, path ={221 }
-Path from 222 to 6: weight =32767, path ={222 }
-Path from 223 to 6: weight =32767, path ={223 }
-Path from 224 to 6: weight =32767, path ={224 }
-Path from 225 to 6: weight =32767, path ={225 }
-Path from 226 to 6: weight =32767, path ={226 }
-Path from 227 to 6: weight =32767, path ={227 }
-Path from 228 to 6: weight =32767, path ={228 }
-Path from 229 to 6: weight =32767, path ={229 }
-Path from 230 to 6: weight =32767, path ={230 }
-Path from 231 to 6: weight =32767, path ={231 }
-Path from 232 to 6: weight =32767, path ={232 }
-Path from 233 to 6: weight =32767, path ={233 }
-Path from 234 to 6: weight =32767, path ={234 }
-Path from 235 to 6: weight =32767, path ={235 }
-Path from 236 to 6: weight =32767, path ={236 }
-Path from 237 to 6: weight =32767, path ={237 }
-Path from 238 to 6: weight =32767, path ={238 }
-Path from 239 to 6: weight =32767, path ={239 }
-Path from 240 to 6: weight =32767, path ={240 }
-Path from 241 to 6: weight =32767, path ={241 }
-Path from 242 to 6: weight =32767, path ={242 }
-Path from 243 to 6: weight =32767, path ={243 }
-Path from 244 to 6: weight =32767, path ={244 }
-Path from 245 to 6: weight =32767, path ={245 }
-Path from 246 to 6: weight =32767, path ={246 }
-Path from 247 to 6: weight =32767, path ={247 }
-Path from 248 to 6: weight =32767, path ={248 }
-Path from 249 to 6: weight =32767, path ={249 }
+Path from 7 to 6: weight =14, path ={7 8 5 6 }
+Path from 8 to 6: weight =10, path ={8 5 6 }
+Path from 9 to 6: weight =17, path ={9 5 6 }
+Path from 10 to 6: weight =94, path ={10 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 11 to 6: weight =91, path ={11 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 12 to 6: weight =19, path ={12 9 5 6 }
+Path from 13 to 6: weight =20, path ={13 12 9 5 6 }
+Path from 14 to 6: weight =29, path ={14 12 9 5 6 }
+Path from 15 to 6: weight =30, path ={15 14 12 9 5 6 }
+Path from 16 to 6: weight =20, path ={16 7 8 5 6 }
+Path from 17 to 6: weight =23, path ={17 16 7 8 5 6 }
+Path from 18 to 6: weight =28, path ={18 16 7 8 5 6 }
+Path from 19 to 6: weight =36, path ={19 20 14 12 9 5 6 }
+Path from 20 to 6: weight =32, path ={20 14 12 9 5 6 }
+Path from 21 to 6: weight =39, path ={21 19 20 14 12 9 5 6 }
+Path from 22 to 6: weight =87, path ={22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 23 to 6: weight =39, path ={23 19 20 14 12 9 5 6 }
+Path from 24 to 6: weight =34, path ={24 18 16 7 8 5 6 }
+Path from 25 to 6: weight =45, path ={25 19 20 14 12 9 5 6 }
+Path from 26 to 6: weight =53, path ={26 25 19 20 14 12 9 5 6 }
+Path from 27 to 6: weight =57, path ={27 29 25 19 20 14 12 9 5 6 }
+Path from 28 to 6: weight =62, path ={28 27 29 25 19 20 14 12 9 5 6 }
+Path from 29 to 6: weight =49, path ={29 25 19 20 14 12 9 5 6 }
+Path from 30 to 6: weight =63, path ={30 27 29 25 19 20 14 12 9 5 6 }
+Path from 31 to 6: weight =64, path ={31 30 27 29 25 19 20 14 12 9 5 6 }
+Path from 32 to 6: weight =67, path ={32 30 27 29 25 19 20 14 12 9 5 6 }
+Path from 33 to 6: weight =74, path ={33 32 30 27 29 25 19 20 14 12 9 5 6 }
+Path from 34 to 6: weight =69, path ={34 32 30 27 29 25 19 20 14 12 9 5 6 }
+Path from 35 to 6: weight =70, path ={35 34 32 30 27 29 25 19 20 14 12 9 5 6 }
+Path from 36 to 6: weight =67, path ={36 37 26 25 19 20 14 12 9 5 6 }
+Path from 37 to 6: weight =58, path ={37 26 25 19 20 14 12 9 5 6 }
+Path from 38 to 6: weight =49, path ={38 23 19 20 14 12 9 5 6 }
+Path from 39 to 6: weight =51, path ={39 38 23 19 20 14 12 9 5 6 }
+Path from 40 to 6: weight =71, path ={40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 41 to 6: weight =127, path ={41 57 64 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 42 to 6: weight =133, path ={42 41 57 64 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 43 to 6: weight =132, path ={43 41 57 64 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 44 to 6: weight =84, path ={44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 45 to 6: weight =74, path ={45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 46 to 6: weight =134, path ={46 56 57 64 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 47 to 6: weight =138, path ={47 46 56 57 64 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 48 to 6: weight =147, path ={48 54 60 59 65 75 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 49 to 6: weight =147, path ={49 55 54 60 59 65 75 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 50 to 6: weight =97, path ={50 51 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 51 to 6: weight =87, path ={51 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 52 to 6: weight =59, path ={52 38 23 19 20 14 12 9 5 6 }
+Path from 53 to 6: weight =66, path ={53 52 38 23 19 20 14 12 9 5 6 }
+Path from 54 to 6: weight =138, path ={54 60 59 65 75 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 55 to 6: weight =142, path ={55 54 60 59 65 75 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 56 to 6: weight =126, path ={56 57 64 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 57 to 6: weight =119, path ={57 64 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 58 to 6: weight =94, path ={58 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 59 to 6: weight =132, path ={59 65 75 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 60 to 6: weight =137, path ={60 59 65 75 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 61 to 6: weight =96, path ={61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 62 to 6: weight =137, path ={62 68 78 82 87 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 63 to 6: weight =146, path ={63 62 68 78 82 87 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 64 to 6: weight =113, path ={64 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 65 to 6: weight =124, path ={65 75 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 66 to 6: weight =116, path ={66 73 79 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 67 to 6: weight =72, path ={67 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 68 to 6: weight =136, path ={68 78 82 87 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 69 to 6: weight =89, path ={69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 70 to 6: weight =92, path ={70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 71 to 6: weight =61, path ={71 52 38 23 19 20 14 12 9 5 6 }
+Path from 72 to 6: weight =66, path ={72 71 52 38 23 19 20 14 12 9 5 6 }
+Path from 73 to 6: weight =107, path ={73 79 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 74 to 6: weight =115, path ={74 73 79 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 75 to 6: weight =117, path ={75 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 76 to 6: weight =99, path ={76 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 77 to 6: weight =95, path ={77 10 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 78 to 6: weight =126, path ={78 82 87 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 79 to 6: weight =104, path ={79 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 80 to 6: weight =110, path ={80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 81 to 6: weight =98, path ={81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 82 to 6: weight =123, path ={82 87 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 83 to 6: weight =93, path ={83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 84 to 6: weight =32764, path ={84 }
+Path from 85 to 6: weight =32764, path ={85 }
+Path from 86 to 6: weight =108, path ={86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 87 to 6: weight =118, path ={87 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 88 to 6: weight =100, path ={88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 89 to 6: weight =105, path ={89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 90 to 6: weight =32764, path ={90 }
+Path from 91 to 6: weight =32764, path ={91 }
+Path from 92 to 6: weight =95, path ={92 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 93 to 6: weight =97, path ={93 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 94 to 6: weight =115, path ={94 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 95 to 6: weight =103, path ={95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 96 to 6: weight =101, path ={96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 97 to 6: weight =113, path ={97 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 98 to 6: weight =103, path ={98 92 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 99 to 6: weight =120, path ={99 87 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 100 to 6: weight =127, path ={100 99 87 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 101 to 6: weight =105, path ={101 98 92 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 102 to 6: weight =109, path ={102 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 103 to 6: weight =108, path ={103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 104 to 6: weight =105, path ={104 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 105 to 6: weight =126, path ={105 99 87 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 106 to 6: weight =133, path ={106 82 87 80 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 107 to 6: weight =118, path ={107 97 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 108 to 6: weight =119, path ={108 94 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 109 to 6: weight =135, path ={109 110 108 94 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 110 to 6: weight =129, path ={110 108 94 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 111 to 6: weight =108, path ={111 112 101 98 92 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 112 to 6: weight =106, path ={112 101 98 92 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 113 to 6: weight =118, path ={113 102 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 114 to 6: weight =128, path ={114 113 102 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 115 to 6: weight =114, path ={115 103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 116 to 6: weight =143, path ={116 118 109 110 108 94 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 117 to 6: weight =151, path ={117 116 118 109 110 108 94 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 118 to 6: weight =142, path ={118 109 110 108 94 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 119 to 6: weight =110, path ={119 111 112 101 98 92 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 120 to 6: weight =112, path ={120 104 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 121 to 6: weight =119, path ={121 122 111 112 101 98 92 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 122 to 6: weight =114, path ={122 111 112 101 98 92 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 123 to 6: weight =110, path ={123 124 103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 124 to 6: weight =109, path ={124 103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 125 to 6: weight =115, path ={125 119 111 112 101 98 92 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 126 to 6: weight =126, path ={126 127 122 111 112 101 98 92 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 127 to 6: weight =119, path ={127 122 111 112 101 98 92 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 128 to 6: weight =116, path ={128 115 103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 129 to 6: weight =121, path ={129 127 122 111 112 101 98 92 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 130 to 6: weight =129, path ={130 126 127 122 111 112 101 98 92 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 131 to 6: weight =137, path ={131 130 126 127 122 111 112 101 98 92 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 132 to 6: weight =65, path ={132 52 38 23 19 20 14 12 9 5 6 }
+Path from 133 to 6: weight =149, path ={133 116 118 109 110 108 94 86 89 95 81 61 70 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 134 to 6: weight =126, path ={134 137 138 128 115 103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 135 to 6: weight =126, path ={135 136 123 124 103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 136 to 6: weight =117, path ={136 123 124 103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 137 to 6: weight =124, path ={137 138 128 115 103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 138 to 6: weight =118, path ={138 128 115 103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 139 to 6: weight =32764, path ={139 }
+Path from 140 to 6: weight =32764, path ={140 }
+Path from 141 to 6: weight =138, path ={141 142 145 137 138 128 115 103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 142 to 6: weight =134, path ={142 145 137 138 128 115 103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 143 to 6: weight =138, path ={143 144 138 128 115 103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 144 to 6: weight =128, path ={144 138 128 115 103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 145 to 6: weight =132, path ={145 137 138 128 115 103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 146 to 6: weight =168, path ={146 149 161 175 178 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 147 to 6: weight =165, path ={147 150 149 161 175 178 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 148 to 6: weight =172, path ={148 147 150 149 161 175 178 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 149 to 6: weight =159, path ={149 161 175 178 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 150 to 6: weight =164, path ={150 149 161 175 178 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 151 to 6: weight =75, path ={151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 152 to 6: weight =68, path ={152 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 153 to 6: weight =77, path ={153 152 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 154 to 6: weight =77, path ={154 152 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 155 to 6: weight =88, path ={155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 156 to 6: weight =79, path ={156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 157 to 6: weight =96, path ={157 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 158 to 6: weight =32764, path ={158 }
+Path from 159 to 6: weight =32764, path ={159 }
+Path from 160 to 6: weight =32764, path ={160 }
+Path from 161 to 6: weight =150, path ={161 175 178 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 162 to 6: weight =103, path ={162 157 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 163 to 6: weight =105, path ={163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 164 to 6: weight =111, path ={164 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 165 to 6: weight =100, path ={165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 166 to 6: weight =96, path ={166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 167 to 6: weight =152, path ={167 172 176 178 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 168 to 6: weight =159, path ={168 167 172 176 178 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 169 to 6: weight =162, path ={169 167 172 176 178 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 170 to 6: weight =101, path ={170 157 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 171 to 6: weight =102, path ={171 170 157 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 172 to 6: weight =149, path ={172 176 178 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 173 to 6: weight =151, path ={173 175 178 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 174 to 6: weight =159, path ={174 173 175 178 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 175 to 6: weight =141, path ={175 178 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 176 to 6: weight =146, path ={176 178 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 177 to 6: weight =135, path ={177 144 138 128 115 103 96 88 83 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 178 to 6: weight =138, path ={178 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 179 to 6: weight =111, path ={179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 180 to 6: weight =106, path ={180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 181 to 6: weight =132, path ={181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 182 to 6: weight =137, path ={182 181 183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 183 to 6: weight =123, path ={183 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 184 to 6: weight =113, path ={184 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 185 to 6: weight =114, path ={185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 186 to 6: weight =124, path ={186 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 187 to 6: weight =128, path ={187 186 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 188 to 6: weight =131, path ={188 186 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 189 to 6: weight =152, path ={189 193 192 196 195 194 188 186 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 190 to 6: weight =155, path ={190 189 193 192 196 195 194 188 186 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 191 to 6: weight =154, path ={191 189 193 192 196 195 194 188 186 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 192 to 6: weight =145, path ={192 196 195 194 188 186 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 193 to 6: weight =151, path ={193 192 196 195 194 188 186 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 194 to 6: weight =140, path ={194 188 186 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 195 to 6: weight =141, path ={195 194 188 186 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 196 to 6: weight =143, path ={196 195 194 188 186 185 179 180 163 165 166 155 156 151 132 52 38 23 19 20 14 12 9 5 6 }
+Path from 197 to 6: weight =103, path ={197 77 10 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 198 to 6: weight =100, path ={198 76 69 22 44 45 40 36 37 26 25 19 20 14 12 9 5 6 }
+Path from 199 to 6: weight =32764, path ={199 }
+Path from 200 to 6: weight =32764, path ={200 }
+Path from 201 to 6: weight =32764, path ={201 }
+Path from 202 to 6: weight =32764, path ={202 }
+Path from 203 to 6: weight =32764, path ={203 }
+Path from 204 to 6: weight =32764, path ={204 }
+Path from 205 to 6: weight =32764, path ={205 }
+Path from 206 to 6: weight =32764, path ={206 }
+Path from 207 to 6: weight =32764, path ={207 }
+Path from 208 to 6: weight =32764, path ={208 }
+Path from 209 to 6: weight =32764, path ={209 }
+Path from 210 to 6: weight =32764, path ={210 }
+Path from 211 to 6: weight =32764, path ={211 }
+Path from 212 to 6: weight =32764, path ={212 }
+Path from 213 to 6: weight =32764, path ={213 }
+Path from 214 to 6: weight =32764, path ={214 }
+Path from 215 to 6: weight =32764, path ={215 }
+Path from 216 to 6: weight =32764, path ={216 }
+Path from 217 to 6: weight =32764, path ={217 }
+Path from 218 to 6: weight =32764, path ={218 }
+Path from 219 to 6: weight =32764, path ={219 }
+Path from 220 to 6: weight =32764, path ={220 }
+Path from 221 to 6: weight =32764, path ={221 }
+Path from 222 to 6: weight =32764, path ={222 }
+Path from 223 to 6: weight =32764, path ={223 }
+Path from 224 to 6: weight =32764, path ={224 }
+Path from 225 to 6: weight =32764, path ={225 }
+Path from 226 to 6: weight =32764, path ={226 }
+Path from 227 to 6: weight =32764, path ={227 }
+Path from 228 to 6: weight =32764, path ={228 }
+Path from 229 to 6: weight =32764, path ={229 }
+Path from 230 to 6: weight =32764, path ={230 }
+Path from 231 to 6: weight =32764, path ={231 }
+Path from 232 to 6: weight =32764, path ={232 }
+Path from 233 to 6: weight =32764, path ={233 }
+Path from 234 to 6: weight =32764, path ={234 }
+Path from 235 to 6: weight =32764, path ={235 }
+Path from 236 to 6: weight =32764, path ={236 }
+Path from 237 to 6: weight =32764, path ={237 }
+Path from 238 to 6: weight =32764, path ={238 }
+Path from 239 to 6: weight =32764, path ={239 }
+Path from 240 to 6: weight =32764, path ={240 }
+Path from 241 to 6: weight =32764, path ={241 }
+Path from 242 to 6: weight =32764, path ={242 }
+Path from 243 to 6: weight =32764, path ={243 }
+Path from 244 to 6: weight =32764, path ={244 }
+Path from 245 to 6: weight =32764, path ={245 }
+Path from 246 to 6: weight =32764, path ={246 }
+Path from 247 to 6: weight =32764, path ={247 }
+Path from 248 to 6: weight =32764, path ={248 }
+Path from 249 to 6: weight =32764, path ={249 }
 
 -----PATH NODES WENT THROUGH-----
 

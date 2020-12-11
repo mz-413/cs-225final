@@ -1,16 +1,15 @@
 #include "graph.h"
-#include <list>
 
 const Vertex Graph::InvalidVertex = "_CS225INVALIDVERTEX";
 const int Graph::InvalidWeight = INT_MIN;
 const string Graph:: InvalidLabel = "_CS225INVALIDLABEL";
 const Edge Graph::InvalidEdge = Edge(Graph::InvalidVertex, Graph::InvalidVertex, Graph::InvalidWeight);
 
-Graph::Graph(){
+Graph::Graph(){/*nothing*/
 }
 
-//Idea: Pass in vector in which first element is the source edge, 2nd dest edge, 3rd is the edge weight, this cycle repeats until the end
-//main constructor used
+//Idea: Pass in queue in which first element is the source edge, 2nd dest edge, 3rd is the edge weight, this cycle repeats until the 
+//queue is empty. Main constructor to be used
 Graph::Graph(queue<string> infile){
    
     Vertex source;
@@ -28,16 +27,10 @@ Graph::Graph(queue<string> infile){
         weight = std::stoi(infile.front());
         infile.pop();
 
-
-        //Add the 2 vertices to adjacency List, no need will be added with insertedge, possible missing edges if done this way
-        //insertVertex(source);
-        //insertVertex(dest);
-        
         //Add the the edge and set its weight;
         bool  a = insertEdge(source,dest);
         setEdgeWeight(source,dest, weight);
         
-
     }
 
 }
@@ -45,72 +38,91 @@ Graph::Graph(queue<string> infile){
 
 void Graph::DijkstraSSSP(int source){
 
-    int graphsize = (int)getVertices().size();      
+    int graphsize = (int)getVertices().size();          //number of vertices in the current graph object  
 
-    vector<int> distance(graphsize, INFINITY);           //used to track distances from source, index represents node number, initialiezed to infinity
-    vector<bool> visited(graphsize, false);             //used to keep track of which vertices have been processed
-    vector<int> prevStep(graphsize, -1);                 //use to keep track of path to source
+    //bounds check
+    if(source > graphsize-1){
 
-    prevStep.at(source) = -1;                           //path starts at the source
-    distance.at(source) =0;                             //distance from source
+        cout << "ERROR!! The inputted source vertex is outside of range!! Please choose a vertex less than than " << graphsize << "!!" << endl;
+        return;
+    }
+        
+
+
+
+
+
+    vector<int> distance(graphsize, INFINITY);           //used to track distances from source vertex, index represents node number, initialized to infinity
+    vector<bool> visited(graphsize, false);              //used to keep track of which vertices have been processed
+    vector<int> prevStep(graphsize, -1);                 //use to keep track of path back to source
+
+    prevStep.at(source) = -1;                           //path starts at the source, we denote it as the "root" with a negative element
+    distance.at(source) =0;                             //distance from source at the source is zero
 
 
     //iterate through all vertices in the graph and find their distances from the source vertex
     for(int i=0; i<graphsize; i++){
 
-        int minWeight = INT32_MAX; //large number but not infinite, used to find the vertex w/smallest to process next
-        int minIdx;                 //the index of the vertex to 
+        int minWeight = INT32_MAX;      //large number but not infinite(important note that distance vector elements have been initialized to infinity)
+                                        //used to find the vertex w/ smallest weight to process next
+        int minIdx;                     //the index of the vertex to process next.
   
-        //iterate through every vertex and select an uvisited vertex with smallest weight
+        //Iterate through every vertex and select an uvisited vertex with the smallest weight to source vertex
         for (int v = 0; v < graphsize; v++){ 
        
-            if (visited[v] == false && distance[v] <= minWeight) { //if not visited and distance from source is finite
-                minWeight = distance[v]; 
-                minIdx = v; 
+            if (visited[v] == false && distance[v] <= minWeight) { //If vertex is not visited and distance from source is finite(ie less than infinity)
+                minWeight = distance[v];                            //set minWeight to the min. weight to source seen so far.
+                minIdx = v;                                         //keep track of the "index" (remember index represent vertex)
             }
         }
-        //at the end of for loop we found the next unprocessed vertex at the "edge" of visited vs unvisted nodes w/ smallest weight.
-        int currV= minIdx; 
-        visited[currV] = true;     //mark current vertex as visited
-        //cout << "LOOP:" << i << " currV=" << currV << "\n";
-        
-
-        //iterate thru every vertex that is connected to current vertex and update its prevStep and weight if shorter path to source exists
+        //At the end of forLoop we find the next unprocessed vertex at the "edge" of visited vs unvisted vertices w/ the smallest weight.
+        int currV= minIdx;          //We process this vertex next
+        visited[currV] = true;     //mark current the vertex as visited
+      
+        //Iterate thru every vertex that is connected to current vertex and update its prevStep and weight if shorter path to source V exists
         for(int v=0; v<graphsize; v++){
-            //if v not visited and edge exist between v and currV and distance from currV to source + the edge weight of currV and V is less than distance v to src
+            
+            //if vertex v is unvisited and an edge exist between vertex v and vertex currV and the distance from currV to the 
+            //source + the edge weight of currV and v is less than distance[v] (which is the current best weight back to source), then update.
             if(!visited[v] && edgeExists(to_string(currV),to_string(v)) && 
             distance[currV]+getEdgeWeight(to_string(currV),to_string(v)) < distance[v] ){
 
-                prevStep[v] =currV;
-                distance[v] = distance[currV] + getEdgeWeight(to_string(currV),to_string(v));
-                //cout << "iloop:" << v << "\n";
+                prevStep[v] =currV;                                                                //update new previous step to be the current vertex currV
+                distance[v] = distance[currV] + getEdgeWeight(to_string(currV),to_string(v));      //and update the distance from v to source
             }
 
         }
-
-        
-
-        
     }
 
+    /*  At this point we have all the information needed. Distance contains all the distances back to source from any vertex and we can use prevStep 
+        to find the exact path back to source
 
-    ///Print solution: indexes represent vertex number, and the element is the distance from source in the distance vector and the element in the prevStep 
-    //vector represent the previous step to which takes you back eventually to the source.
+    */
 
+   //Iterate through each vertex
     for(int i=0; i< graphsize; i++){
 
-        vector<int> path;
-       int nextidx = prevStep.at(i);    //i=7 , nxt=4
-       path.push_back(i);
+        vector<int> path;                   
+        int nextidx = prevStep.at(i);   //index of the next vertex to get back to source
+        path.push_back(i);              //put the first vertex as the current vertex we are processing
 
-        //find path
+        //while not at root, contain to load path with the steps it takes to get back to source
        while(nextidx != -1){
 
-           path.push_back(nextidx);
+           path.push_back(nextidx);            
            nextidx = prevStep.at(nextidx);
        }
-        std::reverse(path.begin(), path.end()); //reverse
+        //std::reverse(path.begin(), path.end());
 
+/*
+        //print if weight is more than 30k than its disconnected no path possible
+        if(distance.at(i) > 30000)
+
+        }else{
+
+
+        }
+*/
         string first = "Path from " + to_string(i);
         string second = " to " + to_string(source);
         string third = ": weight =" + to_string(distance.at(i)) + ", path ={";
@@ -130,7 +142,9 @@ void Graph::DijkstraSSSP(int source){
         // cout << "}\n";
         path_output += "}\n";
 
+      
 
+        
     }
 
 
@@ -138,11 +152,7 @@ void Graph::DijkstraSSSP(int source){
 
 
 
-
-
-
-
-
+//used to get all adjacent vertices to a given source vertex
 vector<Vertex> Graph::getAdjacent(Vertex source) const {
     auto lookup = adjacency_list.find(source);
 
@@ -162,10 +172,6 @@ vector<Vertex> Graph::getAdjacent(Vertex source) const {
 }
 
 
-Vertex Graph::getStartingVertex() const
-{
-    return adjacency_list.begin()->first;
-}
 
 vector<Vertex> Graph::getVertices() const
 {
@@ -187,6 +193,7 @@ Edge Graph::getEdge(Vertex source , Vertex destination) const
     return ret;
 }
 
+//get all edges in a graph in a vector container
 vector<Edge> Graph::getEdges() const
 {
     if (adjacency_list.empty())
@@ -217,17 +224,19 @@ vector<Edge> Graph::getEdges() const
     return ret;
 }
 
+//check if vertex exists
 bool Graph::vertexExists(Vertex v) const
 {
     return assertVertexExists(v, "");
 }
 
+//check if edge exists
 bool Graph::edgeExists(Vertex source, Vertex destination) const
 {
     return assertEdgeExists(source, destination, "");
 }
 
-
+//get an edge's weight
 int Graph::getEdgeWeight(Vertex source, Vertex destination) const
 {
 
@@ -236,6 +245,7 @@ int Graph::getEdgeWeight(Vertex source, Vertex destination) const
     return adjacency_list[source][destination].getWeight();
 }
 
+//insert a vertex
 void Graph::insertVertex(Vertex v)
 {
     // will overwrite if old stuff was there
@@ -243,7 +253,6 @@ void Graph::insertVertex(Vertex v)
     // make it empty again
     adjacency_list[v] = unordered_map<Vertex, Edge>();
 }
-
 
 Vertex Graph::removeVertex(Vertex v)
 {
@@ -330,6 +339,7 @@ Edge Graph::setEdgeWeight(Vertex source, Vertex destination, int weight)
     return new_edge;
 }
 
+//check if vertex exists with an error if not
 bool Graph::assertVertexExists(Vertex v, string functionName) const
 {
     if (adjacency_list.find(v) == adjacency_list.end())
@@ -341,6 +351,7 @@ bool Graph::assertVertexExists(Vertex v, string functionName) const
     return true;
 }
 
+//check if edges exists with an error if not
 bool Graph::assertEdgeExists(Vertex source, Vertex destination, string functionName) const
 {
     if(assertVertexExists(source,functionName) == false)
@@ -365,6 +376,7 @@ bool Graph::assertEdgeExists(Vertex source, Vertex destination, string functionN
     return true;
 }
 
+//clear a graph ie clear the u-map
 void Graph::clear()
 {
     adjacency_list.clear();
@@ -380,7 +392,6 @@ void Graph::error(string message) const
 {
     cerr << "\033[1;31m[Graph Error]\033[0m " + message << endl;
 }
-
 
 
 
