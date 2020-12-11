@@ -225,13 +225,18 @@ public:
     const static int InvalidWeight;
     const static string InvalidLabel;
 
+    /** returns the string to print in textfile in main */
+    string toPrint() const;
+    /** returns string to print in txtfile - Dijkstra path specifically*/
+    string getPaths() const;
+
 private:
                         //<src, umap<dest , edge>>
     mutable unordered_map<Vertex, unordered_map<Vertex, Edge>> adjacency_list;
     vector<int> Dshortestpath;
     vector<int> Dijkdistances;
 
-
+    string path_output = "";
 
     int picNum;
     string picName;

@@ -6,8 +6,11 @@ TEST = test
 EXE_OBJ = main.o
 OBJS = graph.o main.o readFile.o BFS.o
 
-# tests.o: tests/tests.cpp catch/catch.hpp
-# 	$(CXX) $(CXXFLAGS) tests/tests.cpp catch/catch.hpp
+# Reads the file
+EXE = read
+EXE_OBJ = read.o
+OBJS = read.o readFile.o
+
 
 # Generated files
 CLEAN_RM = images/Out.png

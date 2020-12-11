@@ -111,13 +111,24 @@ void Graph::DijkstraSSSP(int source){
        }
         std::reverse(path.begin(), path.end()); //reverse
 
+        string first = "Path from " + to_string(i);
+        string second = " to " + to_string(source);
+        string third = ": weight =" + to_string(distance.at(i)) + ", path ={";
+        // cout << "Path from " << i << " to " << source << ": weight =" << distance.at(i) << ", path ={";
 
-        cout << "Path from " << i << " to " << source << ": weight =" << distance.at(i) << ", path ={";
+        path_output += first + second + third;
 
-        for(int v:path)
-            cout << v << " ";
+        for(int v:path) {
+            // cout << v << " ";
+            string temp = to_string(v);
+            path_output += temp + " ";
+            // path_output += ",";
+        }
 
-        cout << "}\n";
+
+
+        // cout << "}\n";
+        path_output += "}\n";
 
 
     }
@@ -396,3 +407,34 @@ void Graph::print() const
         cout << endl;
     }
 }
+
+/** 
+ * To print on txtfile for main
+*/
+string Graph::toPrint() const { 
+    string output = "";
+    for (auto it = adjacency_list.begin(); it != adjacency_list.end(); ++it) 
+    {
+        output += it->first + "\n";
+        for (auto it2 = it->second.begin(); it2 != it->second.end(); ++it2) 
+        {
+            std::stringstream ss;
+            ss << it2->first; 
+            string vertexColumn = "    => " + ss.str();
+            vertexColumn += " " ;
+            output += vertexColumn;
+
+            output += "weight = " + to_string(it2->second.getWeight()) + "\n";
+        }
+        output += "\n";
+    }
+    return output;
+}
+
+/** returns string of path to main */
+string Graph::getPaths() const {
+    return path_output;
+}
+
+
+

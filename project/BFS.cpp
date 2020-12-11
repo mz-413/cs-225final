@@ -197,16 +197,6 @@ void BFS::writeOut() {
         // NOTE: Should be unreachabale
     }
 
-    // for (auto it = visited_edges.begin(); it != visited_edges.end(); it++) {
-
-    //     // pair<Edge, string> pair(edges.at(i), "UNEXPLORED");
-
-    //     Edge edge = (*it).first;
-    //     output += edge.source + " " + edge.dest + " ";
-    //     output += (*it).second;
-    //     output += "\n";
-    // }
-
     myFile << output;
     myFile.close();
 
@@ -215,14 +205,6 @@ void BFS::writeOut() {
 
 //? Getter for test case?
 queue<string> BFS::getTraverseOrder() {
-    // stack<string> stack;
-    // queue<string> queue = output_queue_;
-    // size_t size = queue.size();
-
-    // for (size_t i = 0; i < size; i++) {
-    //     stack.push(queue.front());
-    //     queue.pop();
-    // }
     return output_queue_;
 }
 

@@ -7,19 +7,28 @@
 #include <istream>
 #include <iterator>
 #include <queue>
-#include "readFile.hpp"
+#include "readFile.h"
 
 using namespace std;
 
 // Referencing from the sample files
-//? Sometime's file cannot be read due to "invalid preprocessing directive"
 
-vector<int> empty_nodes_check;
+
+// empty constructor
+readFile::readFile(){}
+
+readFile::readFile(string empty) {
+    empty_nodes_check.clear();
+    string d_list = "temp_directed_list.txt";
+    vector<string> dir_vect = file_to_vector();
+    vector<pair<int, int>> dir_mapped = createMap(dir_vect);
+    queue<string> q = writeOut(dir_mapped); // contains the queue of string
+}
 
 /** 
  * Turns the directedlist file to a vectorString
 */
-vector<string> file_to_vector() {
+vector<string> readFile::file_to_vector() {
 
     ofstream outfile;
     outfile.open("roadNet-PA.txt", std::ios_base::app); // append instead of overwrite
@@ -49,7 +58,7 @@ vector<string> file_to_vector() {
  * @return the organized map of ints that contains the undirected list of nodes
 */
 // still have to figure out how to collect the data from actual file and connect the code with the file
-vector<pair<int, int>> createMap(vector<string> list) {
+vector<pair<int, int>> readFile::createMap(vector<string> list) {
     vector<pair<int, int>> undirected;
 
     for (size_t i = 0; i < 250; i++) {
@@ -98,7 +107,7 @@ vector<pair<int, int>> createMap(vector<string> list) {
     return undirected;
 }
 
-queue<string> writeOut(vector<pair<int, int>> undirected) {
+queue<string> readFile::writeOut(vector<pair<int, int>> undirected) {
     ofstream myFile;
 
     // // !Find a way to clear the contents within undirected_list.txt
@@ -124,6 +133,7 @@ queue<string> writeOut(vector<pair<int, int>> undirected) {
             to_return.push(first);
             to_return.push(second);
             to_return.push(weight);
+            //? counter for weights
             output += first + " " + second + " " + weight + "\n";
         }
     }
