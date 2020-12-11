@@ -230,7 +230,7 @@ void DijkstrasTestMenu(Graph &g){
 
             writeOutDijkstras(temp);
             cout << "Updated Dijkstras.txt" << endl;
-            
+
         }else{
 
             done =true;
@@ -240,6 +240,7 @@ void DijkstrasTestMenu(Graph &g){
     }
 
 }
+
 
 int main() {
 /*
@@ -284,7 +285,13 @@ OUTLINE:
 
 
 /////////////////////////////////////////////////////interactive Dijkstras test
-    DijkstrasTestMenu(PAgraph);
+    //DijkstrasTestMenu(PAgraph);
+
+
+
+    //landmark test
+    vector<int> landmarkpath = PAgraph.Landmark(4,7,0);
+
 
 return 0;
 }

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 -----DIJKSTRAS PATH RESULTS-----
 Path from 0 to 2: weight =15, path ={0 ,3 ,1 ,2 ,}
 Path from 1 to 2: weight =7, path ={1 ,2 ,}
@@ -10,6 +11,20 @@ Path from 7 to 2: weight =4, path ={7 ,2 ,}
 
 -----ADJACENCY LIST OF NODES-----
 
+=======
+Dijkstra results: 
+Path from 0 to 4: weight =0, path ={0 ,}
+Path from 1 to 4: weight =0, path ={1 ,}
+Path from 2 to 4: weight =0, path ={2 ,}
+Path from 3 to 4: weight =0, path ={3 ,}
+Path from 4 to 4: weight =0, path ={4 ,}
+Path from 5 to 4: weight =0, path ={5 ,}
+Path from 6 to 4: weight =0, path ={6 ,}
+Path from 7 to 4: weight =0, path ={7 ,}
+
+-----PATH NODES WENT THROUGH-----
+
+>>>>>>> Stashed changes
 6
     => 7 weight = 5
     => 4 weight = 2

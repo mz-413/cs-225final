@@ -148,8 +148,109 @@ void Graph::DijkstraSSSP(int source){
 
     }
 
+    DprevStep = prevStep;
+    Dijkdistances = distance;
 
 }
+
+
+
+
+/*
+IDEA: call dikstras on landmark you now have the shortest paths from landmark to the source and dest;
+
+*/
+vector<int> Graph::Landmark(int source, int dest, int landmark){
+
+    DijkstraSSSP(landmark); //Run Dijik
+
+    vector<int> srcToLandmark;
+    vector<int> LandmarkTodest;
+
+    srcToLandmark.push_back(source);              //put the first vertex as the current vertex we are processing         
+    int nextidx = DprevStep.at(source);   //index of the next vertex to get back to landmark
+   
+
+        //while not at root, contain to load path with the steps it takes to get back to source
+       while(nextidx != -1){
+
+           srcToLandmark.push_back(nextidx);            
+           nextidx = DprevStep.at(nextidx);
+       }
+
+    cout << "\nSTL ";
+    for(int i=0; i<(int)srcToLandmark.size(); i++){
+
+        cout << srcToLandmark[i] << " ";
+    }
+       
+
+
+
+
+
+
+    nextidx = DprevStep.at(dest);   //index of the next vertex to get back to landmark
+    LandmarkTodest.push_back(dest);              //put the first vertex as the current vertex we are processing
+
+        //while not at root, contain to load path with the steps it takes to get back to source
+       while(nextidx != -1){
+
+           LandmarkTodest.push_back(nextidx);            
+           nextidx = DprevStep.at(nextidx);
+
+       }
+
+    cout << "\nLTD ";
+    for(int i=0; i< (int)LandmarkTodest.size(); i++)
+        cout << LandmarkTodest[i] << " ";
+
+
+        LandmarkTodest.pop_back();  //remove the landmark element
+       
+        
+        while(!LandmarkTodest.empty()){
+
+            srcToLandmark.push_back(LandmarkTodest.back());
+            LandmarkTodest.pop_back();
+
+        }
+
+    cout << "\nSTL ";
+    for(int i=0; i< (int)srcToLandmark.size(); i++)
+        cout << srcToLandmark[i] << " ";
+
+
+
+
+
+
+        return srcToLandmark;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

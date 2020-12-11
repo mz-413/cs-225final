@@ -70,7 +70,7 @@ public:
 
     void DijkstraSSSP(int source);
 
-    void Landmark(int source, int dest, int landmark);
+    vector<int> Landmark(int source, int dest, int landmark);       //uses information  generated from DijkstrsSSP to find path.
 
 
     /**
@@ -191,8 +191,8 @@ public:
 private:
                         //<src, umap<dest , edge>>
     mutable unordered_map<Vertex, unordered_map<Vertex, Edge>> adjacency_list;
-    //vector<int> Dshortestpath;
-    //vector<int> Dijkdistances;
+    vector<int> DprevStep;          //contains the path back to source from the previously ran void DijkstrasSSSP
+    vector<int> Dijkdistances;      //contains the distances to source from the previously ran void DijkstrasSSSP
 
     string path_output;
 
