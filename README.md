@@ -10,7 +10,8 @@ To read a brand new .txt file of data:
     Rather than running the entire program, this will only read a brand new file to avoid lengthy runtimes or errors
 4) Once ./read completes and the file undirected_list has been successfully updated, comment lines 11-13 again using #.
 Notes:
-    Make sure the file is formatted correctly (similar to the given roadNext-PA.txt) to avoid issues;
+    Make sure the file is formatted correctly (similar to the given roadNet-PA.txt) to avoid issues;
+    Please rename the brand new file as "roadNet-PA.txt";
     The output is located in undirected_list.txt;
 
 To Run Test Cases:

@@ -17,9 +17,12 @@ using namespace std;
 // empty constructor
 readFile::readFile(){}
 
-readFile::readFile(string empty) {
+/**
+ * Constructor that constructs and writes the file
+*/
+readFile::readFile(string unused) {
     empty_nodes_check.clear();
-    string d_list = "temp_directed_list.txt";
+    string d_list = "directed_list.txt";
     vector<string> dir_vect = file_to_vector();
     vector<pair<int, int>> dir_mapped = createMap(dir_vect);
     queue<string> q = writeOut(dir_mapped); // contains the queue of string

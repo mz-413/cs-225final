@@ -10,6 +10,7 @@
 #include <queue>
 
 int main() {
+    // read the file
     readFile file("empty");
     return 0;
 }
