@@ -253,7 +253,7 @@ void LandmarkTestMenu(Graph &g){
     int count=1;
 
     while(!done){
-        cout << "\nWelcome to our interactive Landmark Test!";
+        cout << "\n\nWelcome to our interactive Landmark Test!";
         cout << "\n(Press q to exit, or c to continue)";
         cin >> selection;
 
@@ -269,13 +269,14 @@ void LandmarkTestMenu(Graph &g){
 
             vector<int> result = g.Landmark(stoi(source),stoi(dest),stoi(landmark));
 
-            cout << "\nRun #" << count << "Path from " << source << " to " << dest << " through "<< landmark << ": " << " weight = ";
+            cout << "\nRun #" << count << ": Path from " << source << " to " << dest << " through "<< landmark << ": " << " weight = ";
             cout << g.Ddistances[stoi(source)] +g.Ddistances[stoi(dest)] << ",\tpath ={ ";
             for(int v:result){
             
                 cout << v << " ";
              }
             cout << "}";
+            cout << "\nSaved to Landmark.txt!!";
 
 
 
@@ -285,9 +286,9 @@ void LandmarkTestMenu(Graph &g){
             done =true;
         }
 
-
-    }
     count++;
+    }
+    
 }
 
 
@@ -335,7 +336,7 @@ OUTLINE:
 
 /////////////////////////////////////////////////////interactive Dijkstras test
     DijkstrasTestMenu(PAgraph); //no output, just to file only.
-    //LandmarkTestMenu(PAgraph);
+    LandmarkTestMenu(PAgraph);
 
 
     
