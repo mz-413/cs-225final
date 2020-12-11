@@ -123,28 +123,29 @@ void Graph::DijkstraSSSP(int source){
 
         }
 */
+        //Print solution to a txt file & to cout
         string first = "Path from " + to_string(i);
         string second = " to " + to_string(source);
         string third = ": weight =" + to_string(distance.at(i)) + ", path ={";
-        // cout << "Path from " << i << " to " << source << ": weight =" << distance.at(i) << ", path ={";
+        cout << "Path from " << i << " to " << source << ": weight =" << distance.at(i) << ", path = { ";
 
         path_output += first + second + third;
 
         for(int v:path) {
-            // cout << v << " ";
+            cout << v << " ";
             string temp = to_string(v);
             path_output += temp + " ";
-            // path_output += ",";
+            path_output += ",";
         }
 
 
 
-        // cout << "}\n";
+        cout << "}\n";
         path_output += "}\n";
 
-      
 
-        
+
+
     }
 
 

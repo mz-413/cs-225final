@@ -70,6 +70,8 @@ public:
 
     void DijkstraSSSP(int source);
 
+    void Landmark(int source, int dest, int landmark);
+
 
     /**
      * Gets all adjacent vertices to the parameter vertex.

@@ -205,6 +205,41 @@ void  writeOutDijkstras(string output) {
     return;
 }
 
+void DijkstrasTestMenu(Graph &g){
+
+    bool done =false;
+    string selection;
+
+    while(!done){
+        cout << "\nWelcome to our interactive Dijkstras SSSP Test!";
+        cout << "\n(Enter q to exit)";
+        cout << "\n\nPlease select a vertex to run the algorithm on from 0 to " << g.getVertices().size()-1 << " : ";
+        
+        cin >> selection;
+        
+        if(selection !="q"){
+
+            string temp = "Dijkstra results: \n";
+
+            g.DijkstraSSSP(stoi(selection));
+            
+            temp += g.getPaths();
+    
+            temp += "\n-----PATH NODES WENT THROUGH-----\n\n";
+            temp += g.toPrint();
+
+            writeOutDijkstras(temp);
+            cout << "Updated Dijkstras.txt" << endl;
+            
+        }else{
+
+            done =true;
+        }
+     
+
+    }
+
+}
 
 int main() {
 /*
@@ -214,29 +249,28 @@ OUTLINE:
 3) Do a BFS Traversal, output traversal info to txt file
 4) Run Dijkstras algorithm, output information to txt file
 6) Any addition test cases to ouput to screen in main;
-
-
 */
-    /** Read file of directed nodes, write the undirected nodes into "undirected_list.txt" */
-    //? there is not output for queue in main but there's output in test?
-   /* // string d_list = "temp_directed_list.txt";
-    vector<string> dir_vect = file_to_vector();
-    vector<pair<int, int>> dir_mapped = createMap(dir_vect);
-    queue<string> q = writeOut(dir_mapped); // contains the queue of string
-    */
     
-    queue<string> infileQ;
-    /*Manual load of a predefined queue */
-    //loadQ(infileQ);//loads graph, manually 
+//Create Graph object from a modified text file,
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+    queue<string> infileQ; 
 
-    /*Read from a modified large dataset txt file and load that into the queue*/        
-    infileQ = readFromFile(); //load from "temp_undirected_list.txt"
+    /*Manual load of a predefined queue uncomment line below*/
+    loadQ(infileQ);//loads graph, manually 
+
+    /*Read from a modified large dataset txt file and load that into the queue, uncomment line below*/        
+    //infileQ = readFromFile(); //load from "temp_undirected_list.txt"
 
     Graph PAgraph(infileQ); //create the graph object
-    graphtest(PAgraph);     //output the graph info simple
-    graphtest2(PAgraph);    //output graph detailed
 
-    // Output into a Graph.txt
+//Test the graph
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    graphtest(PAgraph);         //output the graph info simple
+    //graphtest2(PAgraph);    //output graph detailed
+
+//Output into a Graph.txt, 
+//////////////////////////////////////////////////////////////////////////////////////////////////////
     writeOutGraph(PAgraph);
     cout << "Updated Graph.txt" << endl;
     
@@ -248,17 +282,20 @@ OUTLINE:
     string temp = "Dijkstra results: \n";
 
     temp += PAgraph.getPaths();
-    // PAgraph.print();
+    
     temp += "\n-----PATH NODES WENT THROUGH-----\n\n";
     temp += PAgraph.toPrint();
-
+///////////////////////////////////////////////////////
     // Output into a Dijkstras.txt
     writeOutDijkstras(temp);
     cout << "Updated Dijkstras.txt" << endl;
+//////////////////////////////////////////////////////
 
 
+/////////////////////////////////////////////////////interactive Dijkstras test
+    DijkstrasTestMenu(PAgraph);
 
-    return 0;
+return 0;
 }
 
 /** 
