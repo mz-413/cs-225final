@@ -192,7 +192,7 @@ private:
                         //<src, umap<dest , edge>>
     mutable unordered_map<Vertex, unordered_map<Vertex, Edge>> adjacency_list;
     vector<int> DprevStep;          //contains the path back to source from the previously ran void DijkstrasSSSP
-    vector<int> Dijkdistances;      //contains the distances to source from the previously ran void DijkstrasSSSP
+    vector<int> Ddistances;      //contains the distances to source from the previously ran void DijkstrasSSSP
 
     string path_output;
     int total_weight;
