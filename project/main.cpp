@@ -134,7 +134,7 @@ void BFSTest(Graph g) {
 queue<string> readFromFile() {
 
 	ifstream text;
-    text.open("undirected_list.txt");
+    text.open("temp_undirected_list.txt");
 
 	queue<string> out;
 
@@ -225,20 +225,22 @@ OUTLINE:
     */
     
 
-    //Queue Read from the newly created test file and create graph using that text file
-    // queue<string> infileQ;
-    // loadQ(infileQ);//loads Q with 5 vertices, 4 egdes
+    //Manual load of a predefined queue;
+    //queue<string> infileQ;
+    //loadQ(infileQ);//loads graph, manually 
 
-    queue<string> infileQ = readFromFile();
+    //Queue Read from the newly created test file and create graph using that text file
+    queue<string> infileQ = readFromFile(); //load from "   "
 
     Graph PAgraph(infileQ); //create the graph
     graphtest(PAgraph);     //output the graph info
 
     // Output into a Graph.txt
     writeOutGraph(PAgraph);
+    cout << "Updated Graph.txt" << endl;
     
-    cout << "BFS: Check BFS.txt" << endl;
     BFSTest(PAgraph);
+    cout << "Updated BFS.txt" << endl;
 
     PAgraph.DijkstraSSSP(6);    //0 =source
     
@@ -247,10 +249,11 @@ OUTLINE:
     temp += PAgraph.getPaths();
     // PAgraph.print();
     temp += "\n-----PATH NODES WENT THROUGH-----\n\n";
-    temp += PAgraph.toPrint();
+    // temp += PAgraph.toPrint();
 
     // Output into a Dijkstras.txt
     writeOutDijkstras(temp);
+    cout << "Updated Dijkstras.txt" << endl;
 
 
 

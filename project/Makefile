@@ -6,10 +6,11 @@ TEST = test
 EXE_OBJ = main.o
 OBJS = graph.o main.o readFile.o BFS.o
 
-# Reads the file
-EXE = read
-EXE_OBJ = read.o
-OBJS = read.o readFile.o
+# # Reads the file
+# # To read, 1) uncomment lines 11-13; 2) make ; 3) ./read ;
+# EXE = read
+# EXE_OBJ = read.o
+# OBJS = read.o readFile.o
 
 
 # Generated files
