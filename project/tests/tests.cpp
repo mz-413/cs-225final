@@ -127,7 +127,7 @@ TEST_CASE("test graph edges", "[part=graph]") {
 }
 
 //
-// Traversal/Algorithm tests
+// Traversal
 //
 
 TEST_CASE("test bfs traverse order", "[part=bfs]") {
@@ -146,7 +146,7 @@ TEST_CASE("test bfs traverse order", "[part=bfs]") {
   REQUIRE(result == "05314627");
 }
 
-TEST_CASE("test bfs edge state", "[part=bfs]") {
+TEST_CASE("test bfs edge states", "[part=bfs]") {
   queue<string> q;
   loadQ(q);
   Graph g(q);
@@ -162,8 +162,116 @@ TEST_CASE("test bfs edge state", "[part=bfs]") {
     result += (it.source) + " " + (it.dest) + " CROSS EDGE\n";
   }
 
-  REQUIRE(result == "5 0 DISCOVERED\n3 0 DISCOVERED\n1 0 DISCOVERED\n4 5 DISCOVERED\n6 5 DISCOVERED\n2 1 DISCOVERED\n7 4 DISCOVERED\n7 6 CROSS EDGE\n7 2 CROSS EDGE\n1 3 CROSS EDGE\n2 4 CROSS EDGE\n4 6 CROSS EDGE\n");
+  string answer = "5 0 DISCOVERED\n3 0 DISCOVERED\n1 0 DISCOVERED\n4 5 DISCOVERED\n6 5 DISCOVERED\n2 1 DISCOVERED\n7 4 DISCOVERED\n7 6 CROSS EDGE\n";
+  answer += "7 2 CROSS EDGE\n1 3 CROSS EDGE\n2 4 CROSS EDGE\n4 6 CROSS EDGE\n";
+
+  REQUIRE(result == answer);
+}
+
+//
+// Algorithm - Dijkstras
+//
+
+TEST_CASE("test dijkstras simple graph (node = 0)", "[part=dijkstras]") {
+  queue<string> q;
+  loadQ(q);
+  Graph g(q);
+  g.DijkstraSSSP(0);
+
+  string output = g.getPaths();
+
+  REQUIRE(output == "Path from 0 to 0: weight =0, path ={0 ,}\nPath from 1 to 0: weight =8, path ={1 ,3 ,0 ,}\nPath from 2 to 0: weight =15, path ={2 ,1 ,3 ,0 ,}\nPath from 3 to 0: weight =3, path ={3 ,0 ,}\nPath from 4 to 0: weight =12, path ={4 ,5 ,0 ,}\nPath from 5 to 0: weight =7, path ={5 ,0 ,}\nPath from 6 to 0: weight =11, path ={6 ,5 ,0 ,}\nPath from 7 to 0: weight =15, path ={7 ,4 ,5 ,0 ,}\n");
+
+}
+
+TEST_CASE("test dijksrtas simple graph (node = 1)", "[part=dijkstras]") {
+  queue<string> q;
+  loadQ(q);
+  Graph g(q);
+  g.DijkstraSSSP(1);
+  string output = g.getPaths();
+
+  REQUIRE(output == "Path from 0 to 1: weight =8, path ={0 ,3 ,1 ,}\nPath from 1 to 1: weight =0, path ={1 ,}\nPath from 2 to 1: weight =7, path ={2 ,1 ,}\nPath from 3 to 1: weight =5, path ={3 ,1 ,}\nPath from 4 to 1: weight =13, path ={4 ,2 ,1 ,}\nPath from 5 to 1: weight =15, path ={5 ,0 ,3 ,1 ,}\nPath from 6 to 1: weight =15, path ={6 ,4 ,2 ,1 ,}\nPath from 7 to 1: weight =11, path ={7 ,2 ,1 ,}\n");
 }
 
 
+TEST_CASE("test dijksrtas simple graph (node = 3)", "[part=dijkstras]") {
+  queue<string> q;
+  loadQ(q);
+  Graph g(q);
+  g.DijkstraSSSP(3);
+  string output = g.getPaths();
+
+  REQUIRE(output == "Path from 0 to 3: weight =3, path ={0 ,3 ,}\nPath from 1 to 3: weight =5, path ={1 ,3 ,}\nPath from 2 to 3: weight =12, path ={2 ,1 ,3 ,}\nPath from 3 to 3: weight =0, path ={3 ,}\nPath from 4 to 3: weight =15, path ={4 ,5 ,0 ,3 ,}\nPath from 5 to 3: weight =10, path ={5 ,0 ,3 ,}\nPath from 6 to 3: weight =14, path ={6 ,5 ,0 ,3 ,}\nPath from 7 to 3: weight =16, path ={7 ,2 ,1 ,3 ,}\n");
+}
+
+TEST_CASE("test dijksrtas simple graph (node = 5)", "[part=dijkstras]") {
+  queue<string> q;
+  loadQ(q);
+  Graph g(q);
+  g.DijkstraSSSP(3);
+  string output = g.getPaths();
+
+  REQUIRE(output == "Path from 0 to 3: weight =3, path ={0 ,3 ,}\nPath from 1 to 3: weight =5, path ={1 ,3 ,}\nPath from 2 to 3: weight =12, path ={2 ,1 ,3 ,}\nPath from 3 to 3: weight =0, path ={3 ,}\nPath from 4 to 3: weight =15, path ={4 ,5 ,0 ,3 ,}\nPath from 5 to 3: weight =10, path ={5 ,0 ,3 ,}\nPath from 6 to 3: weight =14, path ={6 ,5 ,0 ,3 ,}\nPath from 7 to 3: weight =16, path ={7 ,2 ,1 ,3 ,}\n");
+}
+
+TEST_CASE("test dijksrtas simple graph (node = 7)", "[part=dijkstras]") {
+  queue<string> q;
+  loadQ(q);
+  Graph g(q);
+  g.DijkstraSSSP(3);
+  string output = g.getPaths();
+
+  REQUIRE(output == "Path from 0 to 3: weight =3, path ={0 ,3 ,}\nPath from 1 to 3: weight =5, path ={1 ,3 ,}\nPath from 2 to 3: weight =12, path ={2 ,1 ,3 ,}\nPath from 3 to 3: weight =0, path ={3 ,}\nPath from 4 to 3: weight =15, path ={4 ,5 ,0 ,3 ,}\nPath from 5 to 3: weight =10, path ={5 ,0 ,3 ,}\nPath from 6 to 3: weight =14, path ={6 ,5 ,0 ,3 ,}\nPath from 7 to 3: weight =16, path ={7 ,2 ,1 ,3 ,}\n");
+}
+
+TEST_CASE("test dijkstras simple graph - Adjacency List", "[part=dijkstras]") {
+  queue<string> q;
+  loadQ(q);
+  Graph g(q);
+  g.DijkstraSSSP(3);
+  string output = g.toPrint();
+
+  string answer = "6\n";
+  answer += "    => 7 weight = 5\n";
+  answer += "    => 4 weight = 2\n";
+  answer += "    => 5 weight = 4\n\n";
+  
+  answer += "4\n";
+  answer += "    => 2 weight = 6\n";
+  answer += "    => 7 weight = 3\n";
+  answer += "    => 6 weight = 2\n";
+  answer += "    => 5 weight = 5\n\n";
+  
+  answer += "3\n";
+  answer += "    => 1 weight = 5\n";
+  answer += "    => 0 weight = 3\n\n";
+  
+  answer += "2\n";
+  answer += "    => 4 weight = 6\n";
+  answer += "    => 7 weight = 4\n";
+  answer += "    => 1 weight = 7\n\n";
+  
+  answer += "1\n";
+  answer += "    => 3 weight = 5\n";
+  answer += "    => 2 weight = 7\n";
+  answer += "    => 0 weight = 10\n\n";
+  
+  answer += "7\n";
+  answer += "    => 2 weight = 4\n";
+  answer += "    => 4 weight = 3\n";
+  answer += "    => 6 weight = 5\n\n";
+  
+  answer += "5\n";
+  answer += "    => 4 weight = 5\n";
+  answer += "    => 6 weight = 4\n";
+  answer += "    => 0 weight = 7\n\n";
+  
+  answer += "0\n";
+  answer += "    => 5 weight = 7\n";
+  answer += "    => 3 weight = 3\n";
+  answer += "    => 1 weight = 10\n\n";
+
+  REQUIRE(output == answer);
+}
 
