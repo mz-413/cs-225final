@@ -201,6 +201,7 @@ TEST_CASE("test dijksrtas simple graph (node = 3)", "[part=dijkstras]") {
   loadQ(q);
   Graph g(q);
   g.DijkstraSSSP(3);
+
   string output = g.getPaths();
 
   REQUIRE(output == "Path from 0 to 3: weight =3, path ={0 ,3 ,}\nPath from 1 to 3: weight =5, path ={1 ,3 ,}\nPath from 2 to 3: weight =12, path ={2 ,1 ,3 ,}\nPath from 3 to 3: weight =0, path ={3 ,}\nPath from 4 to 3: weight =15, path ={4 ,5 ,0 ,3 ,}\nPath from 5 to 3: weight =10, path ={5 ,0 ,3 ,}\nPath from 6 to 3: weight =14, path ={6 ,5 ,0 ,3 ,}\nPath from 7 to 3: weight =16, path ={7 ,2 ,1 ,3 ,}\n");

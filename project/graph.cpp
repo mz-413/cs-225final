@@ -54,8 +54,8 @@ void Graph::DijkstraSSSP(int source){
         return;
     }
 
-    Ddistances.clear(); //clear previous run information
-    DprevStep.clear();
+    // Ddistances.clear(); //clear previous run information
+    // DprevStep.clear();
 
 
     vector<int> distance(graphsize, INFINITY);           //used to track distances from source vertex, index represents node number, initialized to infinity
