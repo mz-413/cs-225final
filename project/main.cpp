@@ -367,7 +367,7 @@ OUTLINE:
 
 
 /////////////////////////////////////////////////////interactive Dijkstras test
-    // DijkstrasTestMenu(PAgraph); //no output, just to file only.
+    DijkstrasTestMenu(PAgraph); //no output, just to file only.
     LandmarkTestMenu(PAgraph);
 
 
