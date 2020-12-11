@@ -216,6 +216,7 @@ void DijkstrasTestMenu(Graph &g){
         cout << "\n\nPlease select a vertex to run the algorithm on from 0 to " << g.getVertices().size()-1 << " : ";
         
         cin >> selection;
+        cout << "\nSaved to txt file!!";
         
         if(selection !="q"){
 
@@ -242,6 +243,54 @@ void DijkstrasTestMenu(Graph &g){
 }
 
 
+void LandmarkTestMenu(Graph &g){
+
+    bool done =false;
+    string selection;
+    string source;
+    string dest;
+    string landmark;
+    int count=1;
+
+    while(!done){
+        cout << "\nWelcome to our interactive Landmark Test!";
+        cout << "\n(Press q to exit, or c to continue)";
+        cin >> selection;
+
+        if(selection != "q"){
+
+            cout << "\nPlease select 3 vertices to run the algorithm on from 0 to " << g.getVertices().size()-1 << ".";
+            cout << "\nPlease select a source vertex: ";
+            cin >> source;
+            cout << "\nPlease select a destination vertex: ";
+            cin >> dest;
+            cout << "\nPlease select the landmark vertex: ";
+            cin >> landmark;
+
+            vector<int> result = g.Landmark(stoi(source),stoi(dest),stoi(landmark));
+
+            cout << "\nRun #" << count << "Path from " << source << " to " << dest << " through "<< landmark << ": " << " weight = ";
+            cout << g.Ddistances[stoi(source)] +g.Ddistances[stoi(dest)] << ",\tpath ={ ";
+            for(int v:result){
+            
+                cout << v << " ";
+             }
+            cout << "}";
+
+
+
+        }else{
+
+
+            done =true;
+        }
+
+
+    }
+    count++;
+}
+
+
 int main() {
 /*
 OUTLINE:
@@ -257,7 +306,7 @@ OUTLINE:
     queue<string> infileQ; 
 
     /*Manual load of a predefined queue uncomment line below*/
-    loadQ(infileQ);//loads graph, manually 
+    //loadQ(infileQ);//loads graph, manually 
 
     /*Read from a modified large dataset txt file and load that into the queue, uncomment line below*/        
     infileQ = readFromFile(); //load from "undirected_list.txt"
@@ -285,12 +334,12 @@ OUTLINE:
 
 
 /////////////////////////////////////////////////////interactive Dijkstras test
-    DijkstrasTestMenu(PAgraph);
+    DijkstrasTestMenu(PAgraph); //no output, just to file only.
+    //LandmarkTestMenu(PAgraph);
 
 
-
-    //landmark test
-    vector<int> landmarkpath = PAgraph.Landmark(4,7,0);
+    
+    //vector<int> landmarkpath = PAgraph.Landmark(4,7,0);
 
 
 return 0;

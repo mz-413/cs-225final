@@ -54,6 +54,8 @@ void Graph::DijkstraSSSP(int source){
         return;
     }
 
+    Ddistances.clear(); //clear previous run information
+    DprevStep.clear();
 
 
     vector<int> distance(graphsize, INFINITY);           //used to track distances from source vertex, index represents node number, initialized to infinity
@@ -178,8 +180,9 @@ IDEA: call dikstras on landmark you now have the shortest paths from landmark to
 */
 vector<int> Graph::Landmark(int source, int dest, int landmark){
 
+
     DijkstraSSSP(landmark); //Run Dijkstrass on the landmark and save the prevstep & distances information to the graphs object private variables
-                            //DprevStep and Ddistances
+                            //DprevStep and Ddistances NOTE: TXT files will NOT be updated
 
     vector<int> srcToLandmark;              
     vector<int> LandmarkTodest;
@@ -217,14 +220,16 @@ vector<int> Graph::Landmark(int source, int dest, int landmark){
         LandmarkTodest.pop_back();
 
     }
-    /* Output the final result
-    cout << "\nSTL ";
+
+
+    //print out soltion path
+    cout << "\nSTD ";
     for(int i=0; i< (int)srcToLandmark.size(); i++)
         cout << srcToLandmark[i] << " ";
 
 
 
-
+    /*
         for weights simply add the 2 paths ie
 
         int Totalweight = Ddistances[source] + Ddistances[dest];
@@ -236,8 +241,6 @@ vector<int> Graph::Landmark(int source, int dest, int landmark){
         return srcToLandmark;
 
 }
-
-
 
 
 
