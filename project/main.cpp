@@ -249,7 +249,7 @@ OUTLINE:
     temp += PAgraph.getPaths();
     // PAgraph.print();
     temp += "\n-----PATH NODES WENT THROUGH-----\n\n";
-    // temp += PAgraph.toPrint();
+    temp += PAgraph.toPrint();
 
     // Output into a Dijkstras.txt
     writeOutDijkstras(temp);
