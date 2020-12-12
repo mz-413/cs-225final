@@ -13,9 +13,9 @@ using namespace std;
 */
 void loadQ(queue<string> & q){
     
-    q.push(string("0"));    //src
-    q.push(string("1"));    //dest
-    q.push(string("10"));   //weight
+    q.push(string("0"));    //source vertex
+    q.push(string("1"));    //dest vertex
+    q.push(string("10"));   //edge weight
 
     q.push(string("1"));
     q.push(string("2"));
@@ -241,10 +241,16 @@ void DijkstrasTestMenu(Graph &g){
 
     bool done =false;
     string selection;
+    int count=1;
 
     while(!done){
-        cout << "\nWelcome to our interactive Dijkstras SSSP Test!";
-        cout << "\n(Enter q to exit)";
+        cout << "\n\n\n\nWelcome to our interactive Dijkstras SSSP Test!";
+        cout << "\n===================================================";
+        cout << "\n(Enter 'q' to quit) ";
+
+        if(count ==1)
+            cout <<"NOTE: First run will not work, you must run at least twice.";
+        
         cout << "\n\nPlease select a vertex to run the algorithm on from 0 to " << g.getVertices().size()-1 << " : ";
         
         cin >> selection;
@@ -269,7 +275,7 @@ void DijkstrasTestMenu(Graph &g){
             done =true;
         }
      
-
+    count++;
     }
 
 }
@@ -289,8 +295,9 @@ void LandmarkTestMenu(Graph &g){
     string output = "______LANDMARK RUNS______";
 
     while(!done){
-        cout << "\n\nWelcome to our interactive Landmark Test!";
-        cout << "\n(Press q to exit, or c to continue)";
+        cout << "\n\n\n\n\nWelcome to our interactive Landmark Test!";
+        cout <<"\n================================================";
+        cout << "\n(Enter 'q' to quit, or any key to continue):";
         cin >> selection;
 
         if(selection != "q"){
@@ -298,9 +305,9 @@ void LandmarkTestMenu(Graph &g){
             cout << "\nPlease select 3 vertices to run the algorithm on from 0 to " << g.getVertices().size()-1 << ".";
             cout << "\nPlease select a source vertex: ";
             cin >> source;
-            cout << "\nPlease select a destination vertex: ";
+            cout << "Please select a destination vertex: ";
             cin >> dest;
-            cout << "\nPlease select the landmark vertex: ";
+            cout << "Please select the landmark vertex: ";
             cin >> landmark;
 
             vector<int> result = g.Landmark(stoi(source),stoi(dest),stoi(landmark));
@@ -317,7 +324,7 @@ void LandmarkTestMenu(Graph &g){
                 dist = to_string(distance);
             }
 
-            cout << "\nRun #" << count << "Path from " << source << " to " << dest << " through "<< landmark << ": " << " weight = ";
+            cout << "\nRun #" << count << " Path from " << source << " to " << dest << " through "<< landmark << ": " << " weight = ";
             cout << g.Ddistances[stoi(source)] +g.Ddistances[stoi(dest)] << ", path ={ ";
 
             output += run + path + dist + ", path ={ ";
@@ -333,7 +340,7 @@ void LandmarkTestMenu(Graph &g){
             }
 
             cout << "}";
-            cout << "\nSaved to Landmark.txt!!";
+            cout << "\nSaved to Landmark.txt!! Please open file to view more information.";
 
             output += "}";
 
@@ -350,6 +357,13 @@ void LandmarkTestMenu(Graph &g){
     
 }
 
+void Exit(){
+
+    cout << "\n\n\n\nThank you for testing our program and helping as with our final project this has been";
+    cout << "\na very rewarding and great experience, we all have learned alot through the process!!";
+    cout << "\nHave a great winter break, thanks again take care! :)\n\n\n\n";
+
+}
 
 int main() {
 /*
@@ -366,10 +380,10 @@ OUTLINE:
     queue<string> infileQ; 
 
     /*Manual load of a predefined queue uncomment line below*/
-    //loadQ(infileQ);//loads graph, manually 
+    loadQ(infileQ);//loads graph, manually 
 
     /*Read from a modified large dataset txt file and load that into the queue, uncomment line below*/        
-    infileQ = readFromFile(); //load from "undirected_list.txt"
+    //infileQ = readFromFile(); //load from "undirected_list.txt"
 
     Graph PAgraph(infileQ); //create the graph object
 
@@ -382,10 +396,10 @@ OUTLINE:
 //Output into a Graph.txt, 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
     writeOutGraph(PAgraph);
-    cout << "Updated Graph.txt" << endl;
+    cout << "Updated Graph.txt open file to view graph info." << endl;
     
     BFSTest(PAgraph);
-    cout << "Updated BFS.txt" << endl;
+    cout << "Updated BFS.txt open file to view BFS traversal." << endl;
 
     // to initialize? For some reason the first time this
     // is called the code does not work as intended
@@ -397,12 +411,13 @@ OUTLINE:
     DijkstrasTestMenu(PAgraph); //no output, just to file only.
     LandmarkTestMenu(PAgraph);
 
-
     
     //vector<int> landmarkpath = PAgraph.Landmark(4,7,0);
 
 
-return 0;
+
+    Exit();
+    return 0;
 }
 
 

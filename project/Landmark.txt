@@ -1,7 +1,14 @@
 ______LANDMARK RUNS______
+<<<<<<< Updated upstream
 Run #0 Path from 34 to 54 through 65:  weight = 78, path ={ 34 36 40 45 44 22 69 70 93 81 95 89 86 80 75 65 59 60 54 }
 Run #1 Path from 6 to 53 through 4:  weight = 99, path ={ 6 5 8 7 2 4 2 7 16 18 24 23 38 52 53 }
 Run #2 Path from 6 to 4 through 4:  weight = 28, path ={ 6 5 8 7 2 4 }
 Run #3 Path from 23 to 55 through 4:  weight = 196, path ={ 23 24 18 16 7 2 4 2 7 16 18 24 20 19 25 26 37 36 40 45 44 22 69 70 61 81 95 89 86 80 75 65 59 60 54 55 }
 Run #4 Path from 0 to 3 through 4:  weight = DNE, path ={ DNE }
 Run #5 Path from 22 to 34 through 56:  weight = 105, path ={ 22 69 70 93 81 95 89 86 80 64 57 56 57 64 80 86 89 95 81 93 70 69 22 44 45 40 36 34 }
+=======
+Run #0 Path from 2 to 3 through 4:  weight = 23, path ={ 2 4 2 3 }
+Run #1 Path from 5 to 6 through 7:  weight = 21, path ={ 5 8 7 8 5 6 }
+Run #2 Path from 1 to 0 through 34:  weight = DNE, path ={ DNE }
+Run #3 Path from 182 to 6 through 0:  weight = DNE, path ={ DNE }
+>>>>>>> Stashed changes
