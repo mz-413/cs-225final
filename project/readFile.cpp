@@ -24,7 +24,6 @@ readFile::readFile(){}
  * Constructor that constructs and writes the file
 */
 readFile::readFile(string unused) {
-    string d_list = "directed_list.txt";
     vector<string> dir_vect = file_to_vector();
     vector<pair<int, int>> dir_mapped = createVector(dir_vect);
     writeOut(dir_mapped);
